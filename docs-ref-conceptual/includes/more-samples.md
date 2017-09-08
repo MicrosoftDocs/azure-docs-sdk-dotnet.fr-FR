@@ -1,0 +1,3 @@
+## <a name="more-samples"></a><span data-ttu-id="a3292-101">Autres exemples</span><span class="sxs-lookup"><span data-stu-id="a3292-101">More samples</span></span>
+
+<span data-ttu-id="a3292-102">La collection complète des exemples pour les bibliothèques de gestion Azure pour .NET se trouvent sur [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code).</span><span class="sxs-lookup"><span data-stu-id="a3292-102">The full collection of samples for the Azure Management Libraries for .NET can be found on [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code).</span></span>
