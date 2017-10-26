@@ -11,15 +11,15 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: 1defed888972ae2f9d60d57bc34c518df9b5867c
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.openlocfilehash: eb7aa364cae9deea4ed2052eefdbd51c85379afa
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-started-with-net-for-azure-developers"></a>Prise en main de .NET pour les développeurs Azure
 
-Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergé comme une application web Azure et utilise Azure CosmosDB pour stocker des données.
+Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure CosmosDB pour stocker des données.
 
 ## <a name="prerequisites"></a>Composants requis
 
@@ -28,7 +28,7 @@ Ce didacticiel vous guide dans la création et le déploiement d’une applicati
 
 ## <a name="create-a-cosmosdb-account"></a>Créer un compte CosmosDB
 
-Dans ce didacticiel, nous utilisons CosmosDB pour stocker des données; vous devez donc créer un compte.  Exécutez ce script en local ou dans Cloud Shell pour créer un compte d’API DocumentDB d’Azure CosmosDB.  Cliquez sur le bouton **Essayer** sur le bloc de code ci-dessous pour lancer [Azure Cloud Shell](/azure/cloud-shell/) puis copiez/collez le bloc de script dans l’interpréteur de commandes.
+Dans ce didacticiel, nous utilisons CosmosDB pour stocker des données ; vous devez donc créer un compte.  Exécutez ce script en local ou dans Cloud Shell pour créer un compte d’API DocumentDB d’Azure CosmosDB.  Cliquez sur le bouton **Essayer** sur le bloc de code ci-dessous pour lancer [Azure Cloud Shell](/azure/cloud-shell/) puis copiez/collez le bloc de script dans l’interpréteur de commandes.
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
@@ -74,7 +74,7 @@ Nous allons maintenant obtenir l’exemple de code pour ce guide et le connecter
 
 4. Appuyez sur **F5** pour restaurer les packages NuGet du projet, générez le projet et exécutez-le localement.
 
-L’application web doit s’exécuter localement dans votre navigateur.  Vous pouvez ajouter de nouveaux éléments à la liste des tâches en cliquant sur **Créer nouveau**.  Remarque : Les données que vous entrez dans l’application sont stockées dans votre compte CosmosDB.  Vous pouvez [afficher vos données dans le portail Azure](https://docs.microsoft.com/en-us/azure/documentdb/documentdb-view-json-document-explorer).
+L’application web doit s’exécuter localement dans votre navigateur.  Vous pouvez ajouter de nouveaux éléments à la liste des tâches en cliquant sur **Créer nouveau**.  Remarque : Les données que vous entrez dans l’application sont stockées dans votre compte CosmosDB.  Vous pouvez [afficher vos données dans le portail Azure](/azure/documentdb/documentdb-view-json-document-explorer).
 
 ## <a name="deploying-the-application-as-an-azure-web-app"></a>Déploiement de l’application en tant qu’application web Azure
 

@@ -2,24 +2,26 @@
 title: "Didacticiels .NET pour l’utilisation de bases de données Azure"
 description: "Didacticiels pour la connexion et aux bases de données Azure et leur utilisation dans vos applications .NET."
 author: camsoper
-manager: douge
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 06/09/2017
 ms.author: casoper
-ms.openlocfilehash: 0a6d84efab9789090e6780504a39cb83893035d8
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 6b1160e20f44b822791deb1ad467ed984a80438b
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>Didacticiels pour l’utilisation de .NET avec des bases de données Azure
 
 Le tableau suivant renvoie à des didacticiels approfondis pour la connexion à des bases de données Azure et leur utilisation dans vos applications .NET.
 
-Pour un exemple de code source, consultez la liste des [exemples de services Azure](https://azure.microsoft.com/resources/samples/?platform=dotnet).
+Pour un exemple de code source, consultez la liste des [exemples de service Azure](https://azure.microsoft.com/resources/samples/?platform=dotnet).
 
 | | |
 |---|---|
@@ -29,7 +31,7 @@ Pour un exemple de code source, consultez la liste des [exemples de services Azu
 | [Utiliser .NET pour se connecter et interroger des données][2] | Utilisez les instructions SQL pour interroger la base de données, la mettre à jour, y insérer des données ou en supprimer. | 
 | **Cosmos DB** ||
 | [Prise en main de l’API DocumentDB][4] | Créez une application console simple avec l’API DocumentDB. | 
-| [Créer une application web ASP.NET avec CosmosDB][3] | Créez une application web à l’aide de la base de données NoSQL du DocumentDB de CosmosDB | 
+| [Créer une application web ASP.NET avec CosmosDB][3] | Créer une application web à l’aide de la base de données NoSQL du DocumentDB de CosmosDB | 
 | **Cache Redis** | |
 | [Utilisation de Cache Redis Azure][6] | Prenez en main Cache Redis Azure. |
 | [Créer une application web avec le Cache Redis][5] | Créez et déployez une application web ASP.NET dans une application web dans Azure App Service en utilisant Visual Studio 2017.  | 

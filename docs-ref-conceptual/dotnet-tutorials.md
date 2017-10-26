@@ -2,18 +2,20 @@
 title: Didacticiels pour les applications .NET dans Azure
 description: "Didacticiels pour créer et ajouter des fonctionnalités à vos applications .NET web et mobiles à l’aide des services Azure."
 author: camsoper
-manager: douge
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 06/29/2017
 ms.author: casoper
-ms.openlocfilehash: 96130a65fb9c435483ed35aeb4109dbeb295cf0e
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 9d07d84275593e405656471dd4fd7c1234eb6906
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="tutorials-for-building-net-apps-in-azure"></a>Didacticiels pour générer des applications .NET dans Azure
 
@@ -30,7 +32,7 @@ Pour un exemple de code source, consultez la liste des [exemples de service Azur
 | **Azure Container Service** ||
 | [Prise en main des conteneurs Kubernetes et Windows][4] | Créez un cluster Kubernetes dans Azure Container Service à l’aide d’un conteneur IIS.
 | **Base de données SQL** ||
-| [Utiliser .NET pour se connecter et interroger des données][5] | Utilisez ADO.NET pour vous connecter à une base de données SQL Azure, puis utiliser les instructions Transact-SQL pour interroger, insérer, mettre à jour et supprimer des données dans la base de données. | 
+| [Utiliser .NET pour se connecter et interroger des données][5] | Utilisez ADO.NET pour vous connecter à une base de données SQL Azure, puis utilisez les instructions Transact-SQL pour interroger, insérer, mettre à jour et supprimer des données dans la base de données | 
 | **Base de données Azure pour PostgreSQL** ||
 | [Utiliser .NET pour se connecter et interroger des données][6] | Utilisez les instructions SQL pour interroger la base de données, la mettre à jour, y insérer des données ou en supprimer. | 
 | **Cosmos DB** ||

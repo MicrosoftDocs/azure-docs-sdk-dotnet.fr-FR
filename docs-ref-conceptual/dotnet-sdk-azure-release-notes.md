@@ -4,18 +4,19 @@ description: "Découvrez les nouveautés et surveillez les dernières modificati
 keywords: "Azure, .NET, API, référence, notes, mises à jour, déconseiller"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.assetid: 
-ms.service: Azure
-ms.devlang: dotnet
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
-ms.technology: Azure
-ms.date: 06/20/2017
-ms.openlocfilehash: b4a66eb2860673f63a0d11c3cf31486337f36131
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 714bd05653c6b41b21b95581b1115b0bfa1956ed
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="release-notes"></a>Notes de publication 
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 08/28/2017
   </tr>
   <tr>
     <td>Base de données SQL</td>
-    <td>Bases de données<br>Pare-feu<br>Pools élastiques</td>
+    <td>Bases de données<br>Pare-feux<br>Pools élastiques</td>
     <td></td>
     <td valign="top"></td>
   </tr>
