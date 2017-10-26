@@ -4,18 +4,19 @@ description: "Référence pour les bibliothèques Azure Key Vault pour .NET"
 keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, Coffre de clés"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/21/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: 77a4e710e858bbeb98579a7b540b52b4cb9dd7b0
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: key-vault
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 3b8bcb9135794592f493db679e60fd40116d05e6
+ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="azure-key-vault-libraries-for-net"></a>Bibliothèques Azure Key Vault pour .NET
 
@@ -103,7 +104,7 @@ using (KeyVaultManagementClient client = new KeyVaultManagementClient(
 * [Getting Started with Azure Client Side Encryption in .NET (Prise en main du chiffrement côté client Azure dans .NET)](https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/)
 
 
-Découvrez d’autres [exemples de code .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet) que vous pouvez utiliser dans vos applications.
+Découvrez d’autres [exemples de code .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet) à utiliser dans vos applications.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
