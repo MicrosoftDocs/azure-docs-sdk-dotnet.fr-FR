@@ -1,6 +1,6 @@
 ---
-title: ".NET pour développeurs Azure"
-description: ".NET pour développeurs Azure"
+title: "Déployer sur Azure à partir de la ligne de commande avec .NET Core"
+description: "Cet article explique comment déployer une application ASP.NET Core sur Azure App Service à l’aide d’outils en ligne de commande."
 keywords: "Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure"
 author: camsoper
 manager: douge
@@ -11,15 +11,15 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: 14374182ee0511e942940797465858b94ec08876
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.openlocfilehash: 2ed69bfed7310c9e6b2f3f8fedb906ce33d87c3c
+ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="get-started-with-net-cli-tools-for-azure-developers"></a>Prise en main des outils CLI .NET pour les développeurs Azure
+# <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>Déployer sur Azure à partir de la ligne de commande avec .NET Core
 
-Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de .NET CORE.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergé comme une application web Azure et utilise Azure CosmosDB pour stocker des données.
+Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de .NET CORE.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure CosmosDB pour stocker des données.
 
 ## <a name="prerequisites"></a>Composants requis
 
@@ -32,7 +32,7 @@ Ce didacticiel vous guide dans la création et le déploiement d’une applicati
 
 ## <a name="create-a-cosmosdb-account"></a>Créer un compte CosmosDB
 
-Dans ce didacticiel, nous utilisons CosmosDB pour stocker des données; vous devez donc créer un compte.  Exécutez ce script en local ou dans Cloud Shell pour créer un compte Azure CosmosDB DocumentDB API.
+Dans ce didacticiel, nous utilisons CosmosDB pour stocker des données ; vous devez donc créer un compte.  Exécutez ce script en local ou dans Cloud Shell pour créer un compte Azure CosmosDB DocumentDB API.
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group

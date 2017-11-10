@@ -1,7 +1,7 @@
 ---
-title: ".NET pour développeurs Azure"
-description: ".NET pour développeurs Azure"
-keywords: "Azure .NET, Kit de développement logiciel (SDK), référence API Azure .NET, bibliothèques de classes .NET Azure"
+title: "Déployer sur Azure à partir de Visual Studio"
+description: "Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET."
+keywords: "Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure"
 author: camsoper
 manager: douge
 ms.author: casoper
@@ -11,13 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: eb7aa364cae9deea4ed2052eefdbd51c85379afa
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 0f8e3e5ea1ef5cde239b2d8ebbc9fe75dd978cb1
+ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="get-started-with-net-for-azure-developers"></a>Prise en main de .NET pour les développeurs Azure
+# <a name="deploy-to-azure-from-visual-studio"></a>Déployer sur Azure à partir de Visual Studio
 
 Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure CosmosDB pour stocker des données.
 
