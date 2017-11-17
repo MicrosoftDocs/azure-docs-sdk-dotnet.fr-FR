@@ -1,0 +1,75 @@
+- name: Azure pour les développeurs .NET
+  href: index.yml
+  items:
+    - name: Démarrages rapides .NET
+      expanded: true
+      items:
+        - name: "Web\_Apps"
+          href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
+        - name: Fonctions sans serveur
+          href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
+        - name: Base de données SQL
+          href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
+        - name: CosmosDB
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
+        - name: Service Fabric
+          href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+    - name: Prise en main de .NET
+      href: dotnet-sdk-azure-get-started.md
+    - name: Outils
+      href: dotnet-tools.md
+    - name: Tutoriels .NET
+      href: dotnet-tutorials.md
+      items:
+        - name: Créer une application web ASP.NET avec Azure SQL Database
+          href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
+        - name: Créer une application web ASP.NET avec CosmosDB
+          href: /azure/documentdb/documentdb-dotnet-application
+        - name: Créer et déployer une API Web
+          href: /azure/app-service-api/app-service-api-dotnet-get-started
+        - name: Prise en main des conteneurs Kubernetes et Windows
+          href: /azure/container-service/container-service-kubernetes-windows-walkthrough
+        - name: Se connecter à SQL Database et l’interroger
+          href: /azure/sql-database/sql-database-connect-query-dotnet
+        - name: Se connecter à PostgreSQL et l’interroger
+          href: /azure/postgresql/connect-csharp
+        - name: Prise en main de l’API DocumentDB de CosmosDB
+          href: /azure/cosmos-db/documentdb-dotnetcore-get-started
+    - name: Articles sur les procédures
+      items:
+        - name: Authentification
+          href: dotnet-sdk-azure-authenticate.md
+        - name: API Fluent
+          href: dotnet-sdk-azure-concepts.md
+        - name: Déployer avec Visual Studio
+          href: dotnet-quickstart-vs.md
+        - name: Déployer avec des outils en ligne de commande
+          href: dotnet-quickstart-xplat.md
+        - name: Bases de données
+          href: dotnet-tutorials-services-databases.md
+        - name: Storage
+          href: dotnet-tutorials-services-storage.md
+        - name: Conteneurs
+          href: dotnet-tutorials-services-containers.md
+        - name: Messagerie + IoT
+          href: dotnet-tutorials-services-messaging-iot.md
+        - name: Utiliser intelligence artificielle + Services cognitifs
+          href: dotnet-tutorials-services-ai-cognitive.md
+        - name: Données + Analytique
+          href: dotnet-tutorials-services-analytics.md
+        - name: Web et mobilité
+          href: dotnet-tutorials-services-web-mobile.md
+        - name: Sécurité et identité
+          href: dotnet-tutorials-services-security.md
+        - name: Surveillance et gestion
+          href: dotnet-tutorials-services-monitoring.md
+    - name: Exemples de code .NET
+      items:
+        - name: "Web\_Apps"
+          href: dotnet-sdk-azure-web-apps-samples.md
+        - name: Bases de données
+          href: dotnet-sdk-azure-sql-database-samples.md
+        - name: Machines virtuelles
+          href: dotnet-sdk-azure-virtual-machine-samples.md
+        - name: Tous les exemples .NET
+          href: 'https://azure.microsoft.com/resources/samples/?platform=dotnet'
