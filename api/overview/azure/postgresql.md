@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: postgresql
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: e3153a35845a2d7660aded64e5dbc3787c62afb6
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 7a8c1965432d5cca36665bce3963c30cdaee9205
+ms.sourcegitcommit: 4dba7cd869bddff3dee7315d258522dc4879abce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/23/2017
 ---
 # <a name="azure-database-for-postgresql-libraries-for-net"></a>Base de données Azure pour des bibliothèques PostgreSQL pour .NET
 
@@ -28,7 +28,7 @@ Utilisez des données et des ressources stockées dans la [base de données Azur
 
 La bibliothèque client recommandée pour accéder à la base de données Azure pour PostgreSQL est un [fournisseur de données Npgsql ADO.NET](http://www.npgsql.org/) open source. Utilisez le fournisseur ADO.NET pour vous connecter à la base de données, puis exécutez les instructions SQL directement ou via Entity Framework avec les fournisseurs Npgsql d’[Entity Framework 6](http://www.npgsql.org/ef6/index.html) ou [Entity Framework Core](http://www.npgsql.org/efcore/index.html).
 
-Installez le [package NuGet](https://www.nuget.org/packages/Npgsql) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio ou avec la [CLI .NET Core][DotNetCli].
+Installez le [package NuGet](https://www.nuget.org/packages/Npgsql) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio ou avec la [CLI .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Gestionnaire de package Visual Studio
 
@@ -74,4 +74,8 @@ using (NpgsqlConnection conn = new NpgsqlConnection(connectionString))
 ### <a name="samples"></a>Exemples
 
 - [Exemples de code ADO.NET](/dotnet/framework/data/adonet/ado-net-code-examples)
-- [Concevoir une base de données PostgreSQL à l’aide d’Azure CLI](https://docs.microsoft.com/azure/postgresql/tutorial-design-database-using-azure-cli) [PackageManager] : https://docs.microsoft.com/nuget/tools/package-manager-console [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
+- [Concevoir une base de données PostgreSQL à l’aide de l’interface Azure CLI](https://docs.microsoft.com/azure/postgresql/tutorial-design-database-using-azure-cli)
+
+
+[PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
