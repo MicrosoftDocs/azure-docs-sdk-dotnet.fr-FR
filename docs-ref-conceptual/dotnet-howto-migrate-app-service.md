@@ -11,17 +11,17 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: 1e2274c428fedc8c65627a99ae7be8a15c85e610
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 8ad1bcd11a823c1b6f7e592a5990dd6f7ed06e97
+ms.sourcegitcommit: ccc95adb96cf7d56ebce5e09bedf10c2d48f5e1f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="migrate-an-aspnet-web-application-to-azure-app-service"></a>Migrer une application web ASP.NET sur Azure App Service
 
 [App Service](https://docs.microsoft.com/azure/app-service/app-service-web-overview#why-use-web-apps) est un service de plateforme de calcul entièrement géré, optimisé pour l’hébergement de sites et d’applications web évolutifs. Ce document fournit des informations sur la façon de migrer très facilement au moyen d’une opération « lift-and-shift » une application existante vers Azure App Service, les modifications à prendre en compte et les ressources supplémentaires pour le transfert vers le cloud.
 
-Vous êtes prêt à commencer ? [Publiez une application ASP.NET + SQL sur Azure App Service](https://go.microsoft.com/fwlink/?linkid=863214).
+Vous êtes prêt à commencer ? [Publiez une application ASP.NET + SQL sur Azure App Service](https://go.microsoft.com/fwlink/?linkid=863214).
 
 # <a name="preparation"></a>Préparation   
 * [Comment déterminer si votre application est éligible à App Service](https://azure.microsoft.com/downloads/migration-assistant/)
@@ -57,4 +57,4 @@ Si votre application conserve les données, vous devez les mettre à jour pour u
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Migrer une application web ASP.NET vers une machine virtuelle Azure](dotnet-howto-migrate-to-vm.md)
+> [Migrer une application web ASP.NET vers Azure App Service](https://aka.ms/azure-webapp-migrate)
