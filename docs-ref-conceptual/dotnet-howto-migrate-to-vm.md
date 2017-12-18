@@ -6,20 +6,34 @@ author: camsoper
 manager: wpickett
 ms.author: casoper
 ms.date: 11/15/2017
-ms.topic: article
+layout: LandingPage
+ms.topic: landing-page
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter
-ms.openlocfilehash: 718d91b98180a7584f78a2383d430c4700743306
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 98f24553961793623f8a6aba10dcf45b930101fe
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Migrer une application web ASP.NET vers une machine virtuelle Azure
 
 Ce document présente comment migrer une application web ASP.NET se trouvant sur site vers une machine virtuelle Azure.
+
+## <a name="quickstart"></a>Démarrage rapide
+
+Découvrez comment créer une machine virtuelle et y publier votre application :
+
+<div class="ico48Case">
+    <div class="ico48Link">
+        <a href="https://tutorials.visualstudio.com/aspnet-vm/intro">
+            <img width="48" height="48" alt="Publish to an Azure VM" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+            <span>Publier sur une machine virtuelle Azure</span>
+        </a>
+    </div>
+</div>
 
 ## <a name="get-started"></a>Prise en main
 
@@ -67,7 +81,7 @@ De nombreuses applications utilisent Active Directory pour la gestion de l’aut
 
 ### <a name="sql-databases"></a>BASES DE DONNÉES SQL
 
-Si votre application utilise une base de données locale, il se peut qu’elle ne soit pas en mesure de communiquer avec elle par défaut. Vous pouvez :
+Si votre application utilise une base de données locale, il se peut qu’elle ne soit pas en mesure de communiquer avec elle par défaut. Vous pouvez :
 - Configurer un réseau hybride qui permet à votre application d’accéder à la base de données exécutée en local.  
 - Migrez votre base de données vers Azure.  Pour plus d’informations, consultez [Migrer votre base de données SQL Server vers Azure SQL Database](dotnet-howto-migrate-sql.md).
 
