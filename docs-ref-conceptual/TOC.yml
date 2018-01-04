@@ -14,6 +14,8 @@
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+        - name: Stockage d'objets blob
+          href: 'https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet'
     - name: Prise en main de .NET
       href: dotnet-sdk-azure-get-started.md
     - name: Outils
@@ -59,7 +61,7 @@
               href: dotnet-quickstart-xplat.md
         - name: Bases de données
           href: dotnet-tutorials-services-databases.md
-        - name: Storage
+        - name: Stockage
           href: dotnet-tutorials-services-storage.md
         - name: Conteneurs
           href: dotnet-tutorials-services-containers.md
