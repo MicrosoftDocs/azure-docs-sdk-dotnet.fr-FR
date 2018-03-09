@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 714bd05653c6b41b21b95581b1115b0bfa1956ed
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 19008714ee38ae00195b08c05fee5bf943da759f
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="release-notes"></a>Notes de publication 
 
@@ -37,7 +36,7 @@ ms.lasthandoff: 10/23/2017
     <td valign="top">Services de conteneurs Azure<br>Registre de conteneurs Azure</td>
   </tr>
   <tr>
-    <td>Storage</td>
+    <td>Stockage</td>
     <td>Comptes de stockage</td>
     <td></td>
     <td>Chiffrement</td>
@@ -50,14 +49,14 @@ ms.lasthandoff: 10/23/2017
   </tr>
   <tr>
     <td>Mise en réseau</td>
-    <td>Réseaux virtuels<br>Interfaces réseau<br>Adresses IP<br>Table de routage<br>groupes de sécurité réseau ;<br>DNS<br>Gestionnaires de trafic</td>
+    <td>Réseaux virtuels<br>Interfaces réseau<br>Adresses IP<br>Table de routage<br>Groupes de sécurité réseau<br>DNS<br>Gestionnaires de trafic</td>
     <td valign="top">Équilibreurs de charge<br>Passerelles d’application</td>
     <td valign="top"></td>
   </tr>
   <tr>
     <td>Plus de services</td>
     <td>Gestionnaire de ressources<br>Key Vault<br>Redis<br>CDN<br>Batch</td>
-    <td valign="top">App Service - Web Apps<br>Fonctions<br>Service Bus</td>
+    <td valign="top">App Service - Web Apps<br>Functions<br>Service Bus</td>
     <td valign="top">Surveiller<br>Graphique RBAC<br>Base de données de documents<br>Scheduler</td>
   </tr>
   <tr>

@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 1995f7a13e941a6178ed209b6c072c6142abba4f
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 5f06ec0af86cb4d1c8467fd50504d6074e556d6c
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="tutorials-for-building-web-and-mobile-apps-with-net-in-azure"></a>Didacticiels pour créer des applications web et mobiles avec .NET dans Azure
 
@@ -35,7 +34,7 @@ Pour un exemple de code source, consultez la liste des [exemples de service Azur
 | [Connexion à un compte Media Services][7] | Obtenez une connexion programmée à Azure Media Services. |
 | [Proposer la vidéo à la demande][4] | Créez un service de distribution de contenu vidéo à la demande dans .NET. | 
 | [Diffuser en continu à l’aide d’encodeurs locaux ][8] | Créez un canal configuré pour une distribution directe. |
-| **Azure Search**||
+| **Recherche Azure**||
 | [Comment utiliser Azure Search à partir d’une application .NET][5] | Vous pouvez utiliser le kit de développement logiciel (SDK) .NET pour intégrer une expérience de recherche enrichie dans votre application à l’aide d’Azure Search. | 
 
 
