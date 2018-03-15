@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: d3bad2e94ec8b08bad2a014fb25d400625a3590d
-ms.sourcegitcommit: 2d08f2815fa7fab55e09d294fc4d74897df7951d
+ms.openlocfilehash: cac6dde85a7b0db2c98d0888cb0ee5c60ee31836
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-virtual-machine-libraries-for-net"></a>Bibliothèques de machines virtuelles Azure pour .NET
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 11/07/2017
 
 Des ressources de calcul à la demande et évolutives s’exécutant sous Linux et Windows.
 
-Pour découvrir les machines virtuelles Azure, consultez la section [Créer une machine virtuelle Linux avec le portail Azure](https://review.docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal).
+Pour découvrir les machines virtuelles Azure, consultez la section [Créer une machine virtuelle Linux avec le portail Azure](https://review.docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal).
 
 ## <a name="management-apis"></a>API de gestion
 
@@ -69,14 +69,14 @@ IVirtualMachine windowsVM = azure.VirtualMachines.Define("MyVirtualMachine")
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API de gestion](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/virtualmachines/management?view=azure-dotnet)
+> [Explorer les API de gestion](https://docs.microsoft.com/dotnet/api/overview/azure/virtualmachines/management?view=azure-dotnet)
 
 ### <a name="samples"></a>Exemples
 
 * [Créer et gérer les machines virtuelles](/dotnet/azure/dotnet-sdk-azure-virtual-machine-samples)
-* [Déployer une machine virtuelle compatible SSH à l’aide d’un modèle dans .NET](https://azure.microsoft.com/en-us/resources/samples/resource-manager-dotnet-template-deployment/)
+* [Déployer une machine virtuelle compatible SSH à l’aide d’un modèle dans .NET](https://azure.microsoft.com/resources/samples/resource-manager-dotnet-template-deployment/)
 
-Afficher la [liste complète](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=VM) des exemples de machines virtuelles.
+Afficher la [liste complète](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=VM) des exemples de machines virtuelles.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

@@ -10,18 +10,17 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.assetid: 
-ms.openlocfilehash: 2ed69bfed7310c9e6b2f3f8fedb906ce33d87c3c
-ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
+ms.openlocfilehash: bb5d4958fb4398192d8427391695da1a7b8cc3c8
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>Déployer sur Azure à partir de la ligne de commande avec .NET Core
 
 Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de .NET CORE.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure CosmosDB pour stocker des données.
 
-## <a name="prerequisites"></a>Composants requis
+## <a name="prerequisites"></a>configuration requise
 
 * Un [Abonnement Microsoft Azure](https://azure.microsoft.com/free/)
 * [.NET core](https://www.microsoft.com/net/download/core) (facultatif)
@@ -138,7 +137,7 @@ Lorsque vous avez terminé de tester l’application et d’inspecter le code et
 az group delete -n DotNetAzureTutorial
 ```
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>étapes suivantes
 
 * [Utiliser Azure Active Directory pour s’authentifier dans une application web ASP.NET](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)
 * [Créer une application web Azure à l’aide d’Azure SQL Database](/azure/app-service-web/web-sites-dotnet-get-started)

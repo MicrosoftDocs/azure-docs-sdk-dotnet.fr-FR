@@ -12,21 +12,21 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: storage
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f9928736fa024258bcf19ba5ad91f0a328aa05a8
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 8f6e0414b54698d0a1dbe3d4c074456a6ad7b7be
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-storage-apis-for-net"></a>API de stockage Azure pour .NET
 
 ## <a name="overview"></a>Vue d'ensemble
 
-Lisez et écrivez des fichiers, des données d’objets blob, des paires clé-valeur et des messages à partir de vos applications .NET avec le [stockage Azure](https://review.docs.microsoft.com/en-us/azure/storage/storage-introduction).
+Lisez et écrivez des fichiers, des données d’objets blob, des paires clé-valeur et des messages à partir de vos applications .NET avec le [stockage Azure](https://review.docs.microsoft.com/azure/storage/storage-introduction).
 
 Pour découvrir le stockage Azure, consultez [Prise en main du stockage d’objets blob Azure à l’aide de .NET](/azure/storage/storage-dotnet-how-to-use-blobs).
 
-## <a name="client-library"></a>Bibliothèque de client
+## <a name="client-library"></a>Bibliothèque cliente
 
 Utilisez [des chaînes de connexion](/azure/storage/storage-create-storage-account#manage-your-storage-account) pour vous connecter à un compte de stockage Azure, puis utilisez les classes et méthodes des bibliothèques de client pour utiliser le stockage d’objets blob, de tables, de fichiers ou de files d’attente.
 
@@ -73,7 +73,7 @@ blob.UploadTextAsync("Hello, World!").Wait();
 ```
 
 > [!div class="nextstepactions"]
-> [Explorer les API client](/dotnet/api/overview/azure/storage/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/storage/client)
 
 ## <a name="management-apis"></a>API de gestion
 
