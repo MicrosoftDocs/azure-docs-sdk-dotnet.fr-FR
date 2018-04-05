@@ -1,6 +1,6 @@
 ---
-title: "Didacticiels pour créer des applications web et mobiles .NET dans Azure"
-description: "Didacticiels pour créer et ajouter des fonctionnalités à vos applications web et mobiles .NET à l’aide des services Azure."
+title: Didacticiels pour créer des applications web et mobiles .NET dans Azure
+description: Didacticiels pour créer et ajouter des fonctionnalités à vos applications web et mobiles .NET à l’aide des services Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

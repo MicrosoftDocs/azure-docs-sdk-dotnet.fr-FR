@@ -1,6 +1,6 @@
 ---
-title: "Didacticiels .NET pour l’intelligence artificielle et les services cognitifs dans Azure  | Microsoft Docs"
-description: "Ajoutez l’intelligence artificielle et des services cognitifs dans vos applications .NET avec les services Microsoft Azure."
+title: Didacticiels .NET pour l’intelligence artificielle et les services cognitifs dans Azure  | Microsoft Docs
+description: Ajoutez l’intelligence artificielle et des services cognitifs dans vos applications .NET avec les services Microsoft Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

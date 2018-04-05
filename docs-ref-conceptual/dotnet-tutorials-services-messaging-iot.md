@@ -1,6 +1,6 @@
 ---
-title: "Didacticiels pour l’envoi de message et IoT avec .NET sur Azure | Microsoft Docs"
-description: "Envoyez des messages entre les applications cloud ainsi qu’entre les appareils et le cloud à l’aide de .NET et des services Azure."
+title: Didacticiels pour l’envoi de message et IoT avec .NET sur Azure | Microsoft Docs
+description: Envoyez des messages entre les applications cloud ainsi qu’entre les appareils et le cloud à l’aide de .NET et des services Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

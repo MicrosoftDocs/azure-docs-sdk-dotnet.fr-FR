@@ -1,6 +1,6 @@
 ---
-title: "Didacticiels .NET pour l’utilisation de bases de données Azure"
-description: "Didacticiels pour la connexion et aux bases de données Azure et leur utilisation dans vos applications .NET."
+title: Didacticiels .NET pour l’utilisation de bases de données Azure
+description: Didacticiels pour la connexion et aux bases de données Azure et leur utilisation dans vos applications .NET.
 author: camsoper
 ms.author: casoper
 manager: wpickett

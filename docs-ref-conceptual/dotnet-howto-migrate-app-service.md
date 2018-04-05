@@ -1,6 +1,6 @@
 ---
 title: Migrer une application web ASP.NET sur Azure App Service
-description: "Découvrez comment migrer une application web ASP.NET se trouvant sur site vers Azure App Service."
+description: Découvrez comment migrer une application web ASP.NET se trouvant sur site vers Azure App Service.
 keywords: Azure .NET, ASP.NET, App Service, application web, migrer, migration
 author: camsoper
 manager: wpickett

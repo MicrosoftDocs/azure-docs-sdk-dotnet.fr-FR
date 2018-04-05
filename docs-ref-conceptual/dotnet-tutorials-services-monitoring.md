@@ -1,6 +1,6 @@
 ---
-title: "Didacticiels sur la gestion et l’analyse des applications .NET dans Azure"
-description: "Analysez la santé et les niveaux de performance de votre application .NET en cours d’exécution dans Azure et gérez les données de télémétrie pour enregistrer des informations sur l’utilisation de votre application par d’autres personnes."
+title: Didacticiels sur la gestion et l’analyse des applications .NET dans Azure
+description: Analysez la santé et les niveaux de performance de votre application .NET en cours d’exécution dans Azure et gérez les données de télémétrie pour enregistrer des informations sur l’utilisation de votre application par d’autres personnes.
 author: camsoper
 ms.author: casoper
 manager: wpickett

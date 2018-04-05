@@ -1,6 +1,6 @@
 ---
-title: "Didacticiels .NET pour sécuriser vos applications Azure"
-description: "Didacticiels pour sécuriser les applications et gérer les identités de vos applications .NET qui s’exécutent sur Azure."
+title: Didacticiels .NET pour sécuriser vos applications Azure
+description: Didacticiels pour sécuriser les applications et gérer les identités de vos applications .NET qui s’exécutent sur Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

@@ -1,7 +1,7 @@
 ---
-title: "Outils pour les développeurs .NET d’Azure"
-description: "Obtenez les outils pour commencer à utiliser les bibliothèques .NET Azure à partir d’un environnement Windows, Linux ou Mac."
-keywords: "Azure .NET, SDK, référence sur l’API Azure .NET, bibliothèques de classes .NET Azure"
+title: Outils pour les développeurs .NET d’Azure
+description: Obtenez les outils pour commencer à utiliser les bibliothèques .NET Azure à partir d’un environnement Windows, Linux ou Mac.
+keywords: Azure .NET, SDK, référence sur l’API Azure .NET, bibliothèques de classes .NET Azure
 author: camsoper
 ms.author: casoper
 manager: wpickett

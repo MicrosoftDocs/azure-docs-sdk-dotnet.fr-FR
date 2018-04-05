@@ -1,7 +1,7 @@
 ---
-title: "Déployer sur Azure à partir de Visual Studio"
-description: "Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET."
-keywords: "Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure"
+title: Déployer sur Azure à partir de Visual Studio
+description: Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET.
+keywords: Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure
 author: camsoper
 manager: douge
 ms.author: casoper

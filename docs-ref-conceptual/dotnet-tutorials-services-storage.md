@@ -1,6 +1,6 @@
 ---
-title: "Didacticiels pour l’utilisation du stockage dans vos applications .NET dans Azure"
-description: "Enregistrer des objets et utiliser des fichiers dans vos applications .NET s’exécutant dans Azure"
+title: Didacticiels pour l’utilisation du stockage dans vos applications .NET dans Azure
+description: Enregistrer des objets et utiliser des fichiers dans vos applications .NET s’exécutant dans Azure
 author: camsoper
 ms.author: casoper
 manager: wpickett

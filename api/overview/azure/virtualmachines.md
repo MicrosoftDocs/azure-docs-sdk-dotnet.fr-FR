@@ -1,6 +1,6 @@
 ---
-title: "Bibliothèques de calcul Azure pour .NET"
-description: "Référence pour les bibliothèques de calcul Azure pour .NET"
+title: Bibliothèques de calcul Azure pour .NET
+description: Référence pour les bibliothèques de calcul Azure pour .NET
 keywords: Azure, .NET, SDK, API, machine virtuelle, machines virtuelles, calcul
 author: camsoper
 ms.author: casoper

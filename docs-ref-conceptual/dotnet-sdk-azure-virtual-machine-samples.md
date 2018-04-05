@@ -1,6 +1,6 @@
 ---
 title: Exemple de code illustrant la gestion des machines virtuelles Azure avec .NET
-description: "Obtenir des exemples de code pour créer et mettre à jour des machines virtuelles Azure à l’aide de .NET"
+description: Obtenir des exemples de code pour créer et mettre à jour des machines virtuelles Azure à l’aide de .NET
 keywords: Azure, .NET, SDK, API, machines virtuelles
 author: camsoper
 ms.author: casoper
