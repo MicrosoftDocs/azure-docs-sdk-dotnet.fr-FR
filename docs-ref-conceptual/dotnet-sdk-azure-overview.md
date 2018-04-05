@@ -1,7 +1,7 @@
 ---
 title: API Azure .NET
-description: "Vue d’ensemble des API Azure pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, NuGet, bibliothèques, packages"
+description: Vue d’ensemble des API Azure pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, NuGet, bibliothèques, packages
 author: camsoper
 ms.author: casoper
 manager: wpickett

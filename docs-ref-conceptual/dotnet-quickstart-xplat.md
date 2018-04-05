@@ -1,7 +1,7 @@
 ---
-title: "Déployer sur Azure à partir de la ligne de commande avec .NET Core"
-description: "Cet article explique comment déployer une application ASP.NET Core sur Azure App Service à l’aide d’outils en ligne de commande."
-keywords: "Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure"
+title: Déployer sur Azure à partir de la ligne de commande avec .NET Core
+description: Cet article explique comment déployer une application ASP.NET Core sur Azure App Service à l’aide d’outils en ligne de commande.
+keywords: Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure
 author: camsoper
 manager: douge
 ms.author: casoper

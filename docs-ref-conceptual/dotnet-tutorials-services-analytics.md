@@ -1,6 +1,6 @@
 ---
-title: "Didacticiels .NET pour l’analyse des données dans Azure | Microsoft Docs"
-description: "Développez des applications d’analyse des données avec les services Microsoft Azure."
+title: Didacticiels .NET pour l’analyse des données dans Azure | Microsoft Docs
+description: Développez des applications d’analyse des données avec les services Microsoft Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure CosmosDB pour .NET"
-description: "Référence pour les bibliothèques Azure CosmosDB pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, CosmosDB"
+title: Bibliothèques Azure CosmosDB pour .NET
+description: Référence pour les bibliothèques Azure CosmosDB pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, CosmosDB
 author: camsoper
 ms.author: casoper
 manager: wpickett

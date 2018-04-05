@@ -1,7 +1,7 @@
 ---
-title: "Exemple de code pour la création d’applications web et mobiles Azure avec .NET"
-description: "Obtenir des exemples de code pour créer et mettre à jour Azure Web Apps à l’aide de .NET"
-keywords: "Azure, .NET, SDK, API, SQL, base de données"
+title: Exemple de code pour la création d’applications web et mobiles Azure avec .NET
+description: Obtenir des exemples de code pour créer et mettre à jour Azure Web Apps à l’aide de .NET
+keywords: Azure, .NET, SDK, API, SQL, base de données
 author: camsoper
 ms.author: casoper
 manager: wpickett

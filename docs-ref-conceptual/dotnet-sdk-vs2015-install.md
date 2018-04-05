@@ -1,7 +1,7 @@
 ---
-title: "Outils Azure pour Visual Studio 2015"
-description: "Obtenez les outils pour commencer à utiliser les bibliothèques Azure .NET à partir de Visual Studio 2015."
-keywords: "Azure .NET, SDK, VS2015, Visual Studio 2015"
+title: Outils Azure pour Visual Studio 2015
+description: Obtenez les outils pour commencer à utiliser les bibliothèques Azure .NET à partir de Visual Studio 2015.
+keywords: Azure .NET, SDK, VS2015, Visual Studio 2015
 author: camsoper
 ms.author: casoper
 manager: wpickett

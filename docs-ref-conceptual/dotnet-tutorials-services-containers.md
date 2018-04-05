@@ -1,6 +1,6 @@
 ---
-title: "Didacticiels .NET pour déployer des conteneurs dans Azure"
-description: "Déployez des applications .NET dans des conteneurs Docker dans Azure et mettez-les à l’échelle avec DC/OS, Mesos ou Kubernetes."
+title: Didacticiels .NET pour déployer des conteneurs dans Azure
+description: Déployez des applications .NET dans des conteneurs Docker dans Azure et mettez-les à l’échelle avec DC/OS, Mesos ou Kubernetes.
 author: camsoper
 ms.author: casoper
 manager: wpickett

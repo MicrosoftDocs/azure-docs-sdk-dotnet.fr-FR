@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure App Service pour .NET"
-description: "Référence pour les bibliothèques Azure App Service pour .NET"
-keywords: "Azure, .NET, SDK, API, applications web, service d’applications, mobile, asp.net"
+title: Bibliothèques Azure App Service pour .NET
+description: Référence pour les bibliothèques Azure App Service pour .NET
+keywords: Azure, .NET, SDK, API, applications web, service d’applications, mobile, asp.net
 author: camsoper
 ms.author: casoper
 manager: wpickett

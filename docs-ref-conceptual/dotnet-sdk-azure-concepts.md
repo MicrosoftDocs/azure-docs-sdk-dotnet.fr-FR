@@ -1,7 +1,7 @@
 ---
-title: "Concepts et modèles d’utilisation des bibliothèques de gestion Azure pour .NET"
-description: 
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, modèles, concepts, fluent, journalisation"
+title: Concepts et modèles d’utilisation des bibliothèques de gestion Azure pour .NET
+description: ''
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, modèles, concepts, fluent, journalisation
 author: camsoper
 ms.author: casoper
 manager: wpickett

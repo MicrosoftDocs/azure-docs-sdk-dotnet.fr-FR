@@ -1,7 +1,7 @@
 ---
-title: "Notes de publication des bibliothèques de gestion Azure pour .NET | Microsoft Docs"
-description: "Découvrez les nouveautés et surveillez les dernières modifications dans les bibliothèques de gestion Azure pour .NET."
-keywords: "Azure, .NET, API, référence, notes, mises à jour, déconseiller"
+title: Notes de publication des bibliothèques de gestion Azure pour .NET | Microsoft Docs
+description: Découvrez les nouveautés et surveillez les dernières modifications dans les bibliothèques de gestion Azure pour .NET.
+keywords: Azure, .NET, API, référence, notes, mises à jour, déconseiller
 author: camsoper
 ms.author: casoper
 manager: wpickett

@@ -1,7 +1,7 @@
 ---
-title: "S’authentifier avec les bibliothèques Azure pour .NET"
-description: "S’authentifier dans les bibliothèques Azure pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, authentification, Active Directory, principal du service"
+title: S’authentifier avec les bibliothèques Azure pour .NET
+description: S’authentifier dans les bibliothèques Azure pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, authentification, Active Directory, principal du service
 author: camsoper
 ms.author: casoper
 manager: wpickett

@@ -1,6 +1,6 @@
 ---
 title: API de stockage Azure .NET
-description: "Référence pour les bibliothèques de stockage Azure pour .NET"
+description: Référence pour les bibliothèques de stockage Azure pour .NET
 keywords: Azure, .NET, SDK, API, stockage, blob
 author: camsoper
 ms.author: casoper

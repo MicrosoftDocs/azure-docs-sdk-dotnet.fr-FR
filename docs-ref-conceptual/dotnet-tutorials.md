@@ -1,6 +1,6 @@
 ---
 title: Didacticiels pour les applications .NET dans Azure
-description: "Didacticiels pour créer et ajouter des fonctionnalités à vos applications .NET web et mobiles à l’aide des services Azure."
+description: Didacticiels pour créer et ajouter des fonctionnalités à vos applications .NET web et mobiles à l’aide des services Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

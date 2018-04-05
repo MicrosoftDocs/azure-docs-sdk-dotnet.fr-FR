@@ -1,7 +1,7 @@
 ---
 title: Prise en main des API Azure .NET
-description: "Découvrez les fonctions de base des bibliothèques Azure pour .NET avec votre propre abonnement Azure."
-keywords: "Azure, .NET, SDK, API, s’authentifier, prise en main"
+description: Découvrez les fonctions de base des bibliothèques Azure pour .NET avec votre propre abonnement Azure.
+keywords: Azure, .NET, SDK, API, s’authentifier, prise en main
 author: camsoper
 ms.author: casoper
 manager: wpickett
