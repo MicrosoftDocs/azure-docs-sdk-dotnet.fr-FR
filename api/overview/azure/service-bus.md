@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure Service Bus pour .NET"
-description: "Référence pour les bibliothèques Azure Service Bus pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, Service Bus"
+title: Bibliothèques Azure Service Bus pour .NET
+description: Référence pour les bibliothèques Azure Service Bus pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Service Bus
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -12,63 +12,65 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-bus
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: c2019fd39f42f9bc4a39dd4e642db9f90b7a917c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: f2795a123a7b92237b0aea672298ce9339fd0830
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 04/14/2018
 ---
-# <a name="azure-service-bus-libraries-for-net"></a><span data-ttu-id="beb9d-104">Bibliothèques Azure Service Bus pour .NET</span><span class="sxs-lookup"><span data-stu-id="beb9d-104">Azure Service Bus libraries for .NET</span></span>
+# <a name="azure-service-bus-libraries-for-net"></a><span data-ttu-id="cb4ff-104">Bibliothèques Azure Service Bus pour .NET</span><span class="sxs-lookup"><span data-stu-id="cb4ff-104">Azure Service Bus libraries for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="beb9d-105">Vue d'ensemble</span><span class="sxs-lookup"><span data-stu-id="beb9d-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="cb4ff-105">Vue d'ensemble</span><span class="sxs-lookup"><span data-stu-id="cb4ff-105">Overview</span></span>
 
-<span data-ttu-id="beb9d-106">[Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) est une infrastructure de messagerie située entre des applications pour leur permettre d'échanger des messages. L'objectif est d'améliorer la mise à l'échelle et la résilience.</span><span class="sxs-lookup"><span data-stu-id="beb9d-106">[Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) is a messaging infrastructure that sits between applications allowing them to exchange messages for improved scale and resiliency.</span></span>
+<span data-ttu-id="cb4ff-106">[Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) est une infrastructure de messagerie située entre des applications pour leur permettre d'échanger des messages. L'objectif est d'améliorer la mise à l'échelle et la résilience.</span><span class="sxs-lookup"><span data-stu-id="cb4ff-106">[Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) is a messaging infrastructure that sits between applications allowing them to exchange messages for improved scale and resiliency.</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="beb9d-107">Bibliothèque cliente</span><span class="sxs-lookup"><span data-stu-id="beb9d-107">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="cb4ff-107">Bibliothèque cliente</span><span class="sxs-lookup"><span data-stu-id="cb4ff-107">Client library</span></span>
 
-<span data-ttu-id="beb9d-108">Installez le [package NuGet](https://www.nuget.org/packages/WindowsAzure.ServiceBus) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="beb9d-108">Install the [NuGet package](https://www.nuget.org/packages/WindowsAzure.ServiceBus) directly from the Visual Studio [Package Manager console][PackageManager].</span></span>
+<span data-ttu-id="cb4ff-108">Installez le [package NuGet](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="cb4ff-108">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus) directly from the Visual Studio [Package Manager console][PackageManager].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="beb9d-109">Gestionnaire de package Visual Studio</span><span class="sxs-lookup"><span data-stu-id="beb9d-109">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="cb4ff-109">Gestionnaire de package Visual Studio</span><span class="sxs-lookup"><span data-stu-id="cb4ff-109">Visual Studio Package Manager</span></span>
 
 ```powershell
-Install-Package WindowsAzure.ServiceBus
+Install-Package Microsoft.Azure.ServiceBus
 ```
 
-### <a name="code-example"></a><span data-ttu-id="beb9d-110">Exemple de code</span><span class="sxs-lookup"><span data-stu-id="beb9d-110">Code Example</span></span>
+### <a name="code-example"></a><span data-ttu-id="cb4ff-110">Exemple de code</span><span class="sxs-lookup"><span data-stu-id="cb4ff-110">Code Example</span></span>
 
-<span data-ttu-id="beb9d-111">Cet exemple envoie un message à une file d’attente Service Bus.</span><span class="sxs-lookup"><span data-stu-id="beb9d-111">This example sends a message to a Service Bus queue.</span></span>
+<span data-ttu-id="cb4ff-111">Cet exemple envoie un message à une file d’attente Service Bus.</span><span class="sxs-lookup"><span data-stu-id="cb4ff-111">This example sends a message to a Service Bus queue.</span></span>
 
 ```csharp
-// using Microsoft.ServiceBus.Messaging;
+// using Microsoft.Azure.ServiceBus;
+// Microsoft.Azure.ServiceBus 2.0.0 (stable)
 
-QueueClient client = QueueClient.CreateFromConnectionString(connectionString, queueName);
-BrokeredMessage message = new BrokeredMessage("This is a test message!");
-client.Send(message);
+byte[] messageBody = System.Text.Encoding.Unicode.GetBytes("Hello, world!");
+ServiceBusConnectionStringBuilder builder = new ServiceBusConnectionStringBuilder(connectionString);
+QueueClient client = new QueueClient(builder, ReceiveMode.PeekLock);
+client.SendAsync(new Message(messageBody));
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="beb9d-112">Explorer les API client</span><span class="sxs-lookup"><span data-stu-id="beb9d-112">Explore the client APIs</span></span>](/dotnet/api/overview/azure/servicebus/client)
+> [<span data-ttu-id="cb4ff-112">Explorer les API clientes</span><span class="sxs-lookup"><span data-stu-id="cb4ff-112">Explore the client APIs</span></span>](/dotnet/api/overview/azure/servicebus/client)
 
 
-## <a name="management-library"></a><span data-ttu-id="beb9d-113">Bibliothèque de gestion</span><span class="sxs-lookup"><span data-stu-id="beb9d-113">Management library</span></span>
+## <a name="management-library"></a><span data-ttu-id="cb4ff-113">Bibliothèque de gestion</span><span class="sxs-lookup"><span data-stu-id="cb4ff-113">Management library</span></span>
 
-<span data-ttu-id="beb9d-114">Installez le [package NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceBus.Fluent) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio ou avec la [CLI .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="beb9d-114">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceBus.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="cb4ff-114">Installez le [package NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceBus.Fluent) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio ou avec la [CLI .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="cb4ff-114">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceBus.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="beb9d-115">Gestionnaire de package Visual Studio</span><span class="sxs-lookup"><span data-stu-id="beb9d-115">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="cb4ff-115">Gestionnaire de package Visual Studio</span><span class="sxs-lookup"><span data-stu-id="cb4ff-115">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.ServiceBus.Fluent
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="beb9d-116">CLI .NET Core</span><span class="sxs-lookup"><span data-stu-id="beb9d-116">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="cb4ff-116">CLI .NET Core</span><span class="sxs-lookup"><span data-stu-id="cb4ff-116">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.Management.ServiceBus.Fluent
 ```
 
-### <a name="code-example"></a><span data-ttu-id="beb9d-117">Exemple de code</span><span class="sxs-lookup"><span data-stu-id="beb9d-117">Code Example</span></span>
+### <a name="code-example"></a><span data-ttu-id="cb4ff-117">Exemple de code</span><span class="sxs-lookup"><span data-stu-id="cb4ff-117">Code Example</span></span>
 
-<span data-ttu-id="beb9d-118">Cet exemple crée une file d’attente Service Bus avec une taille maximale de 1 024 Mo.</span><span class="sxs-lookup"><span data-stu-id="beb9d-118">This example creates a Service Bus queue with a maximum size of 1024 MB.</span></span>
+<span data-ttu-id="cb4ff-118">Cet exemple crée une file d’attente Service Bus avec une taille maximale de 1 024 Mo.</span><span class="sxs-lookup"><span data-stu-id="cb4ff-118">This example creates a Service Bus queue with a maximum size of 1024 MB.</span></span>
 
 ```csharp
 // using Microsoft.Azure.Management.ServiceBus.Fluent;
@@ -86,17 +88,17 @@ using (ServiceBusManagementClient client = new ServiceBusManagementClient(creden
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="beb9d-119">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="beb9d-119">Explore the management APIs</span></span>](/dotnet/api/overview/azure/servicebus/management)
+> [<span data-ttu-id="cb4ff-119">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="cb4ff-119">Explore the management APIs</span></span>](/dotnet/api/overview/azure/servicebus/management)
 
-## <a name="samples"></a><span data-ttu-id="beb9d-120">Exemples</span><span class="sxs-lookup"><span data-stu-id="beb9d-120">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="cb4ff-120">Exemples</span><span class="sxs-lookup"><span data-stu-id="cb4ff-120">Samples</span></span>
 
-- [<span data-ttu-id="beb9d-121">Fonctions de base de la file d’attente Service Bus - .Net</span><span class="sxs-lookup"><span data-stu-id="beb9d-121">Service Bus Queue Basics - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-queue-with-basic-features/)
-- [<span data-ttu-id="beb9d-122">Fonctionnalités avancées de la file d’attente Service Bus - .Net</span><span class="sxs-lookup"><span data-stu-id="beb9d-122">Service Bus Queue Advanced Features - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-queue-with-advanced-features/)
-- [<span data-ttu-id="beb9d-123">Fonctions d’abonnement/de publication de base Service Bus - .Net</span><span class="sxs-lookup"><span data-stu-id="beb9d-123">Service Bus Publish/Subscribe Basics - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-publish-subscribe-with-basic-features/)
-- [<span data-ttu-id="beb9d-124">Fonctionnalités avancées d’abonnement/de publication de base Service Bus - .Net</span><span class="sxs-lookup"><span data-stu-id="beb9d-124">Service Bus Publish/Subscribe Advanced Features - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-publish-subscribe-with-advanced-features/)
-- [<span data-ttu-id="beb9d-125">Service Bus avec l’autorisation par revendications - .Net</span><span class="sxs-lookup"><span data-stu-id="beb9d-125">Service Bus with Claims-Based Authorization - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-with-claims-based-authorization/)
+- [<span data-ttu-id="cb4ff-121">Fonctions de base de la file d’attente Service Bus - .Net</span><span class="sxs-lookup"><span data-stu-id="cb4ff-121">Service Bus Queue Basics - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-queue-with-basic-features/)
+- [<span data-ttu-id="cb4ff-122">Fonctionnalités avancées de la file d’attente Service Bus - .Net</span><span class="sxs-lookup"><span data-stu-id="cb4ff-122">Service Bus Queue Advanced Features - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-queue-with-advanced-features/)
+- [<span data-ttu-id="cb4ff-123">Fonctions d’abonnement/de publication de base Service Bus - .Net</span><span class="sxs-lookup"><span data-stu-id="cb4ff-123">Service Bus Publish/Subscribe Basics - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-publish-subscribe-with-basic-features/)
+- [<span data-ttu-id="cb4ff-124">Fonctionnalités avancées d’abonnement/de publication de base Service Bus - .Net</span><span class="sxs-lookup"><span data-stu-id="cb4ff-124">Service Bus Publish/Subscribe Advanced Features - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-publish-subscribe-with-advanced-features/)
+- [<span data-ttu-id="cb4ff-125">Service Bus avec l’autorisation par revendications - .Net</span><span class="sxs-lookup"><span data-stu-id="cb4ff-125">Service Bus with Claims-Based Authorization - .Net</span></span>](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-with-claims-based-authorization/)
 
-<span data-ttu-id="beb9d-126">Afficher la [liste complète](https://azure.microsoft.com/resources/samples/?term=service+bus) des exemples Azure Service Bus.</span><span class="sxs-lookup"><span data-stu-id="beb9d-126">View the [complete list](https://azure.microsoft.com/resources/samples/?term=service+bus) of Azure Service Bus samples.</span></span>
+<span data-ttu-id="cb4ff-126">Afficher la [liste complète](https://azure.microsoft.com/resources/samples/?term=service+bus) des exemples Azure Service Bus.</span><span class="sxs-lookup"><span data-stu-id="cb4ff-126">View the [complete list](https://azure.microsoft.com/resources/samples/?term=service+bus) of Azure Service Bus samples.</span></span>
 
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
