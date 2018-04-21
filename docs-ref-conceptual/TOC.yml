@@ -63,7 +63,7 @@
           href: dotnet-tutorials-services-databases.md
         - name: Stockage
           href: dotnet-tutorials-services-storage.md
-        - name: Conteneurs
+        - name: Containers
           href: dotnet-tutorials-services-containers.md
         - name: Messagerie + IoT
           href: dotnet-tutorials-services-messaging-iot.md
@@ -78,14 +78,4 @@
         - name: Surveillance et gestion
           href: dotnet-tutorials-services-monitoring.md
     - name: Exemples de code .NET
-      items:
-        - name: Galerie de photos - Web Apps et stockage
-          href: 'https://azure.microsoft.com/resources/samples/storage-blobs-dotnet-webapp/'
-        - name: "Web\_Apps"
-          href: dotnet-sdk-azure-web-apps-samples.md
-        - name: Bases de données
-          href: dotnet-sdk-azure-sql-database-samples.md
-        - name: Machines virtuelles
-          href: dotnet-sdk-azure-virtual-machine-samples.md
-        - name: Tous les exemples .NET
-          href: 'https://azure.microsoft.com/resources/samples/?platform=dotnet'
+      href: dotnet-samples.md

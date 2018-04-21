@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure Service Bus pour .NET"
-description: "Référence pour les bibliothèques Azure Service Bus pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, Service Bus"
+title: Bibliothèques Azure Service Bus pour .NET
+description: Référence pour les bibliothèques Azure Service Bus pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Service Bus
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-bus
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: c2019fd39f42f9bc4a39dd4e642db9f90b7a917c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: f2795a123a7b92237b0aea672298ce9339fd0830
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="azure-service-bus-libraries-for-net"></a>Bibliothèques Azure Service Bus pour .NET
 
@@ -26,12 +26,12 @@ ms.lasthandoff: 10/23/2017
 
 ## <a name="client-library"></a>Bibliothèque cliente
 
-Installez le [package NuGet](https://www.nuget.org/packages/WindowsAzure.ServiceBus) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio.
+Installez le [package NuGet](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio.
 
 #### <a name="visual-studio-package-manager"></a>Gestionnaire de package Visual Studio
 
 ```powershell
-Install-Package WindowsAzure.ServiceBus
+Install-Package Microsoft.Azure.ServiceBus
 ```
 
 ### <a name="code-example"></a>Exemple de code
@@ -39,15 +39,17 @@ Install-Package WindowsAzure.ServiceBus
 Cet exemple envoie un message à une file d’attente Service Bus.
 
 ```csharp
-// using Microsoft.ServiceBus.Messaging;
+// using Microsoft.Azure.ServiceBus;
+// Microsoft.Azure.ServiceBus 2.0.0 (stable)
 
-QueueClient client = QueueClient.CreateFromConnectionString(connectionString, queueName);
-BrokeredMessage message = new BrokeredMessage("This is a test message!");
-client.Send(message);
+byte[] messageBody = System.Text.Encoding.Unicode.GetBytes("Hello, world!");
+ServiceBusConnectionStringBuilder builder = new ServiceBusConnectionStringBuilder(connectionString);
+QueueClient client = new QueueClient(builder, ReceiveMode.PeekLock);
+client.SendAsync(new Message(messageBody));
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API client](/dotnet/api/overview/azure/servicebus/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/servicebus/client)
 
 
 ## <a name="management-library"></a>Bibliothèque de gestion
