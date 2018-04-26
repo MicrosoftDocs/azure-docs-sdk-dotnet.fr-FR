@@ -10,17 +10,18 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.openlocfilehash: bb5d4958fb4398192d8427391695da1a7b8cc3c8
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 8371c304681ff88cba6f1cc3ba0d1caef836d609
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>Déployer sur Azure à partir de la ligne de commande avec .NET Core
 
-Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de .NET CORE.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure CosmosDB pour stocker des données.
+Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de .NET CORE.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure Cosmos DB pour stocker des données.
 
-## <a name="prerequisites"></a>configuration requise
+## <a name="prerequisites"></a>Prérequis
+
 
 * Un [Abonnement Microsoft Azure](https://azure.microsoft.com/free/)
 * [.NET core](https://www.microsoft.com/net/download/core) (facultatif)
@@ -29,9 +30,9 @@ Ce didacticiel vous guide dans la création et le déploiement d’une applicati
 
 [Azure Cloud Shell](/azure/cloud-shell/) a tous les composants facultatifs requis pour ce didacticiel préinstallés.  Vous devez installer les composants facultatifs ci-dessus uniquement pour exécuter le didacticiel localement.  Pour lancer rapidement Cloud Shell, cliquez simplement sur le bouton **Essayer** dans l’angle supérieur droit d’un des blocs de code.
 
-## <a name="create-a-cosmosdb-account"></a>Créer un compte CosmosDB
+## <a name="create-an-azure-cosmos-db-account"></a>Création d’un compte Azure Cosmos DB
 
-Dans ce didacticiel, nous utilisons CosmosDB pour stocker des données ; vous devez donc créer un compte.  Exécutez ce script en local ou dans Cloud Shell pour créer un compte Azure CosmosDB DocumentDB API.
+Dans ce tutoriel, nous utilisons Azure Cosmos DB pour stocker des données ; vous devez donc créer un compte.  Exécutez ce script en local ou dans Cloud Shell pour créer un compte d’API SQL Azure Cosmos DB.
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
@@ -41,7 +42,7 @@ az group create --name DotNetAzureTutorial --location EastUS
 let randomNum=$RANDOM*$RANDOM
 cosmosdbname=dotnettutorial$randomNum
 
-# Create the CosmosDB account
+# Create the Azure Cosmos DB account
 az cosmosdb create --name $cosmosdbname --resource-group DotNetAzureTutorial
 
 # Retrieve the endpoint and key (you'll need these later)
@@ -52,7 +53,7 @@ cosmosAuthKey=$(az cosmosdb list-keys -n $cosmosdbname -g DotNetAzureTutorial --
 
 ## <a name="download-and-configure-the-application"></a>Télécharger et configurer l’application
 
-L’application que vous essayez de déployer une [simple application de tâche](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/) écrite à l’aide d’ASP.NET MVC Core et des bibliothèques de client CosmosDB.  Vous allez maintenant obtenir le code de ce didacticiel et le configurer avec vos informations CosmosDB.
+L’application que vous essayez de déployer est une [simple application de tâche](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/) écrite à l’aide d’ASP.NET MVC Core et des bibliothèques de client Azure Cosmos DB.  Vous allez maintenant obtenir le code de ce tutoriel et le configurer avec vos informations Azure Cosmos DB.
 
 ```azurecli-interactive
 # Get the code from GitHub
@@ -131,13 +132,13 @@ Vous pouvez ajouter de nouveaux éléments à la liste des tâches en cliquant s
 
 ## <a name="clean-up"></a>Nettoyer
 
-Lorsque vous avez terminé de tester l’application et d’inspecter le code et les ressources, vous pouvez supprimer le compte de CosmosDB et de l’application web en supprimant le groupe de ressources.
+Lorsque vous avez terminé de tester l’application et d’inspecter le code et les ressources, vous pouvez supprimer le compte Azure Cosmos DB et celui de l’application web en supprimant le groupe de ressources.
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial
 ```
 
-## <a name="next-steps"></a>étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 
 * [Utiliser Azure Active Directory pour s’authentifier dans une application web ASP.NET](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)
 * [Créer une application web Azure à l’aide d’Azure SQL Database](/azure/app-service-web/web-sites-dotnet-get-started)
