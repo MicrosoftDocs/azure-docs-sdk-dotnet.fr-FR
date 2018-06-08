@@ -16,16 +16,17 @@ metadata:
   ms.technology: azure
   ms.devlang: dotnet
   ms.service: multiple
-  ms.openlocfilehash: b2f97eee78d6e4e5b71b036c3550e0532ff7962d
-  ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
+  ms.openlocfilehash: 0df719af621462048f432589f4235b220721c591
+  ms.sourcegitcommit: 4ec8ceb3a22c209c9c620dd0982cfbc08d21006c
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/11/2018
+  ms.lasthandoff: 06/05/2018
+  ms.locfileid: "34761377"
 sections:
 - items:
   - type: markdown
     text: >
-      Prenez le développement d’applications en main avec Azure en utilisant les ressources ci-dessous pour rechercher d’excellents didacticiels et des outils pour les développeurs .NET.
+      Prenez le développement d’applications cloud en main avec Azure en utilisant les ressources ci-dessous pour rechercher d’excellents tutoriels et des outils pour les développeurs .NET.
 - items:
   - type: list
     style: cards
@@ -63,8 +64,8 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
-      title: Déployer votre première application .NET sur Azure
-      href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
+      title: Créer une application ASP.NET avec une base de données SQL Azure
+      href: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
       title: Créer une fonction sans serveur .NET
@@ -82,13 +83,13 @@ sections:
       title: Créer une application de microservices .NET avec Service Fabric
       href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
     - image:
-        src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
-      title: Créer un pipeline d’intégration continue/de déploiement continu pour .NET
-      href: https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore
+        src: https://docs.microsoft.com/azure/media/index/api_textanalytics.svg
+      title: Analyser le langage avec c# et l’API Analyse de texte
+      href: https://docs.microsoft.com/azure/cognitive-services/text-analytics/quickstarts/csharp
 - title: Démarrer avec .NET sur Azure
   items:
   - type: markdown
-    text: <iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Welcome-to-the-Azure-for-NET-Developer-Center/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>
+    text: <iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Create-a-NET-app-in-Azure-Quickstart/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>
 - title: Formation vidéo gratuite .NET et Azure sur Pluralsight
   items:
   - type: list
@@ -100,16 +101,6 @@ sections:
       image:
         src: https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg
       title: Développement avec .NET et C# sur Azure
-- title: Exemples
-  items:
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/">Développement d’une application .NET à l’aide de Cosmos DB et de l’API Mongo DB</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/">Prise en main du chiffrement côté client Azure dans .NET</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/ ">Prise en main de Stockage Table Azure dans .NET</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/">Stockage Blob Azure avec .NET</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/redis-cache-getting-started/">Prise en main de Cache Redis Azure</a>
 - title: Didacticiels pas à pas
   items:
   - type: paragraph
