@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752471"
 ---
 # <a name="azure-management-libraries-for-net-sample-instructions"></a>Exemple d’instructions de bibliothèques de gestion Azure pour .NET
 
