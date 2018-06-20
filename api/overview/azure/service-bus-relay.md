@@ -1,6 +1,6 @@
 ---
-title: "Bibliothèques Azure Service Bus Relay pour .NET"
-description: "Référence pour les bibliothèques Azure Service Bus Relay pour .NET"
+title: Bibliothèques Azure Service Bus Relay pour .NET
+description: Référence pour les bibliothèques Azure Service Bus Relay pour .NET
 keywords: Azure, .NET, SDK, API, Service Bus Relay
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566160"
 ---
 # <a name="azure-service-bus-relay-libraries-for-net"></a>Bibliothèques Azure Service Bus Relay pour .NET
 

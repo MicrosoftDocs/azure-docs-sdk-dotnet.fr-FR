@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure Data Lake Store pour .NET"
-description: "Référence pour les bibliothèques Azure Data Lake Store pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, Data Lake Store"
+title: Bibliothèques Azure Data Lake Store pour .NET
+description: Référence pour les bibliothèques Azure Data Lake Store pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Data Lake Store
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/09/2017
+ms.locfileid: "26588472"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>Bibliothèques Azure Data Lake Store pour .NET
 

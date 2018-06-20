@@ -1,6 +1,6 @@
 ---
-title: "Bibliothèques Azure Monitor pour .NET"
-description: "Référence pour les bibliothèques Azure Monitor pour .NET"
+title: Bibliothèques Azure Monitor pour .NET
+description: Référence pour les bibliothèques Azure Monitor pour .NET
 keywords: Azure, .NET, SDK, API, Monitor
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 64c9e16e42894e8db8ed088487e55c5e0edd6861
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/31/2017
+ms.locfileid: "23639637"
 ---
 # <a name="azure-monitor-libraries-for-net"></a>Bibliothèques Azure Monitor pour .NET
 

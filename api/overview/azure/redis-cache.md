@@ -1,6 +1,6 @@
 ---
-title: "Bibliothèques de Cache Redis Azure pour .NET"
-description: "Référence pour les bibliothèques de Cache Redis Azure pour .NET"
+title: Bibliothèques de Cache Redis Azure pour .NET
+description: Référence pour les bibliothèques de Cache Redis Azure pour .NET
 keywords: Azure, .NET, SDK, API, Redis Cache
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566340"
 ---
 # <a name="azure-redis-cache-libraries-for-net"></a>Bibliothèques de Cache Redis Azure pour .NET
 

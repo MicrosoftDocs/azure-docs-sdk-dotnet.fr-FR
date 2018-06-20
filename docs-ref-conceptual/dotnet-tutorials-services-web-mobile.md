@@ -15,6 +15,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005756"
 ---
 # <a name="tutorials-for-building-web-and-mobile-apps-with-net-in-azure"></a>Didacticiels pour créer des applications web et mobiles avec .NET dans Azure
 

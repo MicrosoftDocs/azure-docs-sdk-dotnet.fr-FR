@@ -1,7 +1,7 @@
 ---
-title: "Azure Recovery Services et bibliothèques de sauvegarde pour .NET"
-description: "Références sur Azure Recovery Services et les bibliothèques de sauvegarde pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, Recovery Services, sauvegarde"
+title: Azure Recovery Services et bibliothèques de sauvegarde pour .NET
+description: Références sur Azure Recovery Services et les bibliothèques de sauvegarde pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Recovery Services, sauvegarde
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566110"
 ---
 # <a name="azure-recovery-services-and-backup-libraries-for-net"></a>Azure Recovery Services et bibliothèques de sauvegarde pour .NET
 

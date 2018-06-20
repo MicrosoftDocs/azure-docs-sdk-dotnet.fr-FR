@@ -1,7 +1,7 @@
 ---
 title: API Azure SQL Database pour .NET
-description: "Référence pour les bibliothèques Azure SQL Database pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, SQL, SQL Database"
+description: Référence pour les bibliothèques Azure SQL Database pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, SQL, SQL Database
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/15/2017
+ms.locfileid: "24533104"
 ---
 # <a name="azure-sql-database-apis-for-net"></a>API Azure SQL Database pour .NET
 

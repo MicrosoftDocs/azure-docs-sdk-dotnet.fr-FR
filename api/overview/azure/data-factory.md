@@ -1,6 +1,6 @@
 ---
-title: "Bibliothèques Azure Data Factory pour .NET"
-description: "Référence pour les bibliothèques Azure Data Factory pour .NET"
+title: Bibliothèques Azure Data Factory pour .NET
+description: Référence pour les bibliothèques Azure Data Factory pour .NET
 keywords: Azure, .NET, SDK, API, Data Factory
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487142"
 ---
 # <a name="azure-data-factory-libraries-for-net"></a>Bibliothèques Azure Data Factory pour .NET
 
