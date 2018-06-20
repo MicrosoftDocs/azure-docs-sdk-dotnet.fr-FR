@@ -13,8 +13,10 @@ ms.service: event-grid
 ms.custom: devcenter
 ms.openlocfilehash: aa25f76f041e890de512c67d9380903f81216f62
 ms.sourcegitcommit: 9f54e3334fc35c1066d0c591ff85b16d46416aa8
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33802746"
 ---
 # <a name="azure-event-grid-libraries-for-net"></a><span data-ttu-id="38927-103">Bibliothèques Azure Event Grid pour .NET</span><span class="sxs-lookup"><span data-stu-id="38927-103">Azure Event Grid libraries for .NET</span></span>
 

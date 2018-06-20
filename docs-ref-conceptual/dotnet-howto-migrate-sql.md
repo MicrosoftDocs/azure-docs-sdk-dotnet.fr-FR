@@ -1,6 +1,6 @@
 ---
-title: "Déployer une base de données SQL Server vers Azure"
-description: "Découvrez comment migrer une base de données SQL Server depuis un serveur SQL local vers Azure."
+title: Déployer une base de données SQL Server vers Azure
+description: Découvrez comment migrer une base de données SQL Server depuis un serveur SQL local vers Azure.
 keywords: Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, migrer, migration
 author: camsoper
 manager: wpickett
@@ -16,6 +16,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728490"
 ---
 ## <a name="migrate-a-sql-server-database-to-azure"></a><span data-ttu-id="a29ac-104">Déployer une base de données SQL Server vers Azure</span><span class="sxs-lookup"><span data-stu-id="a29ac-104">Migrate a SQL Server database to Azure</span></span>
 

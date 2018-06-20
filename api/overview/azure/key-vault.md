@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure Key Vault pour .NET"
-description: "Référence pour les bibliothèques Azure Key Vault pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, Coffre de clés"
+title: Bibliothèques Azure Key Vault pour .NET
+description: Référence pour les bibliothèques Azure Key Vault pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Coffre de clés
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/24/2017
+ms.locfileid: "23489183"
 ---
 # <a name="azure-key-vault-libraries-for-net"></a><span data-ttu-id="861e9-104">Bibliothèques Azure Key Vault pour .NET</span><span class="sxs-lookup"><span data-stu-id="861e9-104">Azure Key Vault libraries for .NET</span></span>
 

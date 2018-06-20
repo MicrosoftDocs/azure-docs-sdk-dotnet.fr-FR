@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques de réseaux virtuels Azure pour .NET"
-description: "Références pour les bibliothèques de réseaux virtuels Azure pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, réseau virtuel"
+title: Bibliothèques de réseaux virtuels Azure pour .NET
+description: Références pour les bibliothèques de réseaux virtuels Azure pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, réseau virtuel
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487002"
 ---
 # <a name="azure-virtual-network-libraries-for-net"></a><span data-ttu-id="e4356-104">Bibliothèques de réseaux virtuels Azure pour .NET</span><span class="sxs-lookup"><span data-stu-id="e4356-104">Azure Virtual Network libraries for .NET</span></span>
 

@@ -1,6 +1,6 @@
 ---
-title: "Bibliothèques Azure Active Directory pour .NET"
-description: "Référence pour les bibliothèques Azure Active Directory pour .NET"
+title: Bibliothèques Azure Active Directory pour .NET
+description: Référence pour les bibliothèques Azure Active Directory pour .NET
 keywords: Azure, .NET, SDK, API, AAD, Active Directory
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23565990"
 ---
 # <a name="azure-active-directory-libraries-for-net"></a><span data-ttu-id="f3deb-104">Bibliothèques Azure Active Directory pour .NET</span><span class="sxs-lookup"><span data-stu-id="f3deb-104">Azure Active Directory libraries for .NET</span></span>
 

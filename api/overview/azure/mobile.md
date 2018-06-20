@@ -1,6 +1,6 @@
 ---
-title: "Bibliothèques Azure Mobile pour .NET"
-description: "Référence pour les bibliothèques Azure Mobile pour .NET"
+title: Bibliothèques Azure Mobile pour .NET
+description: Référence pour les bibliothèques Azure Mobile pour .NET
 keywords: Azure, .NET, SDK, API, Mobile
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/24/2017
+ms.locfileid: "23489163"
 ---
 # <a name="azure-mobile-libraries-for-net"></a><span data-ttu-id="e1bde-104">Bibliothèques Azure Mobile pour .NET</span><span class="sxs-lookup"><span data-stu-id="e1bde-104">Azure Mobile libraries for .NET</span></span>
 

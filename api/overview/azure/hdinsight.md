@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure HDInsight pour .NET"
-description: "Référence pour les bibliothèques Azure HDInsight pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, HDInsight"
+title: Bibliothèques Azure HDInsight pour .NET
+description: Référence pour les bibliothèques Azure HDInsight pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, HDInsight
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23486952"
 ---
 # <a name="azure-hdinsight-libraries-for-net"></a><span data-ttu-id="8bd5a-104">Bibliothèques Azure HDInsight pour .NET</span><span class="sxs-lookup"><span data-stu-id="8bd5a-104">Azure HDInsight libraries for .NET</span></span>
 

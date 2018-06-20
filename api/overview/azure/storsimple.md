@@ -1,6 +1,6 @@
 ---
-title: "Bibliothèques Azure StorSimple pour .NET"
-description: "Référence pour les bibliothèques Azure StorSimple pour .NET"
+title: Bibliothèques Azure StorSimple pour .NET
+description: Référence pour les bibliothèques Azure StorSimple pour .NET
 keywords: Azure, .NET, SDK, API, StorSimple
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 64c9e16e42894e8db8ed088487e55c5e0edd6861
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/31/2017
+ms.locfileid: "23639647"
 ---
 # <a name="azure-storsimple-libraries-for-net"></a><span data-ttu-id="8ef26-104">Bibliothèques Azure StorSimple pour .NET</span><span class="sxs-lookup"><span data-stu-id="8ef26-104">Azure StorSimple libraries for .NET</span></span>
 

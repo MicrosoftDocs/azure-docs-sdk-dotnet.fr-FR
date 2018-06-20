@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure Stream Analytics pour .NET"
-description: "Référence pour les bibliothèques Azure Stream Analytics pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, Stream Analytics"
+title: Bibliothèques Azure Stream Analytics pour .NET
+description: Référence pour les bibliothèques Azure Stream Analytics pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Stream Analytics
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487132"
 ---
 # <a name="azure-stream-analytics-libraries-for-net"></a><span data-ttu-id="eadc4-104">Bibliothèques Azure Stream Analytics pour .NET</span><span class="sxs-lookup"><span data-stu-id="eadc4-104">Azure Stream Analytics libraries for .NET</span></span>
 

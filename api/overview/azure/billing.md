@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques de facturation Azure pour .NET"
-description: "Référence pour les bibliothèques de facturation Azure pour .NET"
-keywords: "Azure, .NET, Kit de développement logiciel (SDK), API, facturation"
+title: Bibliothèques de facturation Azure pour .NET
+description: Référence pour les bibliothèques de facturation Azure pour .NET
+keywords: Azure, .NET, Kit de développement logiciel (SDK), API, facturation
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566080"
 ---
 # <a name="azure-billing-libraries-for-net"></a><span data-ttu-id="2702f-104">Bibliothèques de facturation Azure pour .NET</span><span class="sxs-lookup"><span data-stu-id="2702f-104">Azure Billing libraries for .NET</span></span>
 

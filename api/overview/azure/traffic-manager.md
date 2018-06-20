@@ -1,6 +1,6 @@
 ---
-title: "Bibliothèques Azure Traffic Manager pour .NET"
-description: "Référence pour les bibliothèques Azure Traffic Manager pour .NET"
+title: Bibliothèques Azure Traffic Manager pour .NET
+description: Référence pour les bibliothèques Azure Traffic Manager pour .NET
 keywords: Azure, .NET, SDK, API, Traffic Manager
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566096"
 ---
 # <a name="azure-traffic-manager-libraries-for-net"></a><span data-ttu-id="adc6a-104">Bibliothèques Azure Traffic Manager pour .NET</span><span class="sxs-lookup"><span data-stu-id="adc6a-104">Azure Traffic Manager libraries for .NET</span></span>
 

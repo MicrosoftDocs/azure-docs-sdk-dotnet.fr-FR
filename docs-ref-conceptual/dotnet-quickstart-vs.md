@@ -15,6 +15,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005886"
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a><span data-ttu-id="18534-104">Déployer sur Azure à partir de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="18534-104">Deploy to Azure from Visual Studio</span></span>
 

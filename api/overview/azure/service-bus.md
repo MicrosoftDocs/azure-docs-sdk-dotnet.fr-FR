@@ -17,6 +17,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005936"
 ---
 # <a name="azure-service-bus-libraries-for-net"></a><span data-ttu-id="cb4ff-104">Bibliothèques Azure Service Bus pour .NET</span><span class="sxs-lookup"><span data-stu-id="cb4ff-104">Azure Service Bus libraries for .NET</span></span>
 
