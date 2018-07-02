@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: batch
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 79ca70e5d0f3d5555c8a691da6dbcc1e6a55ab0b
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: b6053e19d26247dd36ed7e38fc33030f96aecca8
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487262"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065556"
 ---
 # <a name="azure-batch-libraries-for-net"></a>Bibliothèques Azure Batch pour .NET
 
@@ -27,7 +25,7 @@ Avec le Azure Batch, vous définissez facilement des ressources de calcul Azure 
 
 En savoir plus sur comment [exécuter des charges de travail intrinsèquement parallèles avec Batch](/azure/batch/batch-technical-overview). Vous pouvez aussi apprendre comment [bien démarrer avec la création de solutions avec la bibliothèque cliente Batch pour .NET](/azure/batch/batch-dotnet-get-started). Découvrez comment [gérer les quotas et comptes Batch avec la bibliothèque Batch Management pour .NET](/azure/batch/batch-management-dotnet).
 
-## <a name="client-library"></a>Bibliothèque de client
+## <a name="client-library"></a>Bibliothèque cliente
 
 Utilisez la bibliothèque de client pour exécuter des charges de travail parallèles avec Batch.
 
@@ -45,7 +43,7 @@ Install-Package Azure.Batch
 dotnet add package Azure.Batch
 ```
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>Exemples
 
 L’exemple suivant utilise le Kit de développement logiciel (SDK) client pour créer un travail à exécuter dans Azure Batch.
 
@@ -78,7 +76,7 @@ using (BatchClient batchClient = await BatchClient.OpenAsync(credentials))
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API client](/dotnet/api/overview/azure/batch/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/batch/client)
 
 ## <a name="management-library"></a>Bibliothèque de gestion
 
@@ -98,7 +96,7 @@ Install-Package Microsoft.Azure.Management.Batch
 dotnet add package Microsoft.Azure.Management.Batch
 ```
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>Exemples
 
 L’exemple suivant récupère le quota d’abonnement, crée un compte et régénère la clé de compte principal.
 

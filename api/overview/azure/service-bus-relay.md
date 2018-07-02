@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-bus
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 1a869d5939e357c98ec417e6474f711b9ac8c466
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: e0dd9c9b0a187fe6ca81d764e60afd00cbaab654
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566160"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065949"
 ---
 # <a name="azure-service-bus-relay-libraries-for-net"></a>Bibliothèques Azure Service Bus Relay pour .NET
 
@@ -27,7 +25,7 @@ Le service Azure Relay crée des applications hybrides en offrant la possibilit�
           
 En savoir plus sur [Azure Relay](/azure/service-bus-relay/relay-what-is-it).
 
-## <a name="client-library"></a>Bibliothèque de client
+## <a name="client-library"></a>Bibliothèque cliente
 
 Installez le [package NuGet](https://www.nuget.org/packages/Microsoft.Azure.Relay) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio ou avec la [CLI .NET Core][DotNetCLI].
 
@@ -42,7 +40,7 @@ dotnet add package Microsoft.Azure.Relay
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API client](/dotnet/api/overview/azure/relay/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/relay/client)
 
 ## <a name="samples"></a>Exemples
 

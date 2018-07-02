@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: key-vault
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3b8bcb9135794592f493db679e60fd40116d05e6
-ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
+ms.openlocfilehash: 037b80f60616a37665eddb0b7b212d15180700ba
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2017
-ms.locfileid: "23489183"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065449"
 ---
 # <a name="azure-key-vault-libraries-for-net"></a>Bibliothèques Azure Key Vault pour .NET
 
@@ -43,7 +41,7 @@ Install-Package Microsoft.Azure.KeyVault
 dotnet add package Microsoft.Azure.KeyVault
 ```
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>Exemples
 
 L’exemple suivant récupère la clé secrète pour une clé spécifique identifiée dans les paramètres d’application.
 
@@ -56,7 +54,7 @@ SecretBundle sec = await kv.GetSecretAsync(WebConfigurationManager.AppSettings["
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API client](/dotnet/api/overview/azure/keyvault/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/keyvault/client)
 
 ## <a name="management-library"></a>Bibliothèque de gestion
 
@@ -74,7 +72,7 @@ Install-Package Microsoft.Azure.Management.KeyVault.Fluent
 dotnet add package Microsoft.Azure.Management.KeyVault.Fluent
 ```
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>Exemples
 
 L’exemple suivant montre comment créer un nouveau coffre de clés pour créer un nouveau coffre de clés pour groupe de ressources donné et pour un emplacement.
 

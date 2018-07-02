@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: cdn
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: afc63f943fcac3afd9afb7d85f6e699079829244
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 4e5b56ca7e316f3a53d8c6d37fdd90c5d7130e1e
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566330"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065819"
 ---
 # <a name="azure-cdn-libraries-for-net"></a>Bibliothèques Azure CDN pour .NET
 
@@ -44,7 +42,7 @@ Install-Package Microsoft.Azure.Management.Cdn.Fluent
 dotnet add package Microsoft.Azure.Management.Cdn.Fluent
 ```
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>Exemples
 
 Cet exemple crée un nouveau profil CDN avec un nouveau point de terminaison pointé vers `www.contoso.com`.
 

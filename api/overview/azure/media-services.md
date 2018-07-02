@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: media-services
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 872ed60363c0c886e9844d0cb0bef07cf41a0242
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: ec6a7ec7f8f0c416d93aad5c91ece4d3b499fd7a
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487442"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065399"
 ---
 # <a name="azure-media-services-libraries-for-net"></a>Bibliothèques Azure Media Services pour .NET
 
@@ -92,7 +90,7 @@ job.GetExecutionProgressTask(CancellationToken.None).Wait();
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API client](/dotnet/api/overview/azure/mediaservices/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/mediaservices/client)
 
 ## <a name="samples"></a>Exemples
 

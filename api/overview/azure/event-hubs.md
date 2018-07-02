@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: event-hubs
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2ec234959ffc46d2399d1c763e05f173a311b0d2
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 5502ae24574c7883c34522ae18ca81bb516a33d2
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487292"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065309"
 ---
 # <a name="azure-event-hubs-libraries-for-net"></a>Bibliothèques Azure Event Hubs pour .NET
 
@@ -60,7 +58,7 @@ await eventHubClient.SendAsync(new EventData(Encoding.UTF8.GetBytes(message)));
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API client](/dotnet/api/overview/azure/eventhub/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/eventhub/client)
 
 ## <a name="management-library"></a>Bibliothèque de gestion
 
@@ -112,7 +110,7 @@ Console.WriteLine("Created Event Hub successfully.");
 
 * [Exemples Azure Event Hubs](https://github.com/Azure/azure-event-hubs/tree/master/samples)
 
-Découvrez d’autres [exemples de code .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet) que vous pouvez utiliser dans vos applications.
+Découvrez d’autres [exemples de code .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet) à utiliser dans vos applications.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

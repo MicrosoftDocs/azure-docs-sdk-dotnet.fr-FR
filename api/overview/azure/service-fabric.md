@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-fabric
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f4b54933d31a4e1fc4c390baa57469cc1c02783a
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: e1b4d08c93ad44973359f46501aba198047b10e8
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566092"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065939"
 ---
 # <a name="azure-service-fabric-libraries-for-net"></a>Bibliothèques Azure Service Fabric pour .NET
 
@@ -70,7 +68,7 @@ fabricClient.ApplicationManager.CreateApplicationAsync(appDesc).Wait();
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API client](/dotnet/api/overview/azure/servicefabric/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/servicefabric/client)
 
 Cet exemple utilise les API **runtime** et **communes** de Service Fabric à partir d’une application hôte pour mettre à jour une [collection fiable](/azure/service-fabric/service-fabric-reliable-services-reliable-collections) lors de l’exécution.
 

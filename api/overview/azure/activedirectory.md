@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: active-directory
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: aa20715fb62b1d4b714245c404f1a7c142caf586
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: a5a228fcde29dbef6a6e8d0482121ee710b002a4
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23565990"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065859"
 ---
 # <a name="azure-active-directory-libraries-for-net"></a>Bibliothèques Azure Active Directory pour .NET
 
@@ -27,7 +25,7 @@ Authentifiez des utilisateurs et gérez l’accès aux applications et aux API a
 
 Pour découvrir Azure Active Directory, consultez [Connexion et déconnexion à une application web ASP.NET avec Azure AD](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet).
 
-## <a name="client-library"></a>Bibliothèque de client
+## <a name="client-library"></a>Bibliothèque cliente
 
 Connectez et authentifiez des utilisateurs ou des applications sur OAuth2, OpenID Connect, l’API d’authentification Active Directory Graph ou [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference).
 
@@ -71,7 +69,7 @@ catch (AdalException ex)
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API client](/dotnet/api/overview/azure/activedirectory/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/activedirectory/client)
 
 ### <a name="samples"></a>Exemples
 

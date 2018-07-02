@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: redis-cache
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 64bb5a43cec8c82412b3dc7b60fea1e8566ab399
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 879f42aa254103239fb0dceeb25cb99a7d5e9814
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566340"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065919"
 ---
 # <a name="azure-redis-cache-libraries-for-net"></a>Bibliothèques de Cache Redis Azure pour .NET
 
@@ -25,7 +23,7 @@ ms.locfileid: "23566340"
 
 Cache Redis Azure est un cache de données sécurisé et un répartiteur de messagerie qui permet aux applications d’accéder aux données via un débit élevé et une faible latence.  Pour plus d'informations, consultez [Utilisation de Cache Redis](https://docs.microsoft.com/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache).
 
-## <a name="client-library"></a>Bibliothèque de client
+## <a name="client-library"></a>Bibliothèque cliente
 
 Cache Redis Azure est compatible avec n’importe quelle API de client Redis, y compris `StackExchange.Redis`.
 
@@ -41,7 +39,7 @@ Install-Package StackExchange.Redis
 dotnet add package StackExchange.Redis
 ```
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>Exemples
 
 Cet exemple se connecte à une instance de la base de données de Cache Redis, ajoute des chaînes dans le cache par nom, puis les récupère à nouveau.
 
@@ -80,7 +78,7 @@ Install-Package Microsoft.Azure.Management.Redis.Fluent
 dotnet add package Microsoft.Azure.Management.Redis.Fluent
 ```
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>Exemples
 
 Cet exemple crée un Cache Redis.
 
