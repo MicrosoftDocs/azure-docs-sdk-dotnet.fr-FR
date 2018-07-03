@@ -6,18 +6,17 @@ author: camsoper
 manager: wpickett
 ms.author: casoper
 ms.date: 11/15/2017
-layout: LandingPage
-ms.topic: landing-page
+ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter
-ms.openlocfilehash: 98f24553961793623f8a6aba10dcf45b930101fe
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: 53e899ba3cd2ff265a2068e1b7eee5baa4520879
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588482"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065339"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Migrer une application web ASP.NET vers une machine virtuelle Azure
 
@@ -25,16 +24,7 @@ Ce document présente comment migrer une application web ASP.NET se trouvant sur
 
 ## <a name="quickstart"></a>Démarrage rapide
 
-Découvrez comment créer une machine virtuelle et y publier votre application :
-
-<div class="ico48Case">
-    <div class="ico48Link">
-        <a href="https://tutorials.visualstudio.com/aspnet-vm/intro">
-            <img width="48" height="48" alt="Publish to an Azure VM" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
-            <span>Publier sur une machine virtuelle Azure</span>
-        </a>
-    </div>
-</div>
+Découvrez comment créer une machine virtuelle et y publier votre application : [Publier sur une VM Azure](https://tutorials.visualstudio.com/aspnet-vm/intro)
 
 ## <a name="get-started"></a>Prise en main
 
@@ -88,7 +78,7 @@ Si votre application utilise une base de données locale, il se peut qu’elle n
 
 ### <a name="high-availability-and-scalability"></a>Haute disponibilité et extensibilité
 
-#### <a name="virtual-machine-scale-sets"></a>Jeux de mise à l’échelle de machine virtuelle
+#### <a name="virtual-machine-scale-sets"></a>Virtual Machine Scale Sets
 Vous souhaitez vous assurer que votre application est hautement disponible et peut évoluer, migrez l’image de votre machine virtuelle vers un groupe de machines virtuelles identiques pour améliorer la disponibilité et l’évolutivité de votre application.  Microsoft Azure Virtual Machine Scale Sets offre la possibilité d’utiliser une machine virtuelle existante déjà configurée ou d’installer un pipeline de création pour générer une image avec votre application.  
 
 Pour commencer, consultez [Déployer votre application sur des groupes de machines virtuelles identiques](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).

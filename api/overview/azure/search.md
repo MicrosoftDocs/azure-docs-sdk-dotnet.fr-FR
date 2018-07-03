@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: search
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: bd0899d6dbc6d474389eebac78a77a62b86c5255
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 5062d444b859711d7f87a0ecbd65e6b204c04b16
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566300"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065279"
 ---
 # <a name="azure-search-libraries-for-net"></a>Bibliothèques Recherche Azure pour .NET
 
@@ -27,7 +25,7 @@ ms.locfileid: "23566300"
 
 ## <a name="client-library"></a>Bibliothèque cliente
 
-Utilisez la bibliothèque cliente Recherche Azure pour accéder à l’indexation et aux opérations de recherche, puis pour les exécuter sur un service de recherche, un index, des documents ou un autre objet. Pour vous familiariser pas à pas, consultez [Comment utiliser 	Recherche Azure à partir d’une application .NET](https://docs.microsoft.com/azure/search/search-howto-dotnet-sdk).
+Utilisez la bibliothèque cliente Recherche Azure pour accéder à l’indexation et aux opérations de recherche, puis pour les exécuter sur un service de recherche, un index, des documents ou un autre objet. Pour une présentation pas à pas, consultez [Comment utiliser Azure Search à partir d'une application .NET](https://docs.microsoft.com/azure/search/search-howto-dotnet-sdk).
 
 Installez le [package NuGet](https://www.nuget.org/packages/Microsoft.Azure.Search) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio ou avec la [CLI .NET Core][DotNetCLI].
 
@@ -62,7 +60,7 @@ ISearchIndexClient indexClient = serviceClient.Indexes.GetClient("hotels");
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API client](/dotnet/api/overview/azure/search/client)
+> [Explorer les API clientes](/dotnet/api/overview/azure/search/client)
 
 
 ## <a name="management-library"></a>Bibliothèque de gestion
