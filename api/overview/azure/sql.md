@@ -10,16 +10,16 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: sql-database
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 30d5f9ffa0654673fe358872cbb7342fb87d4127
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 8096e66be1263bc50648ef5b9b16f3fc2bd08ac8
+ms.sourcegitcommit: 512e031ead61a578ac96835c8ea01829842740bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065889"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39116675"
 ---
 # <a name="azure-sql-database-apis-for-net"></a>API Azure SQL Database pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) est un service de base de données reposant sur le moteur Microsoft SQL Server qui prend en charge les données relationnelles, JSON, spatiales et XML. 
 
@@ -130,5 +130,5 @@ ISqlDatabase sqlDb = sqlServer.Databases.Define("DatabaseName").Create();
 - [Exemples de code ADO.NET](/dotnet/framework/data/adonet/ado-net-code-examples)
 - [Bibliothèques de gestion Azure pour des exemples .NET pour SQL Database](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
 
-Afficher la [liste complète](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) d’exemples d’Azure SQL Database.
+Afficher la [liste complète](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=sql+database) d’exemples d’Azure SQL Database.
 
