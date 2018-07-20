@@ -1,45 +1,45 @@
 ---
-title: Prise en main des API Azure .NET
-description: Découvrez les fonctions de base des bibliothèques Azure pour .NET avec votre propre abonnement Azure.
-keywords: Azure, .NET, SDK, API, s’authentifier, prise en main
+title: Prise en main des API Azure .NET et .NET Core
+description: Découvrez les fonctions de base des bibliothèques Azure pour .NET et .NET Core avec votre propre abonnement Azure.
+keywords: Azure, .NET, .NET Core, ASP.NET, Kit de développement logiciel (SDK) ASP.NET Core, API, authentification, prise en main
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: a3733898f948dbb2ec07da20aa61724e07f23e73
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: a8775993e71566b7659a8ae8ceb2c376ece14e45
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752871"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135777"
 ---
-# <a name="get-started-with-the-azure-net-apis"></a><span data-ttu-id="838bc-104">Prise en main des API Azure .NET</span><span class="sxs-lookup"><span data-stu-id="838bc-104">Get started with the Azure .NET APIs</span></span>
+# <a name="get-started-with-the-azure-net-and-net-core-apis"></a><span data-ttu-id="4ee5f-104">Prise en main des API Azure .NET et .NET Core</span><span class="sxs-lookup"><span data-stu-id="4ee5f-104">Get started with the Azure .NET and .NET Core APIs</span></span>
 
-<span data-ttu-id="838bc-105">Ce didacticiel montre comment utiliser plusieurs [API Azure pour .NET](/dotnet/api/overview/azure/).</span><span class="sxs-lookup"><span data-stu-id="838bc-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="838bc-106">Vous devrez configurer l’authentification, créer et utiliser un compte de stockage Azure et une base de données Azure SQL Database, ainsi que déployer des machines virtuelles et une application web Azure App Service à partir de GitHub.</span><span class="sxs-lookup"><span data-stu-id="838bc-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
+<span data-ttu-id="4ee5f-105">Ce didacticiel montre comment utiliser plusieurs [API Azure pour .NET](/dotnet/api/overview/azure/).</span><span class="sxs-lookup"><span data-stu-id="4ee5f-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="4ee5f-106">Vous devrez configurer l’authentification, créer et utiliser un compte de stockage Azure et une base de données Azure SQL Database, ainsi que déployer des machines virtuelles et une application web Azure App Service à partir de GitHub.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="838bc-107">configuration requise</span><span class="sxs-lookup"><span data-stu-id="838bc-107">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4ee5f-107">Prérequis</span><span class="sxs-lookup"><span data-stu-id="4ee5f-107">Prerequisites</span></span>
 
-- <span data-ttu-id="838bc-108">Un compte Azure.</span><span class="sxs-lookup"><span data-stu-id="838bc-108">An Azure account.</span></span> <span data-ttu-id="838bc-109">Si vous n’en avez pas, inscrivez-vous pour un [essai gratuit](https://azure.microsoft.com/free/)</span><span class="sxs-lookup"><span data-stu-id="838bc-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
-- [<span data-ttu-id="838bc-110">Azure PowerShell</span><span class="sxs-lookup"><span data-stu-id="838bc-110">Azure PowerShell</span></span>](/powershell/azure/install-azurerm-ps)
+- <span data-ttu-id="4ee5f-108">Un compte Azure.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-108">An Azure account.</span></span> <span data-ttu-id="4ee5f-109">Si vous n’en avez pas, inscrivez-vous pour un [essai gratuit](https://azure.microsoft.com/free/)</span><span class="sxs-lookup"><span data-stu-id="4ee5f-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
+- [<span data-ttu-id="4ee5f-110">Azure PowerShell</span><span class="sxs-lookup"><span data-stu-id="4ee5f-110">Azure PowerShell</span></span>](/powershell/azure/install-azurerm-ps)
 
-## <a name="set-up-authentication"></a><span data-ttu-id="838bc-111">Configurer l’authentification</span><span class="sxs-lookup"><span data-stu-id="838bc-111">Set up authentication</span></span>
+## <a name="set-up-authentication"></a><span data-ttu-id="4ee5f-111">Configurer l’authentification</span><span class="sxs-lookup"><span data-stu-id="4ee5f-111">Set up authentication</span></span>
 
 [!include[Create service principal](includes/create-sp.md)]
 
 [!include[File-based authentication](includes/file-based-auth.md)]
 
-## <a name="create-a-new-project"></a><span data-ttu-id="838bc-112">Création d'un projet</span><span class="sxs-lookup"><span data-stu-id="838bc-112">Create a new project</span></span> 
+## <a name="create-a-new-project"></a><span data-ttu-id="4ee5f-112">Création d'un projet</span><span class="sxs-lookup"><span data-stu-id="4ee5f-112">Create a new project</span></span> 
 
-<span data-ttu-id="838bc-113">Créez un projet d’application de console.</span><span class="sxs-lookup"><span data-stu-id="838bc-113">Create a new console application project.</span></span>  <span data-ttu-id="838bc-114">Vous trouverez cela dans Visual Studio en cliquant sur **Fichier**, **Nouveau**, puis cliquez sur **Projet...**.  Dans les modèles Visual C#, sélectionnez l’**application console (.NET Core)**, nommez votre projet, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="838bc-114">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
+<span data-ttu-id="4ee5f-113">Créez un projet d’application de console.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-113">Create a new console application project.</span></span>  <span data-ttu-id="4ee5f-114">Vous trouverez cela dans Visual Studio en cliquant sur **Fichier**, **Nouveau**, puis cliquez sur **Projet...**.  Dans les modèles Visual C#, sélectionnez l’**application console (.NET Core)**, nommez votre projet, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-114">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
 
 ![Boîte de dialogue Nouveau projet](media/dotnet-sdk-azure-get-started/new-project.png)
 
-<span data-ttu-id="838bc-116">Lorsque vous avez créé l’application de console, ouvrez la Console du Gestionnaire de package en cliquant sur **Outils**, **Gestionnaire de package NuGet**, puis cliquez sur **Console du Gestionnaire de package**.</span><span class="sxs-lookup"><span data-stu-id="838bc-116">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="838bc-117">Dans la console, obtenez les packages dont vous avez besoin en exécutant les trois commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="838bc-117">In the console, get the packages you'll need by executing the following three commands:</span></span>
+<span data-ttu-id="4ee5f-116">Lorsque vous avez créé l’application de console, ouvrez la Console du Gestionnaire de package en cliquant sur **Outils**, **Gestionnaire de package NuGet**, puis cliquez sur **Console du Gestionnaire de package**.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-116">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="4ee5f-117">Dans la console, obtenez les packages dont vous avez besoin en exécutant les trois commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="4ee5f-117">In the console, get the packages you'll need by executing the following three commands:</span></span>
 
 ```powershell
 # Azure Management Libraries for .NET (Fluent)
@@ -52,9 +52,9 @@ Install-Package WindowsAzure.Storage
 Install-Package System.Data.SqlClient
 ```
 
-## <a name="directives"></a><span data-ttu-id="838bc-118">Directives</span><span class="sxs-lookup"><span data-stu-id="838bc-118">Directives</span></span>
+## <a name="directives"></a><span data-ttu-id="4ee5f-118">Directives</span><span class="sxs-lookup"><span data-stu-id="4ee5f-118">Directives</span></span>
 
-<span data-ttu-id="838bc-119">Modifiez le fichier d’application `Program.cs`.</span><span class="sxs-lookup"><span data-stu-id="838bc-119">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="838bc-120">Remplacez les directives `using` au début par les éléments suivants :</span><span class="sxs-lookup"><span data-stu-id="838bc-120">Replace the `using` directives at the top with the following:</span></span>
+<span data-ttu-id="4ee5f-119">Modifiez le fichier d’application `Program.cs`.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-119">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="4ee5f-120">Remplacez les directives `using` au début par les éléments suivants :</span><span class="sxs-lookup"><span data-stu-id="4ee5f-120">Replace the `using` directives at the top with the following:</span></span>
 
 ```csharp
 using System;
@@ -69,11 +69,11 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using System.Data.SqlClient;
 ```
 
-## <a name="create-a-virtual-machine"></a><span data-ttu-id="838bc-121">Création d'une machine virtuelle</span><span class="sxs-lookup"><span data-stu-id="838bc-121">Create a virtual machine</span></span>
+## <a name="create-a-virtual-machine"></a><span data-ttu-id="4ee5f-121">Création d'une machine virtuelle</span><span class="sxs-lookup"><span data-stu-id="4ee5f-121">Create a virtual machine</span></span>
 
-<span data-ttu-id="838bc-122">Cet exemple déploie une machine virtuelle.</span><span class="sxs-lookup"><span data-stu-id="838bc-122">This example deploys a virtual machine.</span></span> 
+<span data-ttu-id="4ee5f-122">Cet exemple déploie une machine virtuelle.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-122">This example deploys a virtual machine.</span></span> 
 
-<span data-ttu-id="838bc-123">Remplacez la méthode `Main` par le code suivant :</span><span class="sxs-lookup"><span data-stu-id="838bc-123">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="838bc-124">Veillez à fournir un `username` et un `password` valides pour la machine virtuelle.</span><span class="sxs-lookup"><span data-stu-id="838bc-124">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
+<span data-ttu-id="4ee5f-123">Remplacez la méthode `Main` par le code suivant :</span><span class="sxs-lookup"><span data-stu-id="4ee5f-123">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="4ee5f-124">Veillez à fournir un `username` et un `password` valides pour la machine virtuelle.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-124">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
 
 ```csharp
 static void Main(string[] args)
@@ -115,17 +115,17 @@ static void Main(string[] args)
 }
 ```
 
-<span data-ttu-id="838bc-125">Appuyez sur **F5** pour exécuter l’exemple.</span><span class="sxs-lookup"><span data-stu-id="838bc-125">Press **F5** to run the sample.</span></span>
+<span data-ttu-id="4ee5f-125">Appuyez sur **F5** pour exécuter l’exemple.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-125">Press **F5** to run the sample.</span></span>
 
-<span data-ttu-id="838bc-126">Après quelques minutes, le programme se termine et vous invite à appuyer sur « Entrée ».</span><span class="sxs-lookup"><span data-stu-id="838bc-126">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="838bc-127">Après avoir appuyé sur « Entrée », vérifiez la machine virtuelle dans votre abonnement avec PowerShell :</span><span class="sxs-lookup"><span data-stu-id="838bc-127">After pressing enter, verify the virtual machine in your subscription with PowerShell:</span></span>
+<span data-ttu-id="4ee5f-126">Après quelques minutes, le programme se termine et vous invite à appuyer sur « Entrée ».</span><span class="sxs-lookup"><span data-stu-id="4ee5f-126">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="4ee5f-127">Après avoir appuyé sur « Entrée », vérifiez la machine virtuelle dans votre abonnement avec PowerShell :</span><span class="sxs-lookup"><span data-stu-id="4ee5f-127">After pressing enter, verify the virtual machine in your subscription with PowerShell:</span></span>
 
 ```powershell
 Get-AzureRmVm -ResourceGroupName sampleResourceGroup
 ```
 
-## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="838bc-128">Déployer une application web à partir d’un référentiel GitHub</span><span class="sxs-lookup"><span data-stu-id="838bc-128">Deploy a web app from a GitHub repo</span></span>
+## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="4ee5f-128">Déployer une application web à partir d’un référentiel GitHub</span><span class="sxs-lookup"><span data-stu-id="4ee5f-128">Deploy a web app from a GitHub repo</span></span>
 
-<span data-ttu-id="838bc-129">À présent, vous allez modifier votre code pour créer et déployer une application web à partir d’un référentiel GitHub existant.</span><span class="sxs-lookup"><span data-stu-id="838bc-129">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="838bc-130">Remplacez la méthode `Main` par le code suivant :</span><span class="sxs-lookup"><span data-stu-id="838bc-130">Replace the `Main` method with the following code:</span></span>
+<span data-ttu-id="4ee5f-129">À présent, vous allez modifier votre code pour créer et déployer une application web à partir d’un référentiel GitHub existant.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-129">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="4ee5f-130">Remplacez la méthode `Main` par le code suivant :</span><span class="sxs-lookup"><span data-stu-id="4ee5f-130">Replace the `Main` method with the following code:</span></span>
 
 ```csharp
 static void Main(string[] args)
@@ -162,13 +162,13 @@ static void Main(string[] args)
 }
 ```
 
-<span data-ttu-id="838bc-131">Exécutez le code comme avant en appuyant sur **F5**.</span><span class="sxs-lookup"><span data-stu-id="838bc-131">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="838bc-132">Vérifiez le déploiement en ouvrant un navigateur et en accédant à l’URL affichée dans la console.</span><span class="sxs-lookup"><span data-stu-id="838bc-132">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
+<span data-ttu-id="4ee5f-131">Exécutez le code comme avant en appuyant sur **F5**.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-131">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="4ee5f-132">Vérifiez le déploiement en ouvrant un navigateur et en accédant à l’URL affichée dans la console.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-132">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
 
-## <a name="connect-to-a-sql-database"></a><span data-ttu-id="838bc-133">Connexion à une base de données SQL</span><span class="sxs-lookup"><span data-stu-id="838bc-133">Connect to a SQL database</span></span>
+## <a name="connect-to-a-sql-database"></a><span data-ttu-id="4ee5f-133">Connexion à une base de données SQL</span><span class="sxs-lookup"><span data-stu-id="4ee5f-133">Connect to a SQL database</span></span>
 
-<span data-ttu-id="838bc-134">Cet exemple crée une base de données Microsoft Azure SQL Database et effectue quelques opérations SQL.</span><span class="sxs-lookup"><span data-stu-id="838bc-134">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
+<span data-ttu-id="4ee5f-134">Cet exemple crée une base de données Microsoft Azure SQL Database et effectue quelques opérations SQL.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-134">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
 
-<span data-ttu-id="838bc-135">Remplacez la méthode `Main` par la suivante, en veillant à attribuer un mot de passe fort pour `dbPassword` :</span><span class="sxs-lookup"><span data-stu-id="838bc-135">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
+<span data-ttu-id="4ee5f-135">Remplacez la méthode `Main` par la suivante, en veillant à attribuer un mot de passe fort pour `dbPassword` :</span><span class="sxs-lookup"><span data-stu-id="4ee5f-135">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
 
 ```csharp
  static void Main(string[] args)
@@ -201,11 +201,11 @@ static void Main(string[] args)
 
     Console.WriteLine("Creating database...");
     var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-    
+
     // Display information for connecting later...
     Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
     Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-    
+
     // Build the connection string
     var builder = new SqlConnectionStringBuilder();
     builder.DataSource = sqlServer.FullyQualifiedDomainName;
@@ -241,13 +241,14 @@ static void Main(string[] args)
     Console.ReadLine();
 }
 ```
-<span data-ttu-id="838bc-136">Exécutez le code comme avant en appuyant sur **F5**.</span><span class="sxs-lookup"><span data-stu-id="838bc-136">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="838bc-137">La sortie de console doit valider la création et le bon fonctionnement du serveur, mais vous pouvez vous y connecter directement avec un outil tel que SQL Server Management Studio si vous le souhaitez.</span><span class="sxs-lookup"><span data-stu-id="838bc-137">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
 
-## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="838bc-138">Écrire un objet blob dans un nouveau compte de stockage</span><span class="sxs-lookup"><span data-stu-id="838bc-138">Write a blob into a new storage account</span></span>
+<span data-ttu-id="4ee5f-136">Exécutez le code comme avant en appuyant sur **F5**.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-136">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="4ee5f-137">La sortie de console doit valider la création et le bon fonctionnement du serveur, mais vous pouvez vous y connecter directement avec un outil tel que SQL Server Management Studio si vous le souhaitez.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-137">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
 
-<span data-ttu-id="838bc-139">Cet exemple crée un compte de stockage et charge un objet blob.</span><span class="sxs-lookup"><span data-stu-id="838bc-139">This example will create a storage account and upload a blob.</span></span>  
+## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="4ee5f-138">Écrire un objet blob dans un nouveau compte de stockage</span><span class="sxs-lookup"><span data-stu-id="4ee5f-138">Write a blob into a new storage account</span></span>
 
-<span data-ttu-id="838bc-140">Remplacez la méthode `Main` par le code suivant :</span><span class="sxs-lookup"><span data-stu-id="838bc-140">Replace the `Main` method with the following.</span></span>
+<span data-ttu-id="4ee5f-139">Cet exemple crée un compte de stockage et charge un objet blob.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-139">This example creates a storage account and upload a blob.</span></span>  
+
+<span data-ttu-id="4ee5f-140">Remplacez la méthode `Main` par le code suivant :</span><span class="sxs-lookup"><span data-stu-id="4ee5f-140">Replace the `Main` method with the following.</span></span>
 
 ```csharp
 static void Main(string[] args)
@@ -280,7 +281,7 @@ static void Main(string[] args)
 
     var account = CloudStorageAccount.Parse(storageConnectionString);
     var serviceClient = account.CreateCloudBlobClient();
-    
+
     // Create container. Name must be lower case.
     Console.WriteLine("Creating container...");
     var container = serviceClient.GetContainerReference("helloazure");
@@ -290,7 +291,7 @@ static void Main(string[] args)
     var containerPermissions = new BlobContainerPermissions()
         { PublicAccess = BlobContainerPublicAccessType.Container };
     container.SetPermissionsAsync(containerPermissions).Wait();
-    
+
     // write a blob to the container
     Console.WriteLine("Uploading blob...");
     var blob = container.GetBlockBlobReference("helloazure.txt");
@@ -299,30 +300,31 @@ static void Main(string[] args)
 
     // Wait for the user
     Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();        
+    Console.ReadLine();
 }
 ```
 
-<span data-ttu-id="838bc-141">Appuyez sur **F5** pour exécuter l’exemple.</span><span class="sxs-lookup"><span data-stu-id="838bc-141">Press **F5** to run the sample.</span></span>
+<span data-ttu-id="4ee5f-141">Appuyez sur **F5** pour exécuter l’exemple.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-141">Press **F5** to run the sample.</span></span>
 
-<span data-ttu-id="838bc-142">Après quelques minutes, le programme se termine.</span><span class="sxs-lookup"><span data-stu-id="838bc-142">After several minutes, the program will finish.</span></span> <span data-ttu-id="838bc-143">Vérifiez que l’objet blob a été chargé en accédant à l’URL affichée dans la console.</span><span class="sxs-lookup"><span data-stu-id="838bc-143">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="838bc-144">Vous devriez voir le texte « Hello, Azure !».</span><span class="sxs-lookup"><span data-stu-id="838bc-144">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="838bc-145">dans votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="838bc-145">in your browser.</span></span>
+<span data-ttu-id="4ee5f-142">Après quelques minutes, le programme se termine.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-142">After several minutes, the program finishes.</span></span> <span data-ttu-id="4ee5f-143">Vérifiez que l’objet blob a été chargé en accédant à l’URL affichée dans la console.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-143">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="4ee5f-144">Vous devriez voir le texte « Hello, Azure !».</span><span class="sxs-lookup"><span data-stu-id="4ee5f-144">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="4ee5f-145">dans votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-145">in your browser.</span></span>
 
-## <a name="clean-up"></a><span data-ttu-id="838bc-146">Nettoyer</span><span class="sxs-lookup"><span data-stu-id="838bc-146">Clean up</span></span>
+## <a name="clean-up"></a><span data-ttu-id="4ee5f-146">Nettoyer</span><span class="sxs-lookup"><span data-stu-id="4ee5f-146">Clean up</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="838bc-147">Si vous ne nettoyez pas les ressources de ce didacticiel, vous continuerez à être facturé.</span><span class="sxs-lookup"><span data-stu-id="838bc-147">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="838bc-148">Assurez-vous d’effectuer cette étape.</span><span class="sxs-lookup"><span data-stu-id="838bc-148">Be sure to do this step.</span></span>
+> <span data-ttu-id="4ee5f-147">Si vous ne nettoyez pas les ressources de ce didacticiel, vous continuerez à être facturé.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-147">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="4ee5f-148">Assurez-vous d’effectuer cette étape.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-148">Be sure to do this step.</span></span>
 
-<span data-ttu-id="838bc-149">Supprimez toutes les ressources que vous avez créées en entrant la commande suivante dans PowerShell :</span><span class="sxs-lookup"><span data-stu-id="838bc-149">Delete all the resources you created by entering the following in PowerShell:</span></span>
+<span data-ttu-id="4ee5f-149">Supprimez toutes les ressources que vous avez créées en entrant la commande suivante dans PowerShell :</span><span class="sxs-lookup"><span data-stu-id="4ee5f-149">Delete all the resources you created by entering the following in PowerShell:</span></span>
 
 ```powershell
 Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
 ```
-## <a name="explore-more-samples"></a><span data-ttu-id="838bc-150">Explorez d’autres exemples</span><span class="sxs-lookup"><span data-stu-id="838bc-150">Explore more samples</span></span>
 
-<span data-ttu-id="838bc-151">Pour savoir comment utiliser les bibliothèques Azure pour .NET afin de gérer les ressources et d’automatiser des tâches, consultez notre exemple de code pour les [machines virtuelles](dotnet-sdk-azure-virtual-machine-samples.md), les [applications web](dotnet-sdk-azure-web-apps-samples.md) et [SQL Database](dotnet-sdk-azure-sql-database-samples.md).</span><span class="sxs-lookup"><span data-stu-id="838bc-151">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
+## <a name="explore-more-samples"></a><span data-ttu-id="4ee5f-150">Explorez d’autres exemples</span><span class="sxs-lookup"><span data-stu-id="4ee5f-150">Explore more samples</span></span>
 
-## <a name="reference"></a><span data-ttu-id="838bc-152">Informations de référence</span><span class="sxs-lookup"><span data-stu-id="838bc-152">Reference</span></span>
+<span data-ttu-id="4ee5f-151">Pour savoir comment utiliser les bibliothèques Azure pour .NET afin de gérer les ressources et d’automatiser des tâches, consultez notre exemple de code pour les [machines virtuelles](dotnet-sdk-azure-virtual-machine-samples.md), les [applications web](dotnet-sdk-azure-web-apps-samples.md) et [SQL Database](dotnet-sdk-azure-sql-database-samples.md).</span><span class="sxs-lookup"><span data-stu-id="4ee5f-151">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
 
-<span data-ttu-id="838bc-153">Il existe une [référence](http://docs.microsoft.com/dotnet/api) pour tous les packages.</span><span class="sxs-lookup"><span data-stu-id="838bc-153">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
+## <a name="reference"></a><span data-ttu-id="4ee5f-152">Référence</span><span class="sxs-lookup"><span data-stu-id="4ee5f-152">Reference</span></span>
+
+<span data-ttu-id="4ee5f-153">Il existe une [référence](http://docs.microsoft.com/dotnet/api) pour tous les packages.</span><span class="sxs-lookup"><span data-stu-id="4ee5f-153">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
 
 [!include[Contribute and community](includes/contribute.md)]
