@@ -1,26 +1,26 @@
 ---
-title: Outils pour les développeurs .NET d’Azure
-description: Obtenez les outils pour commencer à utiliser les bibliothèques .NET Azure à partir d’un environnement Windows, Linux ou Mac.
-keywords: Azure .NET, SDK, référence sur l’API Azure .NET, bibliothèques de classes .NET Azure
+title: Outils pour les développeurs Azure .NET et .NET Core
+description: Obtenez les outils pour commencer à utiliser les bibliothèques .NET Azure à partir d’un environnement Windows, Linux et Mac.
+keywords: Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 5890df018eea61bcc0f8bce1cd4bc02fa84b37cf
-ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
+ms.openlocfilehash: 9c9d25e8f065408f81ed8b1fdb25817196f7e053
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "29752672"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135697"
 ---
-# <a name="tools-for-net-azure-developers"></a>Outils pour les développeurs .NET Azure
+# <a name="tools-for-net-and-net-core-azure-developers"></a>Outils pour les développeurs Azure .NET et .NET Core
 
-Quel que soit votre système d’exploitation, nous disposons d’un vaste éventail d’outils pour vous aider à développer à l’aide de .NET sur Azure.
+Quel que soit votre système d’exploitation, nous disposons d’un vaste éventail d’outils pour vous aider à développer sur Azure à l’aide de .NET, .NET Core, ASP.NET et ASP.NET Core.
 
 ## <a name="windowstabwindows"></a>[Windows](#tab/windows)
 
@@ -44,7 +44,6 @@ Vous utilisez toujours Visual Studio 2015 ?  [cliquez ici pour obtenir des ins
 > [!div class="nextstepaction"]
 > [Télécharger Visual Studio 2017](https://www.visualstudio.com/downloads/)
 
-
 ### <a name="step-2-install-the-two-azure-workloads"></a>Étape 2 : Installer les deux charges de travail Azure
 
 Après avoir lancé le programme d’installation de Visual Studio 2017, assurez-vous que les charges de travail de développement web Azure et ASP.NET sont vérifiées.
@@ -53,8 +52,7 @@ Après avoir lancé le programme d’installation de Visual Studio 2017, assure
 
 ### <a name="step-3-develop-with-net-on-azure"></a>Étape 3 : Développer avec .NET sur Azure
 
-Commencez en [déployant votre première application .NET sur Azure](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
-
+Commencez par [déployer votre première application web ASP.NET Core sur Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
 
 ## <a name="macostabmacos"></a>[macOS](#tab/macos)
 <table>
@@ -67,7 +65,6 @@ Commencez en [déployant votre première application .NET sur Azure](https://doc
     </td>
   </tr>
 </table>
-
 
 ### <a name="step-1-download-visual-studio-for-mac"></a>Étape 1 : Télécharger Visual Studio pour Mac
 
@@ -82,16 +79,16 @@ Lors de l’installation, les outils Azure sont déjà activés par défaut.
 
 <img src="https://docs.microsoft.com/en-us/visualstudio/products/images/vs-code.svg" width="50" height="50"></img>
 
-### <a name="step-1-download-net-core-sdk"></a>Étape 1 : Télécharger le kit de développement logiciel (SDK) .NET Core
+### <a name="step-1-download-the-net-core-sdk"></a>Étape 1 : Télécharger le kit SDK .NET Core
 
-Le Kit de développement logiciel (SDK) et les outils de ligne de commande pour les applications .NET.
+Le Kit de développement logiciel (SDK) et les outils de ligne de commande pour les applications .NET Core.
 
 > [!div class="nextstepaction"]
 > [Télécharger le kit de développement logiciel (SDK) .NET Core](https://www.microsoft.com/net/core)
 
 ### <a name="step-2-visual-studio-code"></a>Étape 2 : Visual Studio Code
 
-Modifier et déboguer des applications .NET sur n’importe quel système d’exploitation.
+Modifiez et déboguez des applications .NET Core sur n’importe quel système d’exploitation : Windows, Mac et Linux.
 
 > [!div class="nextstepaction"]
 > [Télécharger Visual Studio Code](https://code.visualstudio.com)

@@ -1,28 +1,28 @@
 ---
-title: Prise en main des API Azure .NET
-description: Découvrez les fonctions de base des bibliothèques Azure pour .NET avec votre propre abonnement Azure.
-keywords: Azure, .NET, SDK, API, s’authentifier, prise en main
+title: Prise en main des API Azure .NET et .NET Core
+description: Découvrez les fonctions de base des bibliothèques Azure pour .NET et .NET Core avec votre propre abonnement Azure.
+keywords: Azure, .NET, .NET Core, ASP.NET, Kit de développement logiciel (SDK) ASP.NET Core, API, authentification, prise en main
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: a3733898f948dbb2ec07da20aa61724e07f23e73
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: a8775993e71566b7659a8ae8ceb2c376ece14e45
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752871"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135777"
 ---
-# <a name="get-started-with-the-azure-net-apis"></a>Prise en main des API Azure .NET
+# <a name="get-started-with-the-azure-net-and-net-core-apis"></a>Prise en main des API Azure .NET et .NET Core
 
 Ce didacticiel montre comment utiliser plusieurs [API Azure pour .NET](/dotnet/api/overview/azure/).  Vous devrez configurer l’authentification, créer et utiliser un compte de stockage Azure et une base de données Azure SQL Database, ainsi que déployer des machines virtuelles et une application web Azure App Service à partir de GitHub.
 
-## <a name="prerequisites"></a>configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 - Un compte Azure. Si vous n’en avez pas, inscrivez-vous pour un [essai gratuit](https://azure.microsoft.com/free/)
 - [Azure PowerShell](/powershell/azure/install-azurerm-ps)
@@ -201,11 +201,11 @@ Remplacez la méthode `Main` par la suivante, en veillant à attribuer un mot de
 
     Console.WriteLine("Creating database...");
     var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-    
+
     // Display information for connecting later...
     Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
     Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-    
+
     // Build the connection string
     var builder = new SqlConnectionStringBuilder();
     builder.DataSource = sqlServer.FullyQualifiedDomainName;
@@ -241,6 +241,7 @@ Remplacez la méthode `Main` par la suivante, en veillant à attribuer un mot de
     Console.ReadLine();
 }
 ```
+
 Exécutez le code comme avant en appuyant sur **F5**.  La sortie de console doit valider la création et le bon fonctionnement du serveur, mais vous pouvez vous y connecter directement avec un outil tel que SQL Server Management Studio si vous le souhaitez.
 
 ## <a name="write-a-blob-into-a-new-storage-account"></a>Écrire un objet blob dans un nouveau compte de stockage
@@ -280,7 +281,7 @@ static void Main(string[] args)
 
     var account = CloudStorageAccount.Parse(storageConnectionString);
     var serviceClient = account.CreateCloudBlobClient();
-    
+
     // Create container. Name must be lower case.
     Console.WriteLine("Creating container...");
     var container = serviceClient.GetContainerReference("helloazure");
@@ -290,7 +291,7 @@ static void Main(string[] args)
     var containerPermissions = new BlobContainerPermissions()
         { PublicAccess = BlobContainerPublicAccessType.Container };
     container.SetPermissionsAsync(containerPermissions).Wait();
-    
+
     // write a blob to the container
     Console.WriteLine("Uploading blob...");
     var blob = container.GetBlockBlobReference("helloazure.txt");
@@ -299,7 +300,7 @@ static void Main(string[] args)
 
     // Wait for the user
     Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();        
+    Console.ReadLine();
 }
 ```
 
@@ -317,11 +318,12 @@ Supprimez toutes les ressources que vous avez créées en entrant la commande su
 ```powershell
 Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
 ```
+
 ## <a name="explore-more-samples"></a>Explorez d’autres exemples
 
 Pour savoir comment utiliser les bibliothèques Azure pour .NET afin de gérer les ressources et d’automatiser des tâches, consultez notre exemple de code pour les [machines virtuelles](dotnet-sdk-azure-virtual-machine-samples.md), les [applications web](dotnet-sdk-azure-web-apps-samples.md) et [SQL Database](dotnet-sdk-azure-sql-database-samples.md).
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 
 Il existe une [référence](http://docs.microsoft.com/dotnet/api) pour tous les packages.
 
