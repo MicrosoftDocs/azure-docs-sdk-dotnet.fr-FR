@@ -5,18 +5,18 @@ keywords: Azure, .NET, .NET Core, ASP.NET, Kit de développement logiciel (SDK) 
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 07/17/2018
+ms.date: 08/22/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: a8775993e71566b7659a8ae8ceb2c376ece14e45
-ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.openlocfilehash: ad894e47704fcccc83f7d02acb8e418b167993f9
+ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39135777"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42703052"
 ---
 # <a name="get-started-with-the-azure-net-and-net-core-apis"></a>Prise en main des API Azure .NET et .NET Core
 
@@ -25,7 +25,6 @@ Ce didacticiel montre comment utiliser plusieurs [API Azure pour .NET](/dotnet/a
 ## <a name="prerequisites"></a>Prérequis
 
 - Un compte Azure. Si vous n’en avez pas, inscrivez-vous pour un [essai gratuit](https://azure.microsoft.com/free/)
-- [Azure PowerShell](/powershell/azure/install-azurerm-ps)
 
 ## <a name="set-up-authentication"></a>Configurer l’authentification
 
@@ -83,7 +82,7 @@ static void Main(string[] args)
     string password = "MY_PASSWORD";
     string rgName = "sampleResourceGroup";
     string windowsVmName = "sampleWindowsVM";
-    string publicIpDnsLabel = "samplePublicIP";
+    string publicIpDnsLabel = "samplePublicIP" + (new Random().Next(0,100000)).ToString();
 
     // Authenticate
     var credentials = SdkContext.AzureCredentialsFactory
@@ -117,10 +116,10 @@ static void Main(string[] args)
 
 Appuyez sur **F5** pour exécuter l’exemple.
 
-Après quelques minutes, le programme se termine et vous invite à appuyer sur « Entrée ». Après avoir appuyé sur « Entrée », vérifiez la machine virtuelle dans votre abonnement avec PowerShell :
+Après quelques minutes, le programme se termine et vous invite à appuyer sur « Entrée ». Après avoir appuyé sur « Entrée », vérifiez la machine virtuelle dans votre abonnement avec Cloud Shell :
 
-```powershell
-Get-AzureRmVm -ResourceGroupName sampleResourceGroup
+```azurecli-interactive
+az vm list
 ```
 
 ## <a name="deploy-a-web-app-from-a-github-repo"></a>Déployer une application web à partir d’un référentiel GitHub
@@ -313,17 +312,17 @@ Après quelques minutes, le programme se termine. Vérifiez que l’objet blob a
 > [!IMPORTANT]
 > Si vous ne nettoyez pas les ressources de ce didacticiel, vous continuerez à être facturé.  Assurez-vous d’effectuer cette étape.
 
-Supprimez toutes les ressources que vous avez créées en entrant la commande suivante dans PowerShell :
+Supprimez toutes les ressources que vous avez créées en entrant la commande suivante dans Cloud Shell :
 
-```powershell
-Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
+```azurecli-interactive
+az group delete --name sampleResourceGroup
 ```
 
 ## <a name="explore-more-samples"></a>Explorez d’autres exemples
 
 Pour savoir comment utiliser les bibliothèques Azure pour .NET afin de gérer les ressources et d’automatiser des tâches, consultez notre exemple de code pour les [machines virtuelles](dotnet-sdk-azure-virtual-machine-samples.md), les [applications web](dotnet-sdk-azure-web-apps-samples.md) et [SQL Database](dotnet-sdk-azure-sql-database-samples.md).
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Informations de référence
 
 Il existe une [référence](http://docs.microsoft.com/dotnet/api) pour tous les packages.
 
