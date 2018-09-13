@@ -11,18 +11,18 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: 643d758af8f90f22791d3b7deb18ae6233067ef0
-ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
+ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39135717"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700951"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>Migrer votre application ou service web .NET vers Azure App Service 
 
 [App Service](https://docs.microsoft.com/azure/app-service/app-service-web-overview#why-use-web-apps) est un service de plateforme de calcul entièrement géré, optimisé pour l’hébergement de sites et d’applications web évolutifs. Ce document fournit des informations sur la façon de migrer très facilement au moyen d’une opération « lift-and-shift » une application existante vers Azure App Service, les modifications à prendre en compte et les ressources supplémentaires pour le transfert vers le cloud. La plupart des sites web ASP.NET (WebForms, MVC) et des services (API Web, WCF) peuvent passer directement à Azure App Service, sans aucune modification. Certains peuvent nécessiter des modifications mineures tandis que d’autres peuvent nécessiter une refactorisation.
 
-Vous êtes prêt à commencer ? [Publiez une application ASP.NET + SQL sur Azure App Service](https://go.microsoft.com/fwlink/?linkid=863214).
+Vous êtes prêt à commencer ? [Publiez une application ASP.NET + SQL sur Azure App Service](https://go.microsoft.com/fwlink/?linkid=863214).
 
 ## <a name="considerations"></a>Considérations
 
@@ -30,10 +30,10 @@ Vous êtes prêt à commencer ? [Publiez une application ASP.NET + SQL sur Azure
 
 Vérifiez l’accès aux ressources locales, car elles peuvent nécessiter une migration ou des modifications. Les options suivantes permettent de limiter l’accès aux ressources locales :
 
-* Créez un VPN connectant App Service aux ressources locales à l’aide des [Réseaux virtuels Azure](https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet).
-* Exposez les services locaux au cloud de manière sécurisée sans modification du pare-feu à l’aide de [Azure Relay](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-what-is-it).
+* Créez un VPN connectant App Service aux ressources locales à l’aide des [Réseaux virtuels Azure](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet).
+* Exposez les services locaux au cloud de manière sécurisée sans modification du pare-feu à l’aide de [Azure Relay](https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it).
 * Migrez des dépendances comme une [base de données SQL](https://go.microsoft.com/fwlink/?linkid=863217) vers Azure.
-* Utilisez les offres de plateforme en tant que service (PaaS) dans le cloud pour réduire les dépendances. Par exemple, plutôt que de vous connecter à un serveur de messagerie sur site, envisagez d’utiliser [SendGrid](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email). 
+* Utilisez les offres de plateforme en tant que service (PaaS) dans le cloud pour réduire les dépendances. Par exemple, plutôt que de vous connecter à un serveur de messagerie sur site, envisagez d’utiliser [SendGrid](https://docs.microsoft.com/azure/sendgrid-dotnet-how-to-send-email). 
 
 ### <a name="port-bindings"></a>Liaisons de port
 
@@ -64,7 +64,7 @@ Ceci n’est pas pris en charge. Envisagez de copier les assemblys requis dans l
 Tout ce qui est habituellement configuré via applicationHost.config dans votre application peut maintenant être configuré via le portail Azure. Cela s’applique au nombre de bits AppPool, à l’activation/désactivation des websockets, à la version de pipeline managé, à la version de .NET Framework (2.0/4.0), etc. Pour modifier vos [paramètres d’application](https://docs.microsoft.com/azure/app-service/web-sites-configure), accédez au [portail Azure](https://portal.azure.com), ouvrez le panneau de votre application web, puis sélectionnez l’onglet **Paramètres de l’application**.
 
 #### <a name="iis5-compatibility-mode"></a>Mode de compatibilité IIS5
-Le mode de compatibilité IIS5 n’est pas pris en charge. Dans Azure App Service, chaque application web et toutes les applications qu’elle contient s’exécutent dans le même processus Worker avec un jeu spécifique de [pool d’applications](http://technet.microsoft.com/en-us/library/cc735247(v=WS.10).aspx).
+Le mode de compatibilité IIS5 n’est pas pris en charge. Dans Azure App Service, chaque application web et toutes les applications qu’elle contient s’exécutent dans le même processus Worker avec un jeu spécifique de [pool d’applications](http://technet.microsoft.com/library/cc735247(v=WS.10).aspx).
 
 #### <a name="iis7-schema-compliance"></a>Conformité de schéma IIS7+  
 Certains éléments et attributs ne sont pas définis dans le schéma IIS Azure App Service. Si vous rencontrez des problèmes, envisagez d’utiliser des [transformations XDT](http://azure.microsoft.com/documentation/articles/web-sites-transform-extend/).
