@@ -1,2 +1,0 @@
-> [!IMPORTANT]
-> <span data-ttu-id="6a17d-101">Vous devez avoir lu les [instructions](../dotnet-sdk-azure-sample-readme.md) relatives aux conditions préalables et aux étapes d’installation.</span><span class="sxs-lookup"><span data-stu-id="6a17d-101">Ensure you have read the [instructions](../dotnet-sdk-azure-sample-readme.md) for prerequisites and installation steps.</span></span>
