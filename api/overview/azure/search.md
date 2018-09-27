@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Recherche Azure pour .NET
 description: Référence pour les bibliothèques Recherche Azure pour .NET
-keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Recherche
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: search
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 5062d444b859711d7f87a0ecbd65e6b204c04b16
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: cf622ccb59f10a5270c02fa76d7396345fbb1a9b
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065279"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190242"
 ---
 # <a name="azure-search-libraries-for-net"></a>Bibliothèques Recherche Azure pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 [Recherche Azure](https://docs.microsoft.com/azure/search/search-what-is-azure-search) est un service de recherche cloud entièrement géré qui fournit une expérience de recherche riche sur les données dans les applications web, mobiles et d’entreprise.
 

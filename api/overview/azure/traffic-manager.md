@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Traffic Manager pour .NET
 description: Référence pour les bibliothèques Azure Traffic Manager pour .NET
-keywords: Azure, .NET, SDK, API, Traffic Manager
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: traffic-manager
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 05856cbe48a5cf5f0c9ebf43609a029928f490f9
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: a75b5c566496f73475d24d62288a00c7d5775168
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065869"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190814"
 ---
 # <a name="azure-traffic-manager-libraries-for-net"></a>Bibliothèques Azure Traffic Manager pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Microsoft Azure Traffic Manager vous permet de contrôler la répartition du trafic utilisateur pour les points de terminaison de service dans différents centres de données. Les points de terminaison de service pris en charge par Traffic Manager incluent des machines virtuelles Azure, des applications web et des services cloud. Vous pouvez également utiliser Traffic Manager avec des points de terminaison externes non-Azure.
 

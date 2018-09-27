@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure CDN pour .NET
 description: Référence pour les bibliothèques Azure CDN pour .NET
-keywords: Azure, .NET, SDK, API, CDN
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: cdn
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 4e5b56ca7e316f3a53d8c6d37fdd90c5d7130e1e
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 6475edbe4fa0d01739de5cff76038aa6e7fd2cf9
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065819"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190122"
 ---
 # <a name="azure-cdn-libraries-for-net"></a>Bibliothèques Azure CDN pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le réseau de distribution de contenu (CDN) Azure met en cache le contenu web statique à des emplacements stratégiques afin de fournir un débit maximal pour la distribution de contenu aux utilisateurs. Le CDN offre aux développeurs une solution globale pour la distribution de contenu haut débit en mettant en cache le contenu sur des nœuds physiques dans le monde entier.
 

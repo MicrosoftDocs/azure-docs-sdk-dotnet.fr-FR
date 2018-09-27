@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques de réseaux virtuels Azure pour .NET
 description: Références pour les bibliothèques de réseaux virtuels Azure pour .NET
-keywords: Azure, .NET, Kit de développement logiciel (SDK), API, réseau virtuel
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: virtual-network
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: eb2300522e63339386bf08b5dfac3b803a1e5efd
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 54dd79cf0f5bed1eab7b606b8a6e3b30c797ecd0
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065289"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190662"
 ---
 # <a name="azure-virtual-network-libraries-for-net"></a>Bibliothèques de réseaux virtuels Azure pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 Le service de [réseau virtuel Azure](/azure/virtual-network/virtual-networks-overview) vous permet de connecter en toute sécurité des ressources Azure entre elles en utilisant des réseaux virtuels. Un réseau virtuel est une représentation de votre propre réseau dans le cloud. Vous pouvez connecter des réseaux virtuels entre eux, permettant aux ressources connectées à ces réseaux virtuels de communiquer entre elles. 
 
 ## <a name="management-library"></a>Bibliothèque de gestion

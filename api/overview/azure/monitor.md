@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Monitor pour .NET
 description: Référence pour les bibliothèques Azure Monitor pour .NET
-keywords: Azure, .NET, SDK, API, Monitor
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/27/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: multiple
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 7b86b752a354b5ab6f8482b81ecba3b08b8a9442
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: b81786590eb96a45da3ae08cecb8d11cf4c40bee
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065879"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190412"
 ---
 # <a name="azure-monitor-libraries-for-net"></a>Bibliothèques Azure Monitor pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Azure Monitor vous permet de suivre les performances, de mettre à jour la sécurité et d’identifier des tendances.
 

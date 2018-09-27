@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Automation pour .NET
 description: Référence pour les bibliothèques Azure Automation pour .NET
-keywords: Azure, .NET, SDK, API, Automation
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: automation
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: e45db49fa71e5ad16ab1e4f26d76cd9b0146ac5f
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 4890faab86d1319fe802a30e3735419ac65e8d64
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065759"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190282"
 ---
 # <a name="azure-automation-libraries-for-net"></a>Bibliothèques Azure Automation pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Microsoft Azure Automation permet aux utilisateurs d’automatiser les tâches communément exécutées dans un environnement cloud et d’entreprise. 
 

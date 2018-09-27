@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Key Vault pour .NET
 description: Référence pour les bibliothèques Azure Key Vault pour .NET
-keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Coffre de clés
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: key-vault
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 037b80f60616a37665eddb0b7b212d15180700ba
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: a42eb9684bcfb8e8d2209235f61bbf6962cf5e9e
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065449"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190552"
 ---
 # <a name="azure-key-vault-libraries-for-net"></a>Bibliothèques Azure Key Vault pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Azure Key Vault permet de protéger les clés de chiffrement et les secrets utilisés par les services et les applications cloud.
 

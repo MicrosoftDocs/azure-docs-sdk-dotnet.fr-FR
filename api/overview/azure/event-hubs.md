@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Event Hubs pour .NET
 description: Référence pour les bibliothèques Azure Event Hubs pour .NET
-keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Hubs d’événements
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: event-hubs
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 5502ae24574c7883c34522ae18ca81bb516a33d2
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 74c533bef598b90369009d68a759d35d122a368d
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065309"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190272"
 ---
 # <a name="azure-event-hubs-libraries-for-net"></a>Bibliothèques Azure Event Hubs pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Azure Event Hubs est une plateforme de diffusion des données hautement évolutives en continu et un service d’ingestion d’événements.
 

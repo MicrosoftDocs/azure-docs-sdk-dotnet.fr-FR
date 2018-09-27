@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Service Bus pour .NET
 description: Référence pour les bibliothèques Azure Service Bus pour .NET
-keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Service Bus
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: service-bus
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 5ebd659121019c74ad607dc2a553f7e305a34021
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 506be9a669a2418f2437271d128a963e351442e7
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065469"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190872"
 ---
 # <a name="azure-service-bus-libraries-for-net"></a>Bibliothèques Azure Service Bus pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) est une infrastructure de messagerie située entre des applications pour leur permettre d'échanger des messages. L'objectif est d'améliorer la mise à l'échelle et la résilience.
 

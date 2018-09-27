@@ -1,25 +1,19 @@
 ---
 title: Base de données Azure pour des bibliothèques PostgreSQL pour .NET
 description: Documentation de référence pour les bibliothèques de client .NET pour Azure Database pour PostgreSQL
-keywords: Azure, .NET ODBC, SDK, API, SQL, ADO.NET, base de données, PostGres, PostgreSQL
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: postgresql
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 40ef1d5ffd41b45523fbeb2c29095fd423b749bd
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 4137e024eadba93c9cb3e94c1e7478d0816f8370
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065409"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190743"
 ---
 # <a name="azure-database-for-postgresql-libraries-for-net"></a>Base de données Azure pour des bibliothèques PostgreSQL pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Utilisez des données et des ressources stockées dans la [base de données Azure pour PostgreSQL](https://docs.microsoft.com/azure/postgresql/).
 

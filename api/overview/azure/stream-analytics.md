@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Stream Analytics pour .NET
 description: Référence pour les bibliothèques Azure Stream Analytics pour .NET
-keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Stream Analytics
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: stream-analytics
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 4fc8c5700122a82a5e31df870787a67dad277542
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: c04a5c8a7b1d7e0f283d4fb81bd772de24f195eb
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065929"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190452"
 ---
 # <a name="azure-stream-analytics-libraries-for-net"></a>Bibliothèques Azure Stream Analytics pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 [Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction) est un moteur de traitement des événements entièrement géré qui vous permet de configurer des calculs analytiques en temps réel sur des données de streaming. Les données peuvent provenir d’appareils, de capteurs, de sites web, de flux issus des réseaux sociaux, d’applications, de systèmes d’infrastructure et bien plus encore. 
 

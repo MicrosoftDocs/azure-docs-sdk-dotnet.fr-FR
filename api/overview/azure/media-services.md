@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Media Services pour .NET
 description: Référence pour les bibliothèques Azure Media Services pour .NET
-keywords: Azure, .NET, SDK, API, Media Services
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: media-services
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: ec6a7ec7f8f0c416d93aad5c91ece4d3b499fd7a
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: cbb37d5d80c152ef53dba14c83cf2a2695e6b0f0
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065399"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190582"
 ---
 # <a name="azure-media-services-libraries-for-net"></a>Bibliothèques Azure Media Services pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Microsoft Azure Media Services est une plateforme extensible basée sur le cloud qui permet aux développeurs de créer des applications évolutives de gestion et de diffusion de médias. Media Services est basé sur les API REST qui permettent de télécharger, stocker, encoder et empaqueter en toute sécurité du contenu vidéo ou audio destiné à être diffusé à la demande ou en direct sur différents clients (par exemple, téléviseurs, PC et appareils mobiles). 
 

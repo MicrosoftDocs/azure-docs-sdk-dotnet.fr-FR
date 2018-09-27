@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Resource Manager pour .NET
 description: Référence pour la bibliothèque Azure Resource Manager pour .NET
-keywords: Azure, .NET, SDK, API, Resource Manager
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: multiple
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 5f36b826861071b263fac8bc22f8802ebb6505d1
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 6d3a27c5f7ba94f5579723cc4f798826c8bdefd6
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065319"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190838"
 ---
 # <a name="azure-resource-manager-libraries-for-net"></a>Bibliothèques Azure Resource Manager pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Azure Resource Manager vous permet de travailler avec les ressources de solution sous forme de groupe.  Pour plus d’informations sur Resource Manager, consultez la page [Présentation d’Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
 

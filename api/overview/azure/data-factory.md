@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Data Factory pour .NET
 description: Référence pour les bibliothèques Azure Data Factory pour .NET
-keywords: Azure, .NET, SDK, API, Data Factory
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: data-factory
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: b3c492fbfe4a4afa6f06f8c48a370c554a01719c
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 9a779f223cd0e158e99afcf1ee011d121f2fe838
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065789"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190322"
 ---
 # <a name="azure-data-factory-libraries-for-net"></a>Bibliothèques Azure Data Factory pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Azure Data Factory est un service d’intégration de données basé sur le cloud. Il permet de créer dans le cloud des flux de travail pilotés par les données afin d’orchestrer et d’automatiser le déplacement et la transformation des données.
 

@@ -1,22 +1,13 @@
 ---
 title: Notes de publication des bibliothèques de gestion Azure pour .NET | Microsoft Docs
 description: Découvrez les nouveautés et surveillez les dernières modifications dans les bibliothèques de gestion Azure pour .NET.
-keywords: Azure, .NET, API, référence, notes, mises à jour, déconseiller
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 48ff29507268f6b38acb24217801cf7b0227e444
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: dac9dee9c25fc349dedd50d6007f25c7d15b0928
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005906"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190672"
 ---
 # <a name="release-notes"></a>Notes de publication 
 
@@ -57,7 +48,7 @@ ms.locfileid: "31005906"
   <tr>
     <td>Plus de services</td>
     <td>Gestionnaire de ressources<br>Key Vault<br>Redis<br>CDN<br>Batch</td>
-    <td valign="top">App Service - Web Apps<br>Functions<br>Service Bus</td>
+    <td valign="top">App Service - Web Apps<br>Fonctions<br>Service Bus</td>
     <td valign="top">Surveiller<br>Graphique RBAC<br>Azure Cosmos DB<br>Scheduler</td>
   </tr>
   <tr>

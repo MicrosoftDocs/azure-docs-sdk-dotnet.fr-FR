@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure StorSimple pour .NET
 description: Référence pour les bibliothèques Azure StorSimple pour .NET
-keywords: Azure, .NET, SDK, API, StorSimple
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/27/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: storsimple
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 818c48a0f45812841eb0e8c3928b59f6681892cf
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: ecaa1acb0d988f7312645c2e6ed8f3289e51237c
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065899"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190362"
 ---
 # <a name="azure-storsimple-libraries-for-net"></a>Bibliothèques Azure StorSimple pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Microsoft Azure StorSimple est une solution de stockage d’entreprise qui fournit des interfaces physiques iSCSI ou SMB au stockage sur le Cloud. 
 

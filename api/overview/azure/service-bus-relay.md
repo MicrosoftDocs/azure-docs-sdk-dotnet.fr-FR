@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Service Bus Relay pour .NET
 description: Référence pour les bibliothèques Azure Service Bus Relay pour .NET
-keywords: Azure, .NET, SDK, API, Service Bus Relay
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: service-bus
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: e0dd9c9b0a187fe6ca81d764e60afd00cbaab654
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 75c481ab23e461c5194a9eeb0ca668af98f4d2d7
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065949"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47189982"
 ---
 # <a name="azure-service-bus-relay-libraries-for-net"></a>Bibliothèques Azure Service Bus Relay pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le service Azure Relay crée des applications hybrides en offrant la possibilité d’exposer les services qui résident dans un réseau d’entreprise sur le cloud public en toute sécurité, sans avoir à ouvrir une connexion de pare-feu ni à exiger des modifications intrusives dans une infrastructure de réseau d’entreprise. Azure Relay prend en charge une grande variété de protocoles de transport et normes de services web.
           

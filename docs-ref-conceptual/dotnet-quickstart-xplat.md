@@ -1,28 +1,19 @@
 ---
 title: Déployer sur Azure à partir de la ligne de commande avec .NET Core
 description: Cet article explique comment déployer une application ASP.NET Core sur Azure App Service à l’aide d’outils en ligne de commande.
-keywords: Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure
-author: camsoper
-manager: douge
-ms.author: casoper
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.openlocfilehash: 8371c304681ff88cba6f1cc3ba0d1caef836d609
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: a29f5474dcfedc6f8d044f09ad4d54c5be6a371f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005876"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190492"
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>Déployer sur Azure à partir de la ligne de commande avec .NET Core
 
 Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de .NET CORE.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure Cosmos DB pour stocker des données.
 
 ## <a name="prerequisites"></a>Prérequis
-
 
 * Un [Abonnement Microsoft Azure](https://azure.microsoft.com/free/)
 * [.NET core](https://www.microsoft.com/net/download/core) (facultatif)

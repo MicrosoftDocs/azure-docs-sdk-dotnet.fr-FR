@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure IoT pour .NET
 description: Référence pour les bibliothèques Azure IoT pour .NET
-keywords: Azure, .NET, SDK, API, IoT
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: iot-hub
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: af823e910acedd4f204034b12a31ba61fd53e090
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 54182d8fabec0d3aee3ca3b58c7315bdf43cc24e
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065269"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190182"
 ---
 # <a name="azure-iot-libraries-for-net"></a>Bibliothèques Azure IoT pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 [Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/) est un service entièrement géré qui permet des communications bidirectionnelles fiables et sécurisées entre des millions d’appareils et un serveur principal de solution.
 

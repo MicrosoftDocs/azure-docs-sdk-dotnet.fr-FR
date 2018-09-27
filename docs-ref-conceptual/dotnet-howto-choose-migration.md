@@ -1,22 +1,15 @@
 ---
 title: Choisir l’option d’hébergement Azure appropriée
 description: Découvrez le chemin de migration Azure adapté à votre application web ASP.NET.
-keywords: Azure .NET, ASP.NET, App Service, machine virtuelle, application web, migrer, migration
 author: CESARDELATORRE
-manager: wpickett
 ms.author: cesardl
 ms.date: 11/15/2017
-ms.topic: article
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter, casoper
-ms.openlocfilehash: dbf54bb1a6e3d612ef8363a6b30e06b388b4490f
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: 7c0d10436efa86c3d4a60f80e2eebd935ee01cee
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588462"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190612"
 ---
 # <a name="choose-the-right-azure-hosting-option"></a>Choisir l’option d’hébergement Azure appropriée
 
@@ -40,7 +33,7 @@ Le tableau suivant comporte plusieurs comparaisons et recommandations qui vont v
 |Quand utiliser      |<ul><li>L’application dépend fortement des installations .msi en local et sur le serveur.</li><li>Vous souhaitez le chemin de migration d’application le plus simple qui soit</li></ul>|L’application ne dispose d’aucune dépendance sur le serveur. Il s’agit simplement d’une application web ASP.NET propre (MVC, Web Forms) ou d’une application multiniveau (API web, WCf) accédant à un serveur de base de données. |<ul><li>L’application possède des dépendances sur le serveur d’origine, mais ces dernières peuvent être incluses dans l’image Windows Docker.</li><li>Vous souhaiter moderniser l’application pour la rendre [compatible avec Cloud DevOps](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications)</li></ul>|
 |Avantages  |<ul><li>Le chemin de migration le plus simple</li><li>Un environnement familier. L’environnement de déploiement est une machine virtuelle très similaire à celle se trouvant sur les serveurs locaux.</li></ul> |La maintenance PaaS continue est la façon la plus simple de gérer et de mettre à l’échelle des applications dans Azure. |<ul><li>Une application évolutive, compatible avec Cloud DevOps dotée de dépendances incluses dans les conteneurs de l’application.</li><li>Il n’est quasiment pas nécessaire de refactoriser le code .NET /C#.</li></ul> |
 |Inconvénients             |Il s’agit d’une IaaS. La maintenance est coûteuse. Vous devez gérer l’infrastructure des machines virtuelles pour la mise en réseau, l’équilibrage de la charge, l’augmentation de la taille des instances, la gestion IIS, etc. |<ul><li>Toutes les applications ne sont [pas prises en charge](http://www.migratetoazure.net/ReadinessAssessment).</li><li>Certaines applications peuvent nécessiter une refactorisation et même une légère restructuration pour une prise en charge d’Azure App Service.</li></ul> |<ul><li>Courbe d’apprentissage des compétences de Docker</li><li>Modification de certains paramètres de configuration d’application et de code</li></ul>|
-|Configuration requise |Machine virtuelle Windows Server avec la même configuration que l’application pour un environnement local | Les conditions requises pour Azure App Service sont définies au niveau de l’[analyse de compatibilité pour Azure App Service](https://www.migratetoazure.net/Resources). |<ul><li>[Windows Server 2016 avec des conteneurs - Machine virtuelle Azure](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WindowsServer?tab=Overview)<br />ou</li><li>[Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) (il s’agit de l’orchestrateur Kubernetes)<br />ou<li>Orchestrateur [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)</li></ul> |
+|Configuration requise |Machine virtuelle Windows Server avec la même configuration que l’application pour un environnement local | Les conditions requises pour Azure App Service sont définies au niveau de l’[analyse de compatibilité pour Azure App Service](https://www.migratetoazure.net/Resources). |<ul><li>[Windows Server 2016 avec des conteneurs - Machine virtuelle Azure](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WindowsServer?tab=Overview)<br />or</li><li>[Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) (il s’agit de l’orchestrateur Kubernetes)<br />or<li>Orchestrateur [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)</li></ul> |
 |Migration |Voir [Migrate to Azure Virtual Machines](https://go.microsoft.com/fwlink/?linkid=862531) (Migrer vers des machines virtuelles Azure) | Voir [Migrate Azure App Service](https://go.microsoft.com/fwlink/?linkid=862532) (Migrer Azure App Service) | Suivez les considérations, les scénarios et les procédures pas à pas évoqués dans le [livre électronique sur la modernisation des applications .NET existantes avec des conteneurs Azure et Windows](https://aka.ms/liftandshiftwithcontainersebook) |
 
  Le diagramme suivant montre un arbre de décision lié à une planification de migration vers Azure pour vos applications .NET Framework existantes. Sachant que l’option A est la première option à essayer si elle est viable et l’option B le chemin d’accès plus facile à suivre.

@@ -1,28 +1,19 @@
 ---
 title: Déployer sur Azure à partir de Visual Studio
 description: Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET.
-keywords: Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure
-author: camsoper
-manager: douge
-ms.author: casoper
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.openlocfilehash: 87f65d8b8b1b1a5184b9d71770c08be472c7e498
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: a4ddaa0dbf1cd71a0de031cc89b299baa381992c
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005886"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190422"
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>Déployer sur Azure à partir de Visual Studio
 
 Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET.  Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure Cosmos DB pour stocker des données.
 
 ## <a name="prerequisites"></a>Prérequis
-
 
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * Un [Abonnement Microsoft Azure](https://azure.microsoft.com/free/)

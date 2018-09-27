@@ -1,22 +1,14 @@
 ---
 title: Déployer une base de données SQL Server vers Azure
 description: Découvrez comment migrer une base de données SQL Server depuis un serveur SQL local vers Azure.
-keywords: Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, migrer, migration
-author: camsoper
-manager: wpickett
-ms.author: casoper
 ms.date: 11/15/2017
-ms.topic: article
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: sql-database
-ms.custom: devcenter
-ms.openlocfilehash: d118d39e2168686c851f0daa6cb611f0a0c9d2fc
-ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
+ms.openlocfilehash: 49b03632b8ebe31439b3c39629fdaf751412fd5a
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
-ms.locfileid: "29728490"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190512"
 ---
 ## <a name="migrate-a-sql-server-database-to-azure"></a>Déployer une base de données SQL Server vers Azure
 
@@ -66,7 +58,7 @@ Lorsque vous étudiez vers où migrer votre base de données, vous devez déterm
 
 Le tableau suivant décrit les différences entre chaque service basé sur un jeu de scénarios.
 
-| Scénario | SQL Server sur des machines virtuelles Azure | Base de données SQL Azure |
+| Scénario | SQL Server sur des machines virtuelles Azure | Azure SQL Database |
 |----------|-------------------------|--------------------|
 | Migration | Nécessite d’apporter des modifications mineures à votre base de données. | Peut nécessiter des modifications de votre base de données si vous utilisez des fonctionnalités non disponibles dans Azure SQL, comme déterminé par l’[Assistant Migration de données](https://www.microsoft.com/download/details.aspx?id=53595), ou si vous avez d’autres dépendances, telles que des fichiers exécutables installés en local.|
 | Gestion de la disponibilité, de la récupération et des mises à niveau | La disponibilité et la récupération sont configurées manuellement. Les mises à niveau peuvent être automatisées avec [Microsoft Azure Virtual Machine Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade). | Géré automatiquement. |
@@ -90,7 +82,7 @@ Pour en savoir plus sur les différences entre les deux, lisez Choose a cloud SQ
 
     Oui.  La [calculatrice de prix Azure](https://azure.microsoft.com/pricing/calculator/) peut être utilisé pour estimer les coûts pour l’ensemble des services Azure, y compris les machines virtuelles et les services de base de données.
     
-## <a name="next-steps"></a>étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Choisir l’option d’hébergement Azure appropriée](dotnet-howto-choose-migration.md)

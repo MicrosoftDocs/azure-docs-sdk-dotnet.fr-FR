@@ -1,25 +1,19 @@
 ---
 title: Azure Recovery Services et bibliothèques de sauvegarde pour .NET
 description: Références sur Azure Recovery Services et les bibliothèques de sauvegarde pour .NET
-keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Recovery Services, sauvegarde
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: recovery-services
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 6186411b668d0950328b49bb826e5b05c5ee0304
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: c0381ce9a566b5371faca24307edc7b26174e785
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065429"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190788"
 ---
 # <a name="azure-recovery-services-and-backup-libraries-for-net"></a>Azure Recovery Services et bibliothèques de sauvegarde pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Azure Recovery Services est une suite de services de récupération de données, incluant [Sauvegarde Azure](/azure/backup/) et [Azure Site Recovery](/azure/site-recovery/).
 

@@ -1,25 +1,19 @@
 ---
 title: Bibliothèques Azure Data Lake Analytics pour .NET
 description: Référence pour les bibliothèques Azure Data Lake Analytics pour .NET
-keywords: Azure, .NET, Kit de développement logiciel (SDK), API, Data Lake Analytics
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: data-lake-analytics
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: a4340844906d7ccf2612ce17dae13e1fce257da0
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 829f9245ae06c64c4ad9a175fd25c742533a284e
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065679"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47189792"
 ---
 # <a name="azure-data-lake-analytics-libraries-for-net"></a>Bibliothèques Azure Data Lake Analytics pour .NET
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Azure Data Lake Analytics est un service de travaux d’analyse à la demande, qui simplifie l’analyse du Big Data.
 
