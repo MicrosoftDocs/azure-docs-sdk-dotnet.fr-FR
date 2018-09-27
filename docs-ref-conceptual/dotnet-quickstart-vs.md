@@ -1,35 +1,26 @@
 ---
 title: Déployer sur Azure à partir de Visual Studio
 description: Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET.
-keywords: Azure .NET, SDK, référence API Azure .NET, bibliothèques de classes .NET Azure
-author: camsoper
-manager: douge
-ms.author: casoper
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.openlocfilehash: 87f65d8b8b1b1a5184b9d71770c08be472c7e498
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: a4ddaa0dbf1cd71a0de031cc89b299baa381992c
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005886"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190422"
 ---
-# <a name="deploy-to-azure-from-visual-studio"></a><span data-ttu-id="18534-104">Déployer sur Azure à partir de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="18534-104">Deploy to Azure from Visual Studio</span></span>
+# <a name="deploy-to-azure-from-visual-studio"></a><span data-ttu-id="c0d16-103">Déployer sur Azure à partir de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="c0d16-103">Deploy to Azure from Visual Studio</span></span>
 
-<span data-ttu-id="18534-105">Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET.</span><span class="sxs-lookup"><span data-stu-id="18534-105">This tutorial will walk you through building and deploying a Microsoft Azure application using Visual Studio and .NET.</span></span>  <span data-ttu-id="18534-106">Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure Cosmos DB pour stocker des données.</span><span class="sxs-lookup"><span data-stu-id="18534-106">When finished, you'll have a web-based to-do application built in ASP.NET MVC Core, hosted as an Azure Web App, and using Azure Cosmos DB for data storage.</span></span>
+<span data-ttu-id="c0d16-104">Ce didacticiel vous guide dans la création et le déploiement d’une application Microsoft Azure à l’aide de Visual Studio et .NET.</span><span class="sxs-lookup"><span data-stu-id="c0d16-104">This tutorial will walk you through building and deploying a Microsoft Azure application using Visual Studio and .NET.</span></span>  <span data-ttu-id="c0d16-105">Une fois terminé, vous avez une application de tâche web dans ASP.NET MVC Core, qui est hébergée comme une application web Azure et utilise Azure Cosmos DB pour stocker des données.</span><span class="sxs-lookup"><span data-stu-id="c0d16-105">When finished, you'll have a web-based to-do application built in ASP.NET MVC Core, hosted as an Azure Web App, and using Azure Cosmos DB for data storage.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="18534-107">Prérequis
-</span><span class="sxs-lookup"><span data-stu-id="18534-107">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c0d16-106">Prérequis</span><span class="sxs-lookup"><span data-stu-id="c0d16-106">Prerequisites</span></span>
 
-* [<span data-ttu-id="18534-108">Visual Studio 2017</span><span class="sxs-lookup"><span data-stu-id="18534-108">Visual Studio 2017</span></span>](https://www.visualstudio.com/downloads/)
-* <span data-ttu-id="18534-109">Un [Abonnement Microsoft Azure](https://azure.microsoft.com/free/)</span><span class="sxs-lookup"><span data-stu-id="18534-109">A [Microsoft Azure subscription](https://azure.microsoft.com/free/)</span></span>
+* [<span data-ttu-id="c0d16-107">Visual Studio 2017</span><span class="sxs-lookup"><span data-stu-id="c0d16-107">Visual Studio 2017</span></span>](https://www.visualstudio.com/downloads/)
+* <span data-ttu-id="c0d16-108">Un [Abonnement Microsoft Azure](https://azure.microsoft.com/free/)</span><span class="sxs-lookup"><span data-stu-id="c0d16-108">A [Microsoft Azure subscription](https://azure.microsoft.com/free/)</span></span>
 
-## <a name="create-an-azure-cosmos-db-account"></a><span data-ttu-id="18534-110">Création d’un compte Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="18534-110">Create an Azure Cosmos DB account</span></span>
+## <a name="create-an-azure-cosmos-db-account"></a><span data-ttu-id="c0d16-109">Création d’un compte Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="c0d16-109">Create an Azure Cosmos DB account</span></span>
 
-<span data-ttu-id="18534-111">Dans ce tutoriel, nous utilisons Azure Cosmos DB pour stocker des données ; vous devez donc créer un compte.</span><span class="sxs-lookup"><span data-stu-id="18534-111">Azure Cosmos DB is used for data storage in this tutorial, so you'll need to create an account.</span></span>  <span data-ttu-id="18534-112">Exécutez ce script en local ou dans Cloud Shell pour créer un compte d’API SQL Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="18534-112">Run this script locally or in the Cloud Shell to create an Azure Cosmos DB SQL API account.</span></span>  <span data-ttu-id="18534-113">Cliquez sur le bouton **Essayer** sur le bloc de code ci-dessous pour lancer [Azure Cloud Shell](/azure/cloud-shell/) puis copiez/collez le bloc de script dans l’interpréteur de commandes.</span><span class="sxs-lookup"><span data-stu-id="18534-113">Click the **Try it** button on the code block below to launch the [Azure Cloud Shell](/azure/cloud-shell/) and copy/paste the script block into the shell.</span></span>
+<span data-ttu-id="c0d16-110">Dans ce tutoriel, nous utilisons Azure Cosmos DB pour stocker des données ; vous devez donc créer un compte.</span><span class="sxs-lookup"><span data-stu-id="c0d16-110">Azure Cosmos DB is used for data storage in this tutorial, so you'll need to create an account.</span></span>  <span data-ttu-id="c0d16-111">Exécutez ce script en local ou dans Cloud Shell pour créer un compte d’API SQL Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="c0d16-111">Run this script locally or in the Cloud Shell to create an Azure Cosmos DB SQL API account.</span></span>  <span data-ttu-id="c0d16-112">Cliquez sur le bouton **Essayer** sur le bloc de code ci-dessous pour lancer [Azure Cloud Shell](/azure/cloud-shell/) puis copiez/collez le bloc de script dans l’interpréteur de commandes.</span><span class="sxs-lookup"><span data-stu-id="c0d16-112">Click the **Try it** button on the code block below to launch the [Azure Cloud Shell](/azure/cloud-shell/) and copy/paste the script block into the shell.</span></span>
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
@@ -51,66 +42,66 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 ```
 
-<span data-ttu-id="18534-114">Notez les valeurs **authkey** et **endpoint** affichées.</span><span class="sxs-lookup"><span data-stu-id="18534-114">Make a note of the displayed **authKey** and **endpoint**</span></span> 
+<span data-ttu-id="c0d16-113">Notez les valeurs **authkey** et **endpoint** affichées.</span><span class="sxs-lookup"><span data-stu-id="c0d16-113">Make a note of the displayed **authKey** and **endpoint**</span></span> 
 
-## <a name="downloading-and-running-the-application"></a><span data-ttu-id="18534-115">Téléchargement et exécution de l’application</span><span class="sxs-lookup"><span data-stu-id="18534-115">Downloading and running the application</span></span>
+## <a name="downloading-and-running-the-application"></a><span data-ttu-id="c0d16-114">Téléchargement et exécution de l’application</span><span class="sxs-lookup"><span data-stu-id="c0d16-114">Downloading and running the application</span></span>
 
-<span data-ttu-id="18534-116">Nous allons maintenant obtenir l’exemple de code pour ce guide et le connecter à votre compte Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="18534-116">Let's get the sample code for this walkthrough and hook it up to your Azure Cosmos DB account.</span></span>
+<span data-ttu-id="c0d16-115">Nous allons maintenant obtenir l’exemple de code pour ce guide et le connecter à votre compte Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="c0d16-115">Let's get the sample code for this walkthrough and hook it up to your Azure Cosmos DB account.</span></span>
 
-1. <span data-ttu-id="18534-117">Téléchargez l’exemple de code.</span><span class="sxs-lookup"><span data-stu-id="18534-117">Download the sample code.</span></span>  <span data-ttu-id="18534-118">Vous pouvez [l’obtenir à partir de GitHub](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/), ou le cloner sur votre ordinateur local si vous disposez du [client de ligne de commande git](https://git-scm.com/), avec la commande suivante :</span><span class="sxs-lookup"><span data-stu-id="18534-118">You can [get it from GitHub](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/), or if you have the [git command line client](https://git-scm.com/), clone it to your local machine with the following command:</span></span>
+1. <span data-ttu-id="c0d16-116">Téléchargez l’exemple de code.</span><span class="sxs-lookup"><span data-stu-id="c0d16-116">Download the sample code.</span></span>  <span data-ttu-id="c0d16-117">Vous pouvez [l’obtenir à partir de GitHub](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/), ou le cloner sur votre ordinateur local si vous disposez du [client de ligne de commande git](https://git-scm.com/), avec la commande suivante :</span><span class="sxs-lookup"><span data-stu-id="c0d16-117">You can [get it from GitHub](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/), or if you have the [git command line client](https://git-scm.com/), clone it to your local machine with the following command:</span></span>
 
     ```cmd
     git clone https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart
     ```
 
-2. <span data-ttu-id="18534-119">Ouvrez **todo.csproj** dans Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="18534-119">Open **todo.csproj** in Visual Studio.</span></span>
+2. <span data-ttu-id="c0d16-118">Ouvrez **todo.csproj** dans Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="c0d16-118">Open **todo.csproj** in Visual Studio.</span></span>
 
-3. <span data-ttu-id="18534-120">Ouvrez **appsettings.json** dans le projet web.</span><span class="sxs-lookup"><span data-stu-id="18534-120">Open **appsettings.json** in the web project.</span></span>  <span data-ttu-id="18534-121">Recherchez les lignes suivantes :</span><span class="sxs-lookup"><span data-stu-id="18534-121">Look for the following lines:</span></span>
+3. <span data-ttu-id="c0d16-119">Ouvrez **appsettings.json** dans le projet web.</span><span class="sxs-lookup"><span data-stu-id="c0d16-119">Open **appsettings.json** in the web project.</span></span>  <span data-ttu-id="c0d16-120">Recherchez les lignes suivantes :</span><span class="sxs-lookup"><span data-stu-id="c0d16-120">Look for the following lines:</span></span>
 
     ```json
     "authKey": "AUTHKEYVALUE",
     "endpoint": "ENDPOINTVALUE",
     ```
-    <span data-ttu-id="18534-122">Remplacez les valeurs **AUTHKEYVALUE** et **ENDPOINTVALUE** par les valeurs que vous avez notées précédemment.</span><span class="sxs-lookup"><span data-stu-id="18534-122">Replace **AUTHKEYVALUE** and **ENDPOINTVALUE** with the values you noted earlier.</span></span>
+    <span data-ttu-id="c0d16-121">Remplacez les valeurs **AUTHKEYVALUE** et **ENDPOINTVALUE** par les valeurs que vous avez notées précédemment.</span><span class="sxs-lookup"><span data-stu-id="c0d16-121">Replace **AUTHKEYVALUE** and **ENDPOINTVALUE** with the values you noted earlier.</span></span>
 
-4. <span data-ttu-id="18534-123">Appuyez sur **F5** pour restaurer les packages NuGet du projet, générez le projet et exécutez-le localement.</span><span class="sxs-lookup"><span data-stu-id="18534-123">Press **F5** to restore the project's NuGet packages, build the project, and run it locally.</span></span>
+4. <span data-ttu-id="c0d16-122">Appuyez sur **F5** pour restaurer les packages NuGet du projet, générez le projet et exécutez-le localement.</span><span class="sxs-lookup"><span data-stu-id="c0d16-122">Press **F5** to restore the project's NuGet packages, build the project, and run it locally.</span></span>
 
-<span data-ttu-id="18534-124">L’application web doit s’exécuter localement dans votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="18534-124">The web application should run locally in your browser.</span></span>  <span data-ttu-id="18534-125">Vous pouvez ajouter de nouveaux éléments à la liste des tâches en cliquant sur **Créer nouveau**.</span><span class="sxs-lookup"><span data-stu-id="18534-125">You can add new items to the to-do list by clicking **Create New**.</span></span>  <span data-ttu-id="18534-126">Remarque : les données que vous entrez dans l’application sont stockées dans votre compte Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="18534-126">Note the data you enter in the application is being stored in your Azure Cosmos DB account.</span></span>  <span data-ttu-id="18534-127">Vous pouvez afficher vos données dans le [Portail Azure](https://portal.azure.com) en sélectionnant Azure Cosmos DB à partir du menu de gauche, en sélectionnant votre compte, puis en sélectionnant **Explorateur de données**.</span><span class="sxs-lookup"><span data-stu-id="18534-127">You can view your data in the [Azure portal](https://portal.azure.com) by selecting Azure Cosmos DB from the left menu, selecting your account, and then selecting **Data Explorer**.</span></span>
+<span data-ttu-id="c0d16-123">L’application web doit s’exécuter localement dans votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="c0d16-123">The web application should run locally in your browser.</span></span>  <span data-ttu-id="c0d16-124">Vous pouvez ajouter de nouveaux éléments à la liste des tâches en cliquant sur **Créer nouveau**.</span><span class="sxs-lookup"><span data-stu-id="c0d16-124">You can add new items to the to-do list by clicking **Create New**.</span></span>  <span data-ttu-id="c0d16-125">Remarque : les données que vous entrez dans l’application sont stockées dans votre compte Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="c0d16-125">Note the data you enter in the application is being stored in your Azure Cosmos DB account.</span></span>  <span data-ttu-id="c0d16-126">Vous pouvez afficher vos données dans le [Portail Azure](https://portal.azure.com) en sélectionnant Azure Cosmos DB à partir du menu de gauche, en sélectionnant votre compte, puis en sélectionnant **Explorateur de données**.</span><span class="sxs-lookup"><span data-stu-id="c0d16-126">You can view your data in the [Azure portal](https://portal.azure.com) by selecting Azure Cosmos DB from the left menu, selecting your account, and then selecting **Data Explorer**.</span></span>
 
-## <a name="deploying-the-application-as-an-azure-web-app"></a><span data-ttu-id="18534-128">Déploiement de l’application en tant qu’application web Azure</span><span class="sxs-lookup"><span data-stu-id="18534-128">Deploying the application as an Azure Web App</span></span>
+## <a name="deploying-the-application-as-an-azure-web-app"></a><span data-ttu-id="c0d16-127">Déploiement de l’application en tant qu’application web Azure</span><span class="sxs-lookup"><span data-stu-id="c0d16-127">Deploying the application as an Azure Web App</span></span>
 
-<span data-ttu-id="18534-129">Vous avez créé avec succès une application qui utilise des services Azure tels que Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="18534-129">You've successfully built an application that uses Azure services like Azure Cosmos DB.</span></span>  <span data-ttu-id="18534-130">Nous allons ensuite déployer notre application web dans le cloud.</span><span class="sxs-lookup"><span data-stu-id="18534-130">Next, we'll deploy our web application to the cloud.</span></span>
+<span data-ttu-id="c0d16-128">Vous avez créé avec succès une application qui utilise des services Azure tels que Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="c0d16-128">You've successfully built an application that uses Azure services like Azure Cosmos DB.</span></span>  <span data-ttu-id="c0d16-129">Nous allons ensuite déployer notre application web dans le cloud.</span><span class="sxs-lookup"><span data-stu-id="c0d16-129">Next, we'll deploy our web application to the cloud.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="18534-131">Assurez-vous d’être connecté à Visual Studio avec le compte associé à votre abonnement Azure.</span><span class="sxs-lookup"><span data-stu-id="18534-131">Be sure you're signed into Visual Studio with the same account your Azure subscription is associated with.</span></span>
+> <span data-ttu-id="c0d16-130">Assurez-vous d’être connecté à Visual Studio avec le compte associé à votre abonnement Azure.</span><span class="sxs-lookup"><span data-stu-id="c0d16-130">Be sure you're signed into Visual Studio with the same account your Azure subscription is associated with.</span></span>
 
-1. <span data-ttu-id="18534-132">Dans l’explorateur de solution de Visual Studio, cliquez avec le bouton droit sur le nom du projet et sélectionnez **Publier...**</span><span class="sxs-lookup"><span data-stu-id="18534-132">In Visual Studio Solution Explorer, right-click on the project name and select **Publish...**</span></span>
+1. <span data-ttu-id="c0d16-131">Dans l’explorateur de solution de Visual Studio, cliquez avec le bouton droit sur le nom du projet et sélectionnez **Publier...**</span><span class="sxs-lookup"><span data-stu-id="c0d16-131">In Visual Studio Solution Explorer, right-click on the project name and select **Publish...**</span></span>
 
-2. <span data-ttu-id="18534-133">Dans la boîte de dialogue Publier, sélectionnez **Microsoft Azure App Service**, choisissez **Créer nouveau**, puis cliquez sur **Publier**</span><span class="sxs-lookup"><span data-stu-id="18534-133">Using the Publish dialog, select **Microsoft Azure App Service**, select **Create New**, and then click **Publish**</span></span>
+2. <span data-ttu-id="c0d16-132">Dans la boîte de dialogue Publier, sélectionnez **Microsoft Azure App Service**, choisissez **Créer nouveau**, puis cliquez sur **Publier**</span><span class="sxs-lookup"><span data-stu-id="c0d16-132">Using the Publish dialog, select **Microsoft Azure App Service**, select **Create New**, and then click **Publish**</span></span>
 
-3. <span data-ttu-id="18534-134">Renseignez la boîte de dialogue Créer App Service comme suit :</span><span class="sxs-lookup"><span data-stu-id="18534-134">Complete the Create App Service dialog as follows:</span></span>
+3. <span data-ttu-id="c0d16-133">Renseignez la boîte de dialogue Créer App Service comme suit :</span><span class="sxs-lookup"><span data-stu-id="c0d16-133">Complete the Create App Service dialog as follows:</span></span>
 
-    * <span data-ttu-id="18534-135">Entrez un**Nom de l’application web** unique.</span><span class="sxs-lookup"><span data-stu-id="18534-135">Enter a unique **Web App Name**.</span></span>  <span data-ttu-id="18534-136">Il apparaîtra dans l’URL de votre application.</span><span class="sxs-lookup"><span data-stu-id="18534-136">This will be part of the URL for your app.</span></span>
-    * <span data-ttu-id="18534-137">Sélectionnez l’**Abonnement** Azure sur lequel déployer l’application.</span><span class="sxs-lookup"><span data-stu-id="18534-137">Select the Azure **Subscription** you're deploying to.</span></span>  <span data-ttu-id="18534-138">Utilisez l’abonnement que vous avez utilisé pour vous connecter à Cloud Shell précédemment.</span><span class="sxs-lookup"><span data-stu-id="18534-138">Use same subscription with which you were logged into Cloud Shell earlier.</span></span>
-    * <span data-ttu-id="18534-139">Sélectionnez *DotNetAzureTutorial* comme **Groupe de ressources** pour votre application web.</span><span class="sxs-lookup"><span data-stu-id="18534-139">Select *DotNetAzureTutorial* for the **Resource Group** for your web application.</span></span>
-    * <span data-ttu-id="18534-140">Sélectionnez ou créez un **Plan App Service** pour déterminer le coût de votre application.</span><span class="sxs-lookup"><span data-stu-id="18534-140">Select or create an **App Service Plan** to determine the pricing your your application.</span></span>  <span data-ttu-id="18534-141">Voici [plus d’informations sur les plans App Service](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).</span><span class="sxs-lookup"><span data-stu-id="18534-141">Here's [more information about App Service Plans](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).</span></span>
+    * <span data-ttu-id="c0d16-134">Entrez un**Nom de l’application web** unique.</span><span class="sxs-lookup"><span data-stu-id="c0d16-134">Enter a unique **Web App Name**.</span></span>  <span data-ttu-id="c0d16-135">Il apparaîtra dans l’URL de votre application.</span><span class="sxs-lookup"><span data-stu-id="c0d16-135">This will be part of the URL for your app.</span></span>
+    * <span data-ttu-id="c0d16-136">Sélectionnez l’**Abonnement** Azure sur lequel déployer l’application.</span><span class="sxs-lookup"><span data-stu-id="c0d16-136">Select the Azure **Subscription** you're deploying to.</span></span>  <span data-ttu-id="c0d16-137">Utilisez l’abonnement que vous avez utilisé pour vous connecter à Cloud Shell précédemment.</span><span class="sxs-lookup"><span data-stu-id="c0d16-137">Use same subscription with which you were logged into Cloud Shell earlier.</span></span>
+    * <span data-ttu-id="c0d16-138">Sélectionnez *DotNetAzureTutorial* comme **Groupe de ressources** pour votre application web.</span><span class="sxs-lookup"><span data-stu-id="c0d16-138">Select *DotNetAzureTutorial* for the **Resource Group** for your web application.</span></span>
+    * <span data-ttu-id="c0d16-139">Sélectionnez ou créez un **Plan App Service** pour déterminer le coût de votre application.</span><span class="sxs-lookup"><span data-stu-id="c0d16-139">Select or create an **App Service Plan** to determine the pricing your your application.</span></span>  <span data-ttu-id="c0d16-140">Voici [plus d’informations sur les plans App Service](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).</span><span class="sxs-lookup"><span data-stu-id="c0d16-140">Here's [more information about App Service Plans](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).</span></span>
 
-4. <span data-ttu-id="18534-142">Cliquez sur **Créer** pour déployer l’application.</span><span class="sxs-lookup"><span data-stu-id="18534-142">Click **Create** to deploy the application.</span></span>  <span data-ttu-id="18534-143">Lorsque le déploiement est terminé, un navigateur s’ouvre avec votre application déployée.</span><span class="sxs-lookup"><span data-stu-id="18534-143">When deployment is complete, a browser will open with your deployed application.</span></span>
+4. <span data-ttu-id="c0d16-141">Cliquez sur **Créer** pour déployer l’application.</span><span class="sxs-lookup"><span data-stu-id="c0d16-141">Click **Create** to deploy the application.</span></span>  <span data-ttu-id="c0d16-142">Lorsque le déploiement est terminé, un navigateur s’ouvre avec votre application déployée.</span><span class="sxs-lookup"><span data-stu-id="c0d16-142">When deployment is complete, a browser will open with your deployed application.</span></span>
 
 ![L’application terminée](./media/dotnet-quickstart/todo.png)
 
-## <a name="clean-up"></a><span data-ttu-id="18534-145">Nettoyer</span><span class="sxs-lookup"><span data-stu-id="18534-145">Clean up</span></span>
+## <a name="clean-up"></a><span data-ttu-id="c0d16-144">Nettoyer</span><span class="sxs-lookup"><span data-stu-id="c0d16-144">Clean up</span></span>
 
-<span data-ttu-id="18534-146">Lorsque vous avez terminé de tester l’application et d’inspecter le code et les ressources, vous pouvez supprimer le compte d’Azure Cosmos DB et de l’application web en supprimant le groupe de ressources dans Cloud Shell.</span><span class="sxs-lookup"><span data-stu-id="18534-146">When you're done testing the app and inspecting the code and resources, you can delete the Web App and Azure Cosmos DB account by deleting the resource group in the Cloud Shell.</span></span>
+<span data-ttu-id="c0d16-145">Lorsque vous avez terminé de tester l’application et d’inspecter le code et les ressources, vous pouvez supprimer le compte d’Azure Cosmos DB et de l’application web en supprimant le groupe de ressources dans Cloud Shell.</span><span class="sxs-lookup"><span data-stu-id="c0d16-145">When you're done testing the app and inspecting the code and resources, you can delete the Web App and Azure Cosmos DB account by deleting the resource group in the Cloud Shell.</span></span>
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="18534-147">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="18534-147">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="c0d16-146">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="c0d16-146">Next steps</span></span>
 
-* [<span data-ttu-id="18534-148">Utiliser Azure Active Directory pour s’authentifier dans une application web ASP.NET</span><span class="sxs-lookup"><span data-stu-id="18534-148">Use Azure Active Directory for authentication in an ASP.NET web application</span></span>](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)
-* [<span data-ttu-id="18534-149">Créer une application web Azure à l’aide d’Azure SQL Database</span><span class="sxs-lookup"><span data-stu-id="18534-149">Build an Azure Web App using Azure SQL Database</span></span>](/azure/app-service-web/web-sites-dotnet-get-started)
-* [<span data-ttu-id="18534-150">Essayer un exemple d’application .NET avec le stockage Azure</span><span class="sxs-lookup"><span data-stu-id="18534-150">Try a .NET sample application with Azure Storage</span></span>](/azure/storage/storage-samples-dotnet)
+* [<span data-ttu-id="c0d16-147">Utiliser Azure Active Directory pour s’authentifier dans une application web ASP.NET</span><span class="sxs-lookup"><span data-stu-id="c0d16-147">Use Azure Active Directory for authentication in an ASP.NET web application</span></span>](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)
+* [<span data-ttu-id="c0d16-148">Créer une application web Azure à l’aide d’Azure SQL Database</span><span class="sxs-lookup"><span data-stu-id="c0d16-148">Build an Azure Web App using Azure SQL Database</span></span>](/azure/app-service-web/web-sites-dotnet-get-started)
+* [<span data-ttu-id="c0d16-149">Essayer un exemple d’application .NET avec le stockage Azure</span><span class="sxs-lookup"><span data-stu-id="c0d16-149">Try a .NET sample application with Azure Storage</span></span>](/azure/storage/storage-samples-dotnet)
 
 
