@@ -1,20 +1,15 @@
 ---
 title: Bibliothèques Azure Event Grid pour .NET
 description: Référence pour les bibliothèques Azure Event Grid pour .NET
-author: rloutlaw
-ms.author: routlaw
-manager: angerobe
 ms.date: 04/16/2018
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: event-grid
-ms.custom: devcenter
-ms.openlocfilehash: 894b8a5beaf0507ab50e8eed6a5ab20d10a71ba6
-ms.sourcegitcommit: 61638b504b6c4d96b357894835c80c2680a99fe6
+ms.openlocfilehash: 5b19f8aa8b28b3e4aef528da051b6e7d177f1a2f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750597"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190392"
 ---
 # <a name="azure-event-grid-libraries-for-net"></a>Bibliothèques Azure Event Grid pour .NET
 
@@ -120,7 +115,7 @@ foreach (EventGridEvent receivedEvent in events)
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API clientes](/dotnet/api/overview/azure/eventgrid/client)
+> [Explorer les API de publication](/dotnet/api/overview/azure/eventgrid/publish)
 
 ## <a name="management-sdk"></a>Kit de développement logiciel (SDK) de gestion
 
