@@ -2,12 +2,12 @@
 title: Prise en main d’Azure et .NET
 description: Découvrez les principes de base que vous devez savoir sur Azure et .NET.
 ms.date: 09/19/2018
-ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190592"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348141"
 ---
 # <a name="get-started-with-azure-and-net"></a>Prise en main d’Azure et .NET
 
@@ -63,7 +63,6 @@ Azure propose plusieurs services pour stocker vos données selon vos besoins. Le
 > Pour plus d’informations, consultez [Choisir la bonne banque de données](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>Diagnostic des problèmes dans le Cloud
-
 Une fois que vous déployez votre application dans Azure, vous pouvez rencontrer des cas où cela fonctionne durant le développement, mais pas dans Azure. Vous trouverez ci-dessous deux bons points de départ pour diagnostiquer des problèmes :
 
 * **Débogage à distance à partir de Visual Studio** : la plupart des services de calcul Azure (y compris les services présentés dans ce document) prennent en charge le débogage à distance avec Visual Studio et l’acquisition des journaux. Pour explorer les fonctionnalités de Visual Studio avec votre application, ouvrez la fenêtre d’outil Cloud Explorer en entrant « Cloud Explorer » dans la barre d’outils de lancement rapide de Visual Studio (dans le coin supérieur droit), puis recherchez votre application dans l’arborescence. Pour plus de détails, consultez [Dépanner une application web dans Azure App Service à l’aide de Visual Studio](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).
