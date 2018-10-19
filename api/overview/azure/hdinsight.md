@@ -3,13 +3,13 @@ title: Kit de développement logiciel (SDK) Azure HDInsight .NET
 description: Référence pour le kit de développement logiciel (SDK) Azure HDInsight .NET
 ms.date: 9/19/2018
 ms.topic: reference
-ms.service: hd-insight
-ms.openlocfilehash: d25bdb1c9086cd93190b97f519654f2c193b9dc3
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.service: hdinsight
+ms.openlocfilehash: 35e2c8c07fb2b86b2d0ae9be4f855e369c1aa86d
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190682"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348201"
 ---
 # <a name="azure-hdinsight-net-sdk"></a>Kit de développement logiciel (SDK) Azure HDInsight .NET
 
@@ -122,7 +122,7 @@ Afficher la [liste complète](https://azure.microsoft.com/resources/samples/?pla
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le kit de développement logiciel (SDK) HDInsight .NET fournit des classes et des méthodes qui vous permettent de gérer vos clusters HDInsight. Il inclut des opérations pour créer, supprimer, mettre à jour, répertorier, mettre à l’échelle, exécuter des actions de script, surveiller, obtenir des propriétés de clusters HDInsight, et bien plus encore.
+Le kit de développement logiciel (SDK) HDInsight .NET fournit des classes et des méthodes qui vous permettent de gérer vos clusters HDInsight. Il inclut des opérations permettant de créer, supprimer, mettre à jour, répertorier, mettre à l’échelle, exécuter des actions de script, surveiller, obtenir des propriétés des clusters HDInsight, et bien plus encore.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -463,7 +463,7 @@ client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPat
 client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPatchParameters(new Dictionary<string, string> { { "tag1Name", "tag1Value" }, { "tag2Name", "tag2Value" } }));
 ```
 
-### <a name="scale-cluster"></a>Mettre le cluster à l’échelle
+### <a name="resize-cluster"></a>Redimensionner le cluster
 
 Vous pouvez mettre à l’échelle un nombre donné de clusters de nœuds Worker en spécifiant une nouvelle taille comme suit :
 
