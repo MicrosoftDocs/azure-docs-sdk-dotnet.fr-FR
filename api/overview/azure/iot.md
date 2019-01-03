@@ -4,12 +4,12 @@ description: Référence pour les bibliothèques Azure IoT pour .NET
 ms.date: 10/19/2017
 ms.topic: reference
 ms.service: iot-hub
-ms.openlocfilehash: 54182d8fabec0d3aee3ca3b58c7315bdf43cc24e
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 667663c5f5e3452fcc5ec0c4f3ded997370c5852
+ms.sourcegitcommit: 7f1a1bf275d8489f8df266b746baa33d66fcb2c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190182"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737074"
 ---
 # <a name="azure-iot-libraries-for-net"></a>Bibliothèques Azure IoT pour .NET
 
@@ -49,7 +49,7 @@ Cet exemple se connecte à IoT Hub et envoie un message par seconde.
 string deviceKey = "<deviceKey>";
 string deviceId = "<deviceId>";
 string iotHubHostName = "<IoTHubHostname>";
-DeviceAuthenticationWithRegistrySymmetricKeyvar deviceAuthentication = new DeviceAuthenticationWithRegistrySymmetricKey(deviceId, deviceKey);
+var deviceAuthentication = new DeviceAuthenticationWithRegistrySymmetricKey(deviceId, deviceKey);
 
 DeviceClient deviceClient = DeviceClient.Create(iotHubHostName, deviceAuthentication, TransportType.Mqtt);
 
