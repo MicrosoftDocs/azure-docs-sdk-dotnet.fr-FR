@@ -3,21 +3,21 @@ ms.service: multiple
 ms.date: 9/20/2018
 ms.topic: include
 ms.openlocfilehash: 5c8cb328802cfb94e944e4241852fb9568e8507f
-ms.sourcegitcommit: e25b6ac74033f3b0a7610bf66feb654acb43054c
+ms.sourcegitcommit: e534dad2d96b72ab6a9bc4b5567508962bd7e05c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53430518"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58343328"
 ---
-<span data-ttu-id="d6ba2-101">Votre application .NET a besoin d’autorisations pour lire et créer des ressources dans votre abonnement Azure afin d’utiliser les bibliothèques de gestion Azure pour .NET.</span><span class="sxs-lookup"><span data-stu-id="d6ba2-101">Your .NET application needs permissions to read and create resources in your Azure subscription in order to use the Azure Management Libraries for .NET.</span></span> <span data-ttu-id="d6ba2-102">Créez un principal de service et configurez votre application pour qu’elle s’exécute avec ses informations d’identification pour accorder cet accès.</span><span class="sxs-lookup"><span data-stu-id="d6ba2-102">Create a service principal and configure your app to run with its credentials to grant this access.</span></span> <span data-ttu-id="d6ba2-103">Les principaux de service permettent de créer un compte non interactif associé à votre identité, auquel vous accordez seulement les privilèges que votre application doit exécuter.</span><span class="sxs-lookup"><span data-stu-id="d6ba2-103">Service principals provide a way to create a non-interactive account associated with your identity to which you grant only the privileges your app needs to run.</span></span>
+<span data-ttu-id="11f93-101">Votre application .NET a besoin d’autorisations pour lire et créer des ressources dans votre abonnement Azure afin d’utiliser les bibliothèques de gestion Azure pour .NET.</span><span class="sxs-lookup"><span data-stu-id="11f93-101">Your .NET application needs permissions to read and create resources in your Azure subscription in order to use the Azure Management Libraries for .NET.</span></span> <span data-ttu-id="11f93-102">Créez un principal de service et configurez votre application pour qu’elle s’exécute avec ses informations d’identification pour accorder cet accès.</span><span class="sxs-lookup"><span data-stu-id="11f93-102">Create a service principal and configure your app to run with its credentials to grant this access.</span></span> <span data-ttu-id="11f93-103">Les principaux de service permettent de créer un compte non interactif associé à votre identité, auquel vous accordez seulement les privilèges que votre application doit exécuter.</span><span class="sxs-lookup"><span data-stu-id="11f93-103">Service principals provide a way to create a non-interactive account associated with your identity to which you grant only the privileges your app needs to run.</span></span>
 
-<span data-ttu-id="d6ba2-104">Tout d’abord, connectez-vous à [Azure Cloud Shell](https://shell.azure.com/bash).</span><span class="sxs-lookup"><span data-stu-id="d6ba2-104">First, login to [Azure Cloud Shell](https://shell.azure.com/bash).</span></span> <span data-ttu-id="d6ba2-105">Vérifiez que vous utilisez actuellement l’abonnement dans lequel vous souhaitez que le principal de service soit créé.</span><span class="sxs-lookup"><span data-stu-id="d6ba2-105">Verify you are currently using the subscription in which you want the service principal created.</span></span> 
+<span data-ttu-id="11f93-104">Tout d’abord, connectez-vous à [Azure Cloud Shell](https://shell.azure.com/bash).</span><span class="sxs-lookup"><span data-stu-id="11f93-104">First, login to [Azure Cloud Shell](https://shell.azure.com/bash).</span></span> <span data-ttu-id="11f93-105">Vérifiez que vous utilisez actuellement l’abonnement dans lequel vous souhaitez que le principal de service soit créé.</span><span class="sxs-lookup"><span data-stu-id="11f93-105">Verify you are currently using the subscription in which you want the service principal created.</span></span> 
 
 ```azurecli-interactive
 az account show
 ```
 
-<span data-ttu-id="d6ba2-106">Les information relatives à votre abonnement sont affichées.</span><span class="sxs-lookup"><span data-stu-id="d6ba2-106">Your subscription information is displayed.</span></span>
+<span data-ttu-id="11f93-106">Les information relatives à votre abonnement sont affichées.</span><span class="sxs-lookup"><span data-stu-id="11f93-106">Your subscription information is displayed.</span></span>
 
 ```json
 {
@@ -35,15 +35,15 @@ az account show
 }
 ```
 
-<span data-ttu-id="d6ba2-107">Si vous n’êtes pas connecté au bon abonnement, sélectionnez le bon en saisissant `az account set -s <name or ID of subscription>`.</span><span class="sxs-lookup"><span data-stu-id="d6ba2-107">If you're not logged into the correct subscription, select the correct one by typing `az account set -s <name or ID of subscription>`.</span></span>
+<span data-ttu-id="11f93-107">Si vous n’êtes pas connecté au bon abonnement, sélectionnez le bon en saisissant `az account set -s <name or ID of subscription>`.</span><span class="sxs-lookup"><span data-stu-id="11f93-107">If you're not logged into the correct subscription, select the correct one by typing `az account set -s <name or ID of subscription>`.</span></span>
 
-<span data-ttu-id="d6ba2-108">Créez le principal de service avec la commande suivante :</span><span class="sxs-lookup"><span data-stu-id="d6ba2-108">Create the service principal with the following command:</span></span>
+<span data-ttu-id="11f93-108">Créez le principal de service avec la commande suivante :</span><span class="sxs-lookup"><span data-stu-id="11f93-108">Create the service principal with the following command:</span></span>
 
 ```azurecli-interactive
 az ad sp create-for-rbac --sdk-auth
 ```
 
-<span data-ttu-id="d6ba2-109">Les informations relatives au principal de service sont affichées en tant que JSON.</span><span class="sxs-lookup"><span data-stu-id="d6ba2-109">The service principal information is displayed as JSON.</span></span>
+<span data-ttu-id="11f93-109">Les informations relatives au principal de service sont affichées en tant que JSON.</span><span class="sxs-lookup"><span data-stu-id="11f93-109">The service principal information is displayed as JSON.</span></span>
 
 ```json
 {
@@ -60,4 +60,4 @@ az ad sp create-for-rbac --sdk-auth
 }
 ```
 
-<span data-ttu-id="d6ba2-110">Copiez et collez la sortie JSON dans un éditeur de texte pour plus tard.</span><span class="sxs-lookup"><span data-stu-id="d6ba2-110">Copy and paste the JSON output to a text editor for use later.</span></span>
+<span data-ttu-id="11f93-110">Copiez et collez la sortie JSON dans un éditeur de texte pour plus tard.</span><span class="sxs-lookup"><span data-stu-id="11f93-110">Copy and paste the JSON output to a text editor for use later.</span></span>
