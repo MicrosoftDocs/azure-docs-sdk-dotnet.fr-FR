@@ -127,7 +127,7 @@ var pip = virtualMachine.CreatedRelatedResource(publicIPAddressCreatable.Key()) 
 
 L’API de gestion définit les classes d’exceptions qui étendent `Microsoft.Rest.RestException`. Interceptez des exceptions générées par l’API de gestion avec un bloc `catch (RestException exception)` après l’instruction pertinente `try`.
 
-## <a name="logs-and-tracing"></a>Journaux et suivi
+## <a name="logs-and-tracing"></a>Journaux d’activité et suivi
 
 La journalisation dans les bibliothèques de gestion Fluent Azure pour .NET exploite le suivi sous-jacent du client du service [AutoRest](https://github.com/Azure/AutoRest).
 
@@ -177,7 +177,7 @@ Les niveaux de consignation `HttpLoggingDelegatingHandler` sont définis comme s
 | Niveau de trace | Journalisation activée 
 | ------------ | ---------------
 | HttpLoggingDelegatingHandler.Level.None | Aucune sortie
-| HttpLoggingDelegatingHandler.Level.Basic | Consigne les URL vers des appels REST sous-jacentes, des codes de réponses et des temps
+| HttpLoggingDelegatingHandler.Level.Basic | Consigne les URL vers des appels REST sous-jacents, des codes de réponse et des durées
 | HttpLoggingDelegatingHandler.Level.Body | Fonctions du niveau de consignation BASIC, ajoutées à des corps de demande et de réponse aux appels REST
 | HttpLoggingDelegatingHandler.Level.Headers | Fonctions du niveau de consignation BASIC, ajoutées à des en-têtes de demande et de réponse aux appels REST
 | HttpLoggingDelegatingHandler.Level.BodyAndHeaders | Fonction des niveaux de consignation BODY et HEADERS

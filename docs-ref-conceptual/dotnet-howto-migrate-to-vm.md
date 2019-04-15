@@ -76,7 +76,7 @@ Vous souhaitez vous assurer que votre application est hautement disponible et pe
 Pour commencer, consultez [Déployer votre application sur des groupes de machines virtuelles identiques](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).
 
 #### <a name="centralized-logging"></a>Journalisation centralisée
-Lorsque vous exécutez votre application sur plusieurs instances, envisagez de stocker vos journaux à un emplacement centralisé, comme le [Stockage Azure](https://docs.microsoft.com/azure/storage/).
+Lorsque vous exécutez votre application sur plusieurs instances, envisagez de stocker vos journaux d’activité à un emplacement centralisé, comme le [Stockage Azure](https://docs.microsoft.com/azure/storage/).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
