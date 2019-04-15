@@ -478,7 +478,7 @@ Le kit de développement logiciel (SDK) HDInsight Management peut également êt
 ### <a name="enable-oms-monitoring"></a>Activer la surveillance OMS
 
 > [!NOTE]
-> Pour activer la surveillance OMS, vous devez disposer d’un espace de travail Log Analytics existant. Si vous n’en avez pas déjà créé un, vous pouvez apprendre à le faire ici : [Créer un espace de travail Log Analytics dans le portail Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
+> Pour activer la supervision OMS, vous devez disposer d’un espace de travail Log Analytics existant. Si vous n’en avez pas déjà créé un, vous pouvez apprendre à le faire ici : [Créer un espace de travail Log Analytics dans le portail Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Pour activer la surveillance OMS sur votre cluster :
 
