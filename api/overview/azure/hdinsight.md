@@ -1,128 +1,23 @@
 ---
-title: Kit de développement logiciel (SDK) Azure HDInsight .NET
-description: Référence pour le kit de développement logiciel (SDK) Azure HDInsight .NET
-ms.date: 9/19/2018
+title: SDK Azure HDInsight pour .NET
+description: Informations de référence sur le kit SDK Azure HDInsight pour .NET
+ms.date: 04/10/2019
 ms.topic: reference
 ms.service: hdinsight
-ms.openlocfilehash: 35e2c8c07fb2b86b2d0ae9be4f855e369c1aa86d
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 2282a302b269a52c71ed88c26e021344cdca4382
+ms.sourcegitcommit: 4328168172ac1b1a448e16988f75199262bc5c2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348201"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59700257"
 ---
-# <a name="azure-hdinsight-net-sdk"></a>Kit de développement logiciel (SDK) Azure HDInsight .NET
+# <a name="azure-hdinsight-sdk-for-net"></a>SDK Azure HDInsight pour .NET
 
-## <a name="azure-hdinsight-libraries-for-net-2x"></a>Bibliothèques Azure HDInsight pour .NET 2.x
+Azure HDInsight propose des kits SDK de tâche et de gestion pour .NET, qui fournissent des classes pour gérer votre cluster HDInsight et soumettre et superviser des tâches Hadoop.
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="management"></a>gestion
 
-Le Kit HDInsight Service .NET SDK fournit des classes qui se rapportent à la création, à la configuration, à l’envoi et à la surveillance des travaux Hadoop gérés par un Service HDInsight Azure. En outre, il fournit des classes pour gérer les abonnements Azure à l’aide du Service HDInsight et configurer les clusters, les comptes de stockage et les autres ressources associées aux clusters HDInsight gérés par un abonnement Azure.
-
-## <a name="management-libraries"></a>Bibliothèques de gestion
-
-### <a name="jobs"></a>Tâches
-
-Utilisez le Kit de développement logiciel (SDK) client Azure HDInsight pour créer, gérer et surveiller des tâches sur un cluster Hadoop. 
-
-Installez le [package NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio ou avec la [CLI .NET Core][DotNetCLI].
-
-#### <a name="visual-studio-package-manager"></a>Gestionnaire de package Visual Studio
-
-```powershell
-Install-Package Microsoft.Azure.Management.HDInsight.Job
-```
-
-```bash
-dotnet add package Microsoft.Azure.Management.HDInsight.Job
-```
-
-#### <a name="code-example"></a>Exemple de code
-
-Cet exemple exécute une tâche Hive dans un cluster Hadoop.
-
-```csharp
-HDInsightJobManagementClient managementClient = new HDInsightJobManagementClient(clusterUri, credentials);
-
-Dictionary<string, string> defines = new Dictionary<string, string> {
-    { "hive.execution.engine", "tez" },
-    { "hive.exec.reducers.max", "1" }
-};
-List<string> arguments = new List<string> { { "argA" }, { "argB" } };
-HiveJobSubmissionParameters parameters = new HiveJobSubmissionParameters
-{
-    Query = "SHOW TABLES",
-    Defines = defines,
-    Arguments = arguments
-};
-
-JobSubmissionResponse jobResponse = managementClient.JobManagement.SubmitHiveJob(parameters);
-```
-
-### <a name="hdinsight"></a>HDInsight
-
-Utilisez le Kit de développement logiciel (SDK) de gestion Azure HDInsight pour créer, gérer, démarrer, arrêter et mettre à l’échelle des clusters Hadoop.
-
-Installez le [package NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio ou avec la [CLI .NET Core][DotNetCLI].
-
-#### <a name="visual-studio-package-manager"></a>Gestionnaire de package Visual Studio
-
-```powershell
-Install-Package Microsoft.Azure.Management.HDInsight
-```
-
-```bash
-dotnet add package Microsoft.Azure.Management.HDInsight
-```
-
-#### <a name="code-example"></a>Exemple de code
-
-Cet exemple crée deux clusters de nœud Hadoop Linux HDInsight avec un Stockage Blob Azure existant.
-
-```csharp
-HDInsightManagementClient managementClient = new HDInsightManagementClient(authToken);
-// Set parameters for the new cluster
-ClusterCreateParameters parameters = new ClusterCreateParameters
-{
-    ClusterSizeInNodes = 2,
-    UserName = "admin",
-    Password = "<Enter HTTP User Password>",
-    ClusterType = "Hadoop",
-    OSType = OSType.Linux,
-    Version = "3.5",
-    // Use an Azure storage account as the default storage
-    DefaultStorageInfo = new AzureStorageInfo("<StorageAccount>", "<StorageKey>", "<BlobContainerName>"),
-    Location = "EAST US 2",
-    SshUserName = "sshuser",
-    SshPassword = "<Enter SSH User Password>",
-};
-
-// Create the cluster
-managementClient.Clusters.Create("<ExistingResourceGroupName>", "<NewClusterName>", parameters);
-```
-
-> [!div class="nextstepaction"]
-> [Explorer les API de gestion](/dotnet/api/overview/azure/hdinsights/management)
-
-
-## <a name="samples"></a>Exemples
-
-- [Création du cluster](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-create-linux-clusters-dotnet-sdk)
-- [Gestion du cluster](https://docs.microsoft.com/azure/hdinsight/hdinsight-administer-use-dotnet-sdk)
-- [Exécuter des tâches Hive](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-hive-dotnet-sdk)
-- [Exécuter des tâches Pig](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-pig-dotnet-sdk)
-- [Plus de tâches](https://docs.microsoft.com/azure/hdinsight/hdinsight-submit-hadoop-jobs-programmatically)
-
-Afficher la [liste complète](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=hdinsight) d’exemples d’Azure SQL Database.
-
-[PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
-
-## <a name="hdinsight-net-management-sdk-3x-preview"></a>Préversion 3.X du kit de développement logiciel (SDK) HDInsight .NET Management
-
-## <a name="overview"></a>Vue d’ensemble
-
-Le kit de développement logiciel (SDK) HDInsight .NET fournit des classes et des méthodes qui vous permettent de gérer vos clusters HDInsight. Il inclut des opérations permettant de créer, supprimer, mettre à jour, répertorier, mettre à l’échelle, exécuter des actions de script, surveiller, obtenir des propriétés des clusters HDInsight, et bien plus encore.
+Le kit SDK de gestion HDInsight pour .NET fournit des classes et des méthodes qui vous permettent de gérer vos clusters HDInsight. Il inclut des opérations permettant de créer, supprimer, mettre à jour, répertorier, mettre à l’échelle, exécuter des actions de script, surveiller, obtenir des propriétés des clusters HDInsight, et bien plus encore.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -136,17 +31,17 @@ Depuis votre projet Visual Studio, ouvrez la Console du Gestionnaire de package 
 Dans la fenêtre Console du Gestionnaire de package, exécutez les commandes suivantes :
 
 ```
-  Install-Package Microsoft.Azure.Management.HDInsight -Version 3.1.0-preview
+  Install-Package Microsoft.Azure.Management.HDInsight
   Install-Package Microsoft.Azure.Management.Fluent
   Install-Package Microsoft.Azure.Management.ResourceManager.Fluent
 ```
 
-## <a name="authentication"></a>Authentification
+## <a name="authentication"></a>Authentication
 
 Le kit de développement logiciel (SDK) doit d’abord être authentifié avec votre abonnement Azure.  Suivez l’exemple ci-dessous pour créer un principal de service et l’utiliser pour s’authentifier. Une fois cette opération terminée, vous avez une instance de `HDInsightManagementClient`, qui contient de nombreuses méthodes (décrites dans les sections suivantes) pouvant être utilisées pour effectuer des opérations de gestion.
 
 > [!NOTE]
-> Il existe d’autres façons de s’authentifier, en plus de l’exemple suivant, peut-être mieux adaptées à vos besoins. Toutes les méthodes sont décrites ici : [S’authentifier avec les bibliothèques Azure pour .NET](https://docs.microsoft.com/en-us/dotnet/azure/dotnet-sdk-azure-authenticate?view=azure-dotnet)
+> Il existe d’autres façons de s’authentifier, en plus de l’exemple suivant, peut-être mieux adaptées à vos besoins. Toutes les méthodes sont décrites ici : [S’authentifier avec les bibliothèques Azure pour .NET](https://docs.microsoft.com/en-us/dotnet/azure/dotnet-sdk-azure-authenticate?view=azure-dotnet)
 
 ### <a name="authentication-example-using-a-service-principal"></a>Exemple d’authentification à l’aide d’un principal de service
 
@@ -243,7 +138,6 @@ namespace HDI_SDK_Test
 }
 ```
 
-
 ## <a name="cluster-management"></a>Gestion du cluster
 
 > [!NOTE]
@@ -251,7 +145,11 @@ namespace HDI_SDK_Test
 
 ### <a name="create-a-cluster"></a>Créer un cluster
 
-Un nouveau cluster peut être créé en appelant `client.Clusters.Create()`. 
+Un nouveau cluster peut être créé en appelant `client.Clusters.Create()`.
+
+#### <a name="samples"></a>Exemples
+
+Des exemples de code pour créer plusieurs types courants de clusters HDInsight sont disponibles : [HDInsight .NET Samples](https://github.com/Azure-Samples/hdinsight-dotnet-sdk-samples).
 
 #### <a name="example"></a>Exemples
 
@@ -478,7 +376,7 @@ Le kit de développement logiciel (SDK) HDInsight Management peut également êt
 ### <a name="enable-oms-monitoring"></a>Activer la surveillance OMS
 
 > [!NOTE]
-> Pour activer la supervision OMS, vous devez disposer d’un espace de travail Log Analytics existant. Si vous n’en avez pas déjà créé un, vous pouvez apprendre à le faire ici : [Créer un espace de travail Log Analytics dans le portail Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
+> Pour activer la supervision OMS, vous devez disposer d’un espace de travail Log Analytics existant. Si vous n’en n’avez pas déjà créé un, vous pouvez apprendre comment le faire ici : [Créer un espace de travail Log Analytics dans le portail Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Pour activer la surveillance OMS sur votre cluster :
 
@@ -506,7 +404,7 @@ client.Extension.DisableMonitoring("<Resource Group Name>", "<Cluster Name>");
 
 HDInsight fournit une méthode de configuration intitulée actions de script, qui appelle des scripts personnalisés pour personnaliser le cluster.
 > [!NOTE]
-> Vous pouvez trouver plus d’informations sur l’utilisation des actions de script ici : [Personnaliser des clusters HDInsight Linux à l’aide d’actions de script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)
+> Vous trouverez plus d’informations sur l’utilisation des actions de script ici : [Personnaliser des clusters HDInsight Linux avec des actions de script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)
 
 ### <a name="execute-script-actions"></a>Exécuter des actions de script
 
@@ -582,3 +480,49 @@ while (true)
     scriptExecutionsPaged = client.ScriptExecutionHistory.ListNext(scriptExecutionsPaged.NextPageLink);
 }
 ```
+
+## <a name="jobs"></a>Tâches
+
+Utilisez le kit SDK de tâche Azure HDInsight pour .NET afin de créer, gérer et superviser des tâches sur un cluster Hadoop.
+
+### <a name="sdk-installation"></a>Installation du Kit de développement logiciel (SDK)
+
+Installez le [package NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job) directement à partir de la [Console du Gestionnaire de package][PackageManager] Visual Studio ou avec la [CLI .NET Core][DotNetCli].
+
+#### <a name="visual-studio-package-manager"></a>Gestionnaire de package Visual Studio
+
+```powershell
+Install-Package Microsoft.Azure.Management.HDInsight.Job
+```
+
+```bash
+dotnet add package Microsoft.Azure.Management.HDInsight.Job
+```
+
+### <a name="code-example"></a>Exemple de code
+
+Cet exemple exécute une tâche Hive dans un cluster Hadoop.
+
+```csharp
+HDInsightJobManagementClient managementClient = new HDInsightJobManagementClient(clusterUri, credentials);
+
+Dictionary<string, string> defines = new Dictionary<string, string> {
+    { "hive.execution.engine", "tez" },
+    { "hive.exec.reducers.max", "1" }
+};
+List<string> arguments = new List<string> { { "argA" }, { "argB" } };
+HiveJobSubmissionParameters parameters = new HiveJobSubmissionParameters
+{
+    Query = "SHOW TABLES",
+    Defines = defines,
+    Arguments = arguments
+};
+
+JobSubmissionResponse jobResponse = managementClient.JobManagement.SubmitHiveJob(parameters);
+```
+
+### <a name="samples"></a>Exemples
+
+- [Exécuter des tâches Hive](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-hive-dotnet-sdk)
+- [Exécuter des tâches Pig](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-pig-dotnet-sdk)
+- [Plus de tâches](https://docs.microsoft.com/azure/hdinsight/hdinsight-submit-hadoop-jobs-programmatically)
