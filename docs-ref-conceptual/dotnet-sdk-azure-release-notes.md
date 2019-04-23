@@ -23,7 +23,7 @@ ms.locfileid: "47190672"
   </tr>
   <tr>
     <td>Calcul</td>
-    <td>Machines virtuelles et extensions de machine virtuelle<br>Groupes identiques de machines virtuelles <br>Disques gérés</td>
+    <td>Machines virtuelles et extensions de machine virtuelle<br>Groupes identiques de machines virtuelles <br>Disques managés</td>
     <td></td>
     <td valign="top">Services de conteneurs Azure<br>Registre de conteneurs Azure</td>
   </tr>
