@@ -17,7 +17,7 @@ ms.locfileid: "47190632"
 
 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) est un service de base de données reposant sur le moteur Microsoft SQL Server qui prend en charge les données relationnelles, JSON, spatiales et XML. 
 
-Pour en savoir plus sur l’utilisation de SQL Database avec .NET, consultez l’article [Utiliser .NET avec Visual Studio pour vous connecter à une base de données SQL Azure et l’interroger](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
+Pour en savoir plus sur l’utilisation de SQL Database avec .NET, consultez l’article [Utiliser .NET avec Visual Studio pour vous connecter à une base de données Azure SQL et l’interroger](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
 
 ## <a name="client-library"></a>Bibliothèque cliente
 
@@ -124,5 +124,5 @@ ISqlDatabase sqlDb = sqlServer.Databases.Define("DatabaseName").Create();
 - [Exemples de code ADO.NET](/dotnet/framework/data/adonet/ado-net-code-examples)
 - [Bibliothèques de gestion Azure pour des exemples .NET pour SQL Database](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
 
-Afficher la [liste complète](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=sql+database) d’exemples d’Azure SQL Database.
+Voir la [liste complète](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=sql+database) d’exemples Azure SQL Database.
 

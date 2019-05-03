@@ -24,7 +24,7 @@ Pour un exemple de code source, consultez la liste des [exemples de service Azur
 | **Azure Container Service** ||
 | [Prise en main des conteneurs Kubernetes et Windows][4] | Créez un cluster Kubernetes dans Azure Container Service à l’aide d’un conteneur IIS.
 | **Base de données SQL** ||
-| [Utiliser .NET pour se connecter et interroger des données][5] | Utilisez ADO.NET pour vous connecter à une base de données SQL Azure, puis utilisez les instructions Transact-SQL pour interroger, insérer, mettre à jour et supprimer des données dans la base de données | 
+| [Utiliser .NET pour se connecter et interroger des données][5] | Utilisez ADO.NET pour vous connecter à une base de données Azure SQL, puis utilisez les instructions Transact-SQL pour interroger, insérer, mettre à jour et supprimer des données dans la base de données | 
 | **Base de données Azure pour PostgreSQL** ||
 | [Utiliser .NET pour se connecter et interroger des données][6] | Utilisez les instructions SQL pour interroger la base de données, la mettre à jour, y insérer des données ou en supprimer. |
 | **Azure Cosmos DB** ||
